@@ -1,0 +1,37 @@
+NPHJ-SC NPHJ-LP:
+
+1. √ hashtable allocation is excluded from total timing ( [DONE]! By moving memset is within each single thread in my own implementation).
+2. √ overflow bucket buffer allocation is excluded from total timing (NPHJ-SC) ( [DONE]！ Included in my implementation). 
+3. NPHJ-SC are overflow buckets (every single bucket is affliated with a latch, but it's redundant) ([HALF-DONE]! Removed in my implementation. Could test the variant if time permits).
+4. NPHJ-LP probing can be accerlated/implemented with SIMD (Could be slower for the complex determination condition of termination)。
+
+
+PHJ:
+1. √ partition space allocation is excluded from total timing ( [DONE]! By moving memset is within each single thread in my own implementation). 
+2. √ part/join/skew queue allocation is excluded from total timing ( [DONE]! Only malloc in the main thread ).
+3. √ output allocation is excluded from total timing ( [DONE]! Only malloc in the main thread ).
+4. √ radix cluster function missed an auxilary array –––– dst ( [DONE]! Seems to resolve this problem with question mark expression ).
+5. move task_queue alloc to NVM.
+6. can see the thread synchronization overheads for the partitioning phase, and decide if it's needed to further fine grained divide the partitioning phase into N tasks, where N >> THREAD_NUM
+7. previous radix join, radix cluster employs two-pass partitioning (1 pass for histogram, the other pass for scattering, can this two-pass be changed to one-pass)
+8. check if the part_queue resizes dynamically in the phase of skew handling parallel partitioning.
+9. SKEW_HANDLING only applies to 2-pass partitioning.
+
+
+PTR:
+1. PTR_NPHJ runtime excludes the memset time for mater while PTR_PHJ runtime includes the memset time for mater.
+2. BW_REG does not apply on the payload workload, as the partitioning write time is bounded by reading ( the reading tuple size is larger than the writing keyrid size ).
+3. For PTR_NPHJ, the saved row_id_pair_t mater is actually sorted according to S's row_id, hence in the retriveing phase, it sequentially scans the S table, but completely randomly retrieves the R. On the contrary, for PTR_PHJ, since the mater is actually stored partiton-by-partiton, the mater exibits a high locality. Specifically, if we performs the join with 2^15 partitions, each S-side (8192.0) actually only accesses only 512 R-tuples, i.e., every single R tuple is accessed 16 times (note that, the mater is actually store consecutively for each thread, the thread-wise mater region actually access almost the same number of different R tuples as PTR_NPHJ. However, the thread-wise consecutive region is actually formed by several contiguous partition-wise sub-mater. For each of these sub-mater, it behaves this high locality, hence yielding much fewer cache misses). Thus, the retrieving phase in PTR_PHJ has much fewer cache misses, (the more the partition bits, the fewer the cache misses), therefore, the retrieving phase is much faster than PTR_NPHJ.
+4. NVM sequential throughput profits from large access size (cf. Maximizing Persistent Memory Bandwidth Utilization for OLAP Workloads). When tuple size exceeds 256B (i.e., 512B in our case), it actually delivers the higher sequential read throughput. Note that, the building phase is more bounded by the tuple read rather than the keyrid write (that's why we don't use bandwidth regulation technique in payload workload), thus the building phase runtime keeps flat when tuple size increases from 256B to 512B (see 1108-logs).
+
+
+SHR:
+1. PHJ_SHR joins should not be applied to zipfian & sparsity workloads.
+
+
+SSB:
+1. nphj_sc, PREFETCH_DISTANCE should be set as 8 for optimal performance.
+
+
+TPCH:
+1. there is no meaning implementing hro join, for the filtered_tuple_size is at least 64B, which already fills up a complete AVX512 size.

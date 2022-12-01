@@ -1,0 +1,5 @@
+link_libraries(-lm -lpmem -lpthread)
+include_directories(${IPMWATCH_INC_PATH})
+aux_source_directory(. DIR_LIB_SRCS)
+add_library(Algo SHARED ${DIR_LIB_SRCS})
+# set_target_properties(Algo PROPERTIES LINK_FLAGS "-Wl,-rpath=/usr/local/lib/pmdk_debug")

@@ -1,0 +1,7 @@
+set(PAPI_INC_PATH "/home/huang/papi/src/install/include")
+set(PAPI_LIB_PATH "/home/huang/papi/src/install/lib")
+include_directories(${PAPI_INC_PATH})
+link_directories(${PAPI_LIB_PATH})
+link_libraries(-lpapi)
+aux_source_directory(. DIR_LIB_SRCS)
+add_library(Papi SHARED ${DIR_LIB_SRCS})

@@ -1,0 +1,117 @@
+NPHJ_SC event counts w.r.t thread:
+	Local:
+		Host Reads: flat (build), flat (probe)
+		Host Writes: slightly increase (build), slightly decrease (probe)
+		Read 64B Ops Received: flat (build), flat (probe)
+		Write 64B Ops Received: flat (build), slightly decrease (probe)
+		Media Read Ops: flat (build), flat (probe)
+		Media Write Ops: flat (build), slightly decrease (probe)
+	Remote:
+		Host Reads: increase (build), flat (probe)
+		Host Writes: increase (build), flat (probe)
+		Read 64B Ops Received: increase (build), flat (probe)
+		Write 64B Ops Received: slightly increase (build), flat (probe)
+		Media Read Ops: increase (build), flat (probe)
+		Media Write Ops: slightly increase (build), flat (probe)
+
+	host_reads
+	LOCAL:	3433612.0	55053729.0	58487342.0
+	REMOTE:	3497026.0	56016684.0	59513711.0
+	L/R:	0.9819	0.9828	0.9828
+
+	host_writes
+	LOCAL:	3441202.0	28193.0	3469395.0
+	REMOTE:	6236024.0	13962592.0	20198616.0
+	L/R:	0.5518	0.002	0.1718
+
+	read_64B_ops_received
+	LOCAL:	23581649.0	185396667.0	208978316.0
+	REMOTE:	35239265.0	211284330.0	246523595.0
+	L/R:	0.6692	0.8775	0.8477
+
+	write_64B_ops_received
+	LOCAL:	11616407.0	183838.0	11800245.0
+	REMOTE:	23079685.0	23109364.0	46189049.0
+	L/R:	0.5033	0.008	0.2555
+
+	media_read_ops
+	LOCAL:	2991310.0	46303207.0	49294517.0
+	REMOTE:	3039895.0	47043741.0	50083636.0
+	L/R:	0.984	0.9843	0.9842
+
+	media_write_ops
+	LOCAL:	2904101.0	45959.0	2950061.0
+	REMOTE:	5769921.0	5777341.0	11547262.0
+	L/R:	0.5033	0.008	0.2555
+
+
+
+
+
+
+PHJ_RADIX_BC events counts w.r.t. thread:
+	Local:
+		Host Reads: flat (partition), flat (join)
+		Host Writes: flat (partition), flat (join)
+		Read 64B Ops Received: flat (partition), flat (join)
+		Write 64B Ops Received: flat (partition), flat (join)
+		Media Read Ops: flat (partition), flat (join)
+		Media Write Ops: flat (partition), flat (join)
+	Remote:
+		Host Reads: slightly increase (partition), increase (join)
+		Host Writes: slightly increase (partition), flat (join)
+		Read 64B Ops Received: increase (partition), increase (join)
+		Write 64B Ops Received: increaase (partition), increase (join)
+		Media Read Ops: slightly increase (partition), increase (join)
+		Media Write Ops: slightly increase (partition), slightly increase (join)
+
+	host_reads
+	LOCAL:	23779410.0	12596285.0	36375695.0
+	REMOTE:	35776149.0	12644978.0	48421127.0
+	L/R:	0.6647	0.9961	0.7512
+
+	host_writes
+	LOCAL:	11948124.0	1399673.0	13347797.0
+	REMOTE:	47589515.0	13987607.0	61577122.0
+	L/R:	0.2511	0.1001	0.2168
+
+	read_64B_ops_received
+	LOCAL:	36256215.0	13826805.0	50083020.0
+	REMOTE:	72688914.0	26577955.0	99266869.0
+	L/R:	0.4988	0.5202	0.5045
+
+	write_64B_ops_received
+	LOCAL:	12291280.0	750812.0	13042092.0
+	REMOTE:	36403995.0	13612349.0	50016344.0
+	L/R:	0.3376	0.0552	0.2608
+
+	media_read_ops
+	LOCAL:	5991233.0	3268998.0	9260232.0
+	REMOTE:	9071229.0	3241401.0	12312631.0
+	L/R:	0.6605	1.0085	0.7521
+
+	media_write_ops
+	LOCAL:	3072820.0	187703.0	3260523.0
+	REMOTE:	9100998.0	3403087.0	12504086.0
+	L/R:	0.3376	0.0552	0.2608
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
