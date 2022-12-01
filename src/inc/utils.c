@@ -296,8 +296,6 @@ void mc_cfg(int *local_cores, int *remote_cores) {
 
 	if (strncmp(hostname, "ocna1", strlen(hostname)-1) == 0) {
 		snprintf(cfg_path, CHAR_BUFFER_LEN, "/work/huang/workspace/pm-join/config/mc/%s.cfg", substr( hostname, 0, strlen(hostname) - 1 ));
-	} else if ( (strncmp(hostname, "optane", strlen(hostname)-1) == 0) || (strncmp(hostname, "dual", strlen(hostname)-1) == 0) ) {
-		snprintf(cfg_path, CHAR_BUFFER_LEN, "/home/huang/workspace/pm-join/config/mc/%s.cfg", substr( hostname, 0, strlen(hostname) - 1 ));
 	} else {
 		printf("[ERROR] Unknown hostname: %s\n", hostname);
 		exit(EXIT_FAILURE);
