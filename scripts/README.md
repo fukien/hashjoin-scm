@@ -1,7 +1,7 @@
 # Experiment Reproduction
 
 ## Instruction
-Please visit the following folders to reproduce (and plot figures) for therespective experiments.
+Please visit the following folders to reproduce (and plot figures) for the respective experiments.
 
 
 Experiments | Scritps
