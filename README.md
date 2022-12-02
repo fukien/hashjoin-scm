@@ -78,11 +78,14 @@ To run RDX-BC with the bandwidth regulation mechanism:
 $ ./bin/main --workload=uniform --subtype=A --param=pkfk --algo=phj_radix_bw_reg_bc
 ```
 
-
 ## Reproducing Experiments 
 See [scripts/](https://github.com/fukien/hashjoin-scm/tree/main/scripts).  
 Note: You may want to amend the path of SCM mounting points, PMWatch, and PAPI in [src/](https://github.com/fukien/hashjoin-scm/tree/main/src) before running all experimental scripts.
 
 
+## Hardware Configuration
+Since the experiments depend on special hardwares, the hardware configuration practices are available under request. 
+
+
 ## Further Support
-If you have any enquiries, please contact huangwentao@u.nus.edu (Huang Wentao) for the further support.
+If you have any enquiries, please contact huang@comp.nus.edu.sg (Huang Wentao) for the further support.
