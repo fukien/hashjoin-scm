@@ -9,7 +9,7 @@ Experiments | Scritps
 "Figure 1(a)" persist-cost microbenchmark | persist-cost-scripts
 "Figure 1(c)" pagefault microbenchmark | pagefault-cost-scripts
 NPHJ prefetching | nphj-prefetching-scripts
-NPHJ bucket alignment | nphj-alignment-runtime/counter-scripts
+NPHJ bucket alignment | nphj-alignment-runtime-scripts, nphj-alignment-counter-scripts
 NPHJ thread scalability | nphj-thread-scalability-scripts
 PHJ SWWCB "ntstore" | phj-part-swwcbnt-scripts
 PHJ part thread scalability | phj-part-thread-scalability-scripts
