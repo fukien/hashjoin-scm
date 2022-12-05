@@ -26,5 +26,5 @@ single-thread performance | single-thread-scripts
 billion-scale performance | billion-scripts
 payload study | payload-scripts
 NUMA \& TPC-H study | numa-tpch-scripts
-"Figure 16" pagefault \& store study | numa-tpch-scripts 
+"Figure 16" pagefault \& store study | pagefault-persist-scripts 
 epsilon \& asymmetry | epsilon-asymmetry-scripts
