@@ -1,42 +1,30 @@
 # Experiment Reproduction
 
-## Instruction
-Please visit the following folders to reproduce (and plot figures) for the respective experiments.
+## General Instruction
+Please visit the following folders, and run the scripts for reproducing the respective experiment. The plotting scripts are also included in these folders.
 
 
 Experiments | Scritps
 ---|---
-microbenchmarks of persistent instructions/page faults | 0623-scripts
-NPHJ prefetching | 0730/0808-scripts
-bucket alignment | 0731/0802/0803-scripts
-SWWCB and "ntstore" | 0819-scripts
-PHJ thread scalability | 0815/0816-scripts
-"putting all together" | 0829/1201-scripts
-"a rigorous evaluation" | 1019/1020-scripts
-payload study | 1022/1024-scripts
-"read/write asymmetry" | 1021/1028/1030/1031-scripts
-
-
-## Additional Data Generation
-### Billion-scale workload
-```
-mkdir build
-cd build
-cmake .. -DRUN_BILLION=true
-make -j 32
-cd ..
-./gen
-```
-
-### Large-size payload workload
-```
-mkdir build
-cd build
-cmake .. -DRUN_PAYLOAD=true -DPAYLOAD_SIZE={payload_size}
-make -j 32
-cd ..
-./gen
-```
-
-### Other tips:
-Since the above workloads are huge, you may need to reserve some space in mounting points for generating these datasets.
+"Figure 1(a)" persist-cost microbenchmark | persist-cost-scripts
+"Figure 1(c)" pagefault microbenchmark | pagefault-cost-scripts
+NPHJ prefetching | nphj-prefetching-scripts
+NPHJ bucket alignment | nphj-alignment-runtime/counter-scripts
+NPHJ thread scalability | nphj-thread-scalability-scripts
+PHJ SWWCB "ntstore" | phj-part-swwcbnt-scripts
+PHJ part thread scalability | phj-part-thread-scalability-scripts
+PHJ part fanout | phj-part-fanout-scripts
+PHJ join fanout | phj-join-fanout-scripts
+PHJ join thread scalability | phj-join-thread-scalability-scripts
+"Putting EveryThing" | pkfkA-scripts
+size difference | size-difference-scripts
+skew | skew-scripts
+selectivity | selectivity-scripts
+duplicate | dupfk-scripts
+density | density-scripts
+single-thread performance | single-thread-scripts
+billion-scale performance | billion-scripts
+payload study | payload-scripts
+NUMA \& TPC-H study | numa-tpch-scripts
+"Figure 16" pagefault \& store study | numa-tpch-scripts 
+epsilon \& asymmetry | epsilon-asymmetry-scripts

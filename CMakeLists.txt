@@ -357,6 +357,17 @@ else()
 endif()
 
 
+
+# FNDLY
+if(FNDLY_R_CARDINALITY)
+	add_definitions(-DFNDLY_R_CARDINALITY=${FNDLY_R_CARDINALITY})
+endif()
+if(FNDLY_S_CARDINALITY)
+	add_definitions(-DFNDLY_S_CARDINALITY=${FNDLY_S_CARDINALITY})
+endif()
+
+
+
 add_subdirectory(${INC_PATH})
 link_libraries(Inc)
 
@@ -383,6 +394,10 @@ target_include_directories(toy PRIVATE ${PAPI_INC_PATH})
 add_executable(gen ${SRC_PATH}/gen.c)
 set_target_properties(gen PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH})
 target_link_libraries(gen -lpmem)
+
+add_executable(fndly_gen ${SRC_PATH}/fndly_gen.c)
+set_target_properties(fndly_gen PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH})
+target_link_libraries(fndly_gen -lpmem)
 
 
 add_executable(main ${SRC_PATH}/main.c)

@@ -80,7 +80,7 @@ $ ./bin/main --workload=uniform --subtype=A --param=pkfk --algo=phj_radix_bw_reg
 
 ## Reproducing Experiments 
 See [scripts/](https://github.com/fukien/hashjoin-scm/tree/main/scripts).  
-Note: You may want to amend the path of SCM mounting points, PMWatch, and PAPI in [src/](https://github.com/fukien/hashjoin-scm/tree/main/src) before running all experimental scripts.
+Note: You may want to amend the paths of SCM mounting points, PMWatch, and PAPI in [src/](https://github.com/fukien/hashjoin-scm/tree/main/src) before running the experimental scripts.
 
 
 ## Hardware Configuration
