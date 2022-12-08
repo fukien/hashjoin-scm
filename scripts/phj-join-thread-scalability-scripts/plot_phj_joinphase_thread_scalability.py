@@ -83,7 +83,8 @@ def plot_row_figs(algo_part, mem_type, core_setting):
 			color=join2color[algo_join], 
 			marker=join2marker[algo_join], fillstyle=join2fillstyle[algo_join], 
 			markeredgecolor="black", markerfacecolor=join2markerfacecolor[algo_join],
-			label="{}_{}".format(part2legend[algo_part], join2legend[algo_join]),
+			# label="{}_{}".format(part2legend[algo_part], join2legend[algo_join]),
+			label=join2legend[algo_join],
 			linestyle=part2linestyle[algo_part]
 		)
 
