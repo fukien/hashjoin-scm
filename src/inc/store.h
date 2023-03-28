@@ -110,7 +110,7 @@ typedef struct {
 	char values[TUPLE_T_SIZE-KEY_T__SIZE-ROWID_T_SIZE];
 } __attribute__( (packed, aligned( TUPLE_T_SIZE ) ) ) tuple_t;
 #else /* TUPLE_T_SIZE */
-} __attribute__( (packed, aligned( KEY_T__SIZE + ROWID_T_SIZE ) ) ) tuple_t;;
+} __attribute__( (packed, aligned( KEY_T__SIZE + ROWID_T_SIZE ) ) ) tuple_t;
 #endif /* TUPLE_T_SIZE */
 
 

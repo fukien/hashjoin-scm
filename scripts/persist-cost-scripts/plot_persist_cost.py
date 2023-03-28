@@ -191,7 +191,7 @@ if __name__ == "__main__":
 	plt.savefig(os.path.join(FIG_PATH, "elapsed-time.png"), bbox_inches="tight", format="png")
 	# plt.title("", fontsize=20)
 	# plt.savefig(os.path.join(FIG_PATH, "elapsed-time.pdf"), bbox_inches="tight", format="pdf")
-	# os.system("pdftops -eps {} {}".format(
+	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 	# 		os.path.join(FIG_PATH, "elapsed-time.pdf"),
 	# 		os.path.join(FIG_PATH, "elapsed-time.eps")
 	# 	)

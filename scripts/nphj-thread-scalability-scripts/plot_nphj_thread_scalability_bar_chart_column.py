@@ -61,7 +61,7 @@ def plot_thread_scalability(mem_type, core_setting):
 		plt.savefig(os.path.join(FIG_PATH, "nphj_thread_scalability_{}_{}.png".format(core_setting, mem_type)), bbox_inches="tight", format="png")
 		plt.title("", fontsize=20)
 		plt.savefig(os.path.join(FIG_PATH, "nphj_thread_scalability_{}_{}.pdf".format(core_setting, mem_type)), bbox_inches="tight", format="pdf")
-		os.system("pdftops -eps {} {}".format(
+		os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 				os.path.join(FIG_PATH, "nphj_thread_scalability_{}_{}.pdf".format(core_setting, mem_type)),
 				os.path.join(FIG_PATH, "nphj_thread_scalability_{}_{}.eps".format(core_setting, mem_type))
 			)
@@ -120,7 +120,7 @@ def plot_thread_scalability(mem_type, core_setting):
 	plt.savefig(os.path.join(FIG_PATH, "nphj_thread_scalability_runtime_{}_bar_chart_column.png".format(mem_type)), bbox_inches="tight", format="png")
 	# plt.title("", fontsize=20)
 	# plt.savefig(os.path.join(FIG_PATH, "nphj_thread_scalability_runtime_{}_bar_chart_column.pdf".format(mem_type)), bbox_inches="tight", format="pdf")
-	# os.system("pdftops -eps {} {}".format(
+	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 	# 		os.path.join(FIG_PATH, "nphj_thread_scalability_runtime_{}_bar_chart_column.pdf".format(mem_type)),
 	# 		os.path.join(FIG_PATH, "nphj_thread_scalability_runtime_{}_bar_chart_column.eps".format(mem_type))
 	# 	)

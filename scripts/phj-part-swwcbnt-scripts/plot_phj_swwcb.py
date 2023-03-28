@@ -79,7 +79,7 @@ def plot_swwcb(mem_type, im_mem_type):
 	plt.savefig(os.path.join(FIG_PATH, "phj_part_swwcb_runtime_{}_im_{}.png".format(mem_type, im_mem_type)), bbox_inches="tight", format="png")
 	plt.title("", fontsize=20)
 	plt.savefig(os.path.join(FIG_PATH, "phj_part_swwcb_runtime_{}_im_{}.pdf".format(mem_type, im_mem_type)), bbox_inches="tight", format="pdf")
-	os.system("pdftops -eps {} {}".format(
+	os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 			os.path.join(FIG_PATH, "phj_part_swwcb_runtime_{}_im_{}.pdf".format(mem_type, im_mem_type)),
 			os.path.join(FIG_PATH, "phj_part_swwcb_runtime_{}_im_{}.eps".format(mem_type, im_mem_type))
 		)
@@ -179,7 +179,7 @@ def plot_row_figs(mem_type):
 	# plt.show()
 	plt.savefig(os.path.join(FIG_PATH, "phj_part_swwcb_runtime_row_figures_{}.png".format(mem_type)), bbox_inches="tight", format="png")
 	# plt.savefig(os.path.join(FIG_PATH, "phj_part_swwcb_runtime_row_figures_{}.pdf".format(mem_type)), bbox_inches="tight", format="pdf")
-	# os.system("pdftops -eps {} {}".format(
+	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 	# 		os.path.join(FIG_PATH, "phj_part_swwcb_runtime_row_figures_{}.pdf".format(mem_type)),
 	# 		os.path.join(FIG_PATH, "phj_part_swwcb_runtime_row_figures_{}.eps".format(mem_type))
 	# 	)

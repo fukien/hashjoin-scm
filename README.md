@@ -1,5 +1,5 @@
-# A Design Space Exploration and Evaluation for Main-Memory Hash Joins in Storage Class Memory  
-**Please access https://www.comp.nus.edu.sg/~huang/assets/works/TR/hashjoin-scm/main-tr.pdf for our full technical report.**
+# A Design Space Exploration and Evaluation for Main-Memory Hash Joins in Storage Class Memory.
+Code repository for our [VLDB'23 paper](https://www.vldb.org/pvldb/vol16/p1249-huang.pdf). 
 
 ## Prerequisites
 ```

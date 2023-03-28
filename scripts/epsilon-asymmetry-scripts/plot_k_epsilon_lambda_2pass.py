@@ -69,7 +69,7 @@ if __name__ == "__main__":
 	plt.savefig(os.path.join(FIG_PATH, "2-pass-rdx-asymm-lambda-{}.png".format(labd) ), bbox_inches="tight", format="png")
 	# # plt.title("", fontsize=default_fontsize, fontweight="bold")
 	# plt.savefig(os.path.join(FIG_PATH, "2-pass-rdx-asymm-lambda-{}.pdf".format(labd) ), bbox_inches="tight", format="pdf")
-	# os.system("pdftops -eps {} {}".format(
+	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 	# 		os.path.join(FIG_PATH, "2-pass-rdx-asymm-lambda-{}.pdf".format(labd) ),
 	# 		os.path.join(FIG_PATH, "2-pass-rdx-asymm-lambda-{}.eps".format(labd) )
 	# 	)

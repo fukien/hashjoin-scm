@@ -99,7 +99,7 @@ def plot_fanout(mem_type):
 	plt.savefig(os.path.join(FIG_PATH, "phj_part_fanout_{}.png".format(mem_type)), bbox_inches="tight", format="png")
 	plt.title("", fontsize=20)
 	plt.savefig(os.path.join(FIG_PATH, "phj_part_fanout_{}.pdf".format(mem_type)), bbox_inches="tight", format="pdf")
-	os.system("pdftops -eps {} {}".format(
+	os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 			os.path.join(FIG_PATH, "phj_part_fanout_{}.pdf".format(mem_type)),
 			os.path.join(FIG_PATH, "phj_part_fanout_{}.eps".format(mem_type))
 		)
@@ -196,7 +196,7 @@ def plot_fanout(mem_type):
 	plt.savefig(os.path.join(FIG_PATH, "phj_part_fanout_{}.png".format(mem_type)), bbox_inches="tight", format="png")
 	# plt.title("", fontsize=20)
 	# plt.savefig(os.path.join(FIG_PATH, "phj_part_fanout_{}.pdf".format(mem_type)), bbox_inches="tight", format="pdf")
-	# os.system("pdftops -eps {} {}".format(
+	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 	# 		os.path.join(FIG_PATH, "phj_part_fanout_{}.pdf".format(mem_type)),
 	# 		os.path.join(FIG_PATH, "phj_part_fanout_{}.eps".format(mem_type))
 	# 	)
@@ -237,7 +237,7 @@ def plot_counter(part, passnum, mem_type,
 		plt.savefig(os.path.join(FIG_PATH, part, "{}_{}_part_fanout_{}.png".format(part, passnum, mem_type)), bbox_inches="tight", format="png")
 		# plt.title("", fontsize=20)
 		# plt.savefig(os.path.join(FIG_PATH, part, "{}_{}_part_fanout_{}.pdf".format(part, passnum, mem_type)), bbox_inches="tight", format="pdf")
-		# os.system("pdftops -eps {} {}".format(
+		# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 		# 		os.path.join(FIG_PATH, part, "{}_{}_part_fanout_{}.pdf".format(part, passnum, mem_type)),
 		# 		os.path.join(FIG_PATH, part, "{}_{}_part_fanout_{}.eps".format(part, passnum, mem_type))
 		# 	)
@@ -265,7 +265,7 @@ def plot_counter(part, passnum, mem_type,
 	plt.savefig(os.path.join(FIG_PATH, part, "{}_{}_part_{}_fanout_{}.png".format(part, passnum, event, mem_type)), bbox_inches="tight", format="png")
 	# plt.title("", fontsize=20)
 	# plt.savefig(os.path.join(FIG_PATH, part, "{}_{}_part_{}_fanout_{}.pdf".format(part, passnum, event, mem_type)), bbox_inches="tight", format="pdf")
-	# os.system("pdftops -eps {} {}".format(
+	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 	# 		os.path.join(FIG_PATH, part, "{}_{}_part_{}_fanout_{}.pdf".format(part, passnum, event, mem_type)),
 	# 		os.path.join(FIG_PATH, part, "{}_{}_part_{}_fanout_{}.eps".format(part, passnum, event, mem_type))
 	# 	)

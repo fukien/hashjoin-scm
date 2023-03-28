@@ -157,7 +157,7 @@ char * current_timestamp() {
 	struct timespec ts;
 	timespec_get(&ts, TIME_UTC);
 	char *buff1 = (char*) malloc( CHAR_BUFFER_LEN * sizeof(char) );
-	char *buff2 = (char*) malloc( CHAR_BUFFER_LEN * sizeof(char) );	
+	char *buff2 = (char*) malloc( CHAR_BUFFER_LEN * sizeof(char) );
 	strftime(buff1, CHAR_BUFFER_LEN, "%F-%T", gmtime(&ts.tv_sec));
 	snprintf(buff2, CHAR_BUFFER_LEN, "%s.%09ld", buff1, ts.tv_nsec);
 	free(buff1);
@@ -340,7 +340,7 @@ int get_cpu_id(int thread_id) {
 		return remote_cores[thread_id % SINGLE_SOCKET_CORE_NUM];
 	} else {
 #ifdef USE_HYPERTHREADING
-		return remote_cores[thread_id % SINGLE_SOCKET_CORE_NUM] + CORE_NUM; 
+		return remote_cores[thread_id % SINGLE_SOCKET_CORE_NUM] + CORE_NUM;
 #else /* USE_HYPERTHREADING */
 		return remote_cores[thread_id % SINGLE_SOCKET_CORE_NUM];
 #endif  /* USE_HYPERTHREADING */
@@ -349,7 +349,7 @@ int get_cpu_id(int thread_id) {
 		return local_cores[thread_id % SINGLE_SOCKET_CORE_NUM];
 	} else {
 #ifdef USE_HYPERTHREADING
-		return local_cores[thread_id % SINGLE_SOCKET_CORE_NUM] + CORE_NUM; 
+		return local_cores[thread_id % SINGLE_SOCKET_CORE_NUM] + CORE_NUM;
 #else /* USE_HYPERTHREADING */
 		return local_cores[thread_id % SINGLE_SOCKET_CORE_NUM];
 #endif  /* USE_HYPERTHREADING */
@@ -500,7 +500,7 @@ void * create_pmem_buffer(const char *filepath, const size_t buffer_size) {
 
 	int res = access(filepath, F_OK);
 	if (res == 0) {
-		pmemaddr = (char*) pmem_map_file(filepath, buffer_size, 
+		pmemaddr = (char*) pmem_map_file(filepath, buffer_size,
 			PMEM_FILE_CREATE, 0666, &mapped_len, &is_pmem);
 	} else {
 		// printf("create mapped filepath: %s\n", filepath);

@@ -152,7 +152,7 @@ static inline ptr_task_t * task_queue_get_slot(ptr_task_queue_t *tq) {
 		ret = &(l->tasks[l->curr]);
 		(l->curr) ++;
 	} else {
-		ptr_task_list_t * nl = (ptr_task_list_t *) malloc(sizeof(ptr_task_list_t));	
+		ptr_task_list_t * nl = (ptr_task_list_t *) malloc(sizeof(ptr_task_list_t));
 		nl->tasks = (ptr_task_t *) malloc(tq->alloc_num * sizeof(ptr_task_t));		// could be modified to alloc on NVM
 		nl->curr = 1;
 		nl->next = tq->free_list;
@@ -188,7 +188,7 @@ static inline ptr_task_queue_t * task_queue_init(size_t alloc_num) {
 	return ret;
 }
 
-static inline void task_queue_free(ptr_task_queue_t *tq)  {
+static inline void task_queue_free(ptr_task_queue_t *tq) {
 	ptr_task_list_t *tmp = tq->free_list;
 	while(tmp) {
 		free(tmp->tasks);													// dealloc_memory(tmp->tasks, sizeof(ptr_task_t) * tmp->alloc_num)

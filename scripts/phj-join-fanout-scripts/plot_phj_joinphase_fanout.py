@@ -131,7 +131,7 @@ def plot_row_figs(mem_type):
 	# plt.show()
 	plt.savefig(os.path.join(FIG_PATH, "phj_joinphase_fanout_row_figures_{}.png".format(mem_type)), bbox_inches="tight", format="png")
 	# plt.savefig(os.path.join(FIG_PATH, "phj_joinphase_fanout_row_figures_{}.pdf".format(mem_type)), bbox_inches="tight", format="pdf")
-	# os.system("pdftops -eps {} {}".format(
+	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 	# 		os.path.join(FIG_PATH, "phj_joinphase_fanout_row_figures_{}.pdf".format(mem_type)),
 	# 		os.path.join(FIG_PATH, "phj_joinphase_fanout_row_figures_{}.eps".format(mem_type))
 	# 	)

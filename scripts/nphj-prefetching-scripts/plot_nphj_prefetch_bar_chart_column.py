@@ -64,7 +64,7 @@ def plot_time(mem_type):
 	plt.savefig(os.path.join(FIG_PATH, mem_type, "nphj_prefetching_runtime_{}.png".format(mem_type)), bbox_inches="tight", format="png")
 	# plt.title("", fontsize=20)
 	# plt.savefig(os.path.join(FIG_PATH, mem_type, "nphj_prefetching_runtime_{}.pdf".format(mem_type)), bbox_inches="tight", format="pdf")
-	# os.system("pdftops -eps {} {}".format(
+	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 	# 		os.path.join(FIG_PATH, mem_type, "nphj_prefetching_runtime_{}.pdf".format(mem_type)),
 	# 		os.path.join(FIG_PATH, mem_type, "nphj_prefetching_runtime_{}.eps".format(mem_type))
 	# 	)
@@ -118,7 +118,7 @@ def plot_counter(mem_type, event, flag):
 	plt.savefig(os.path.join(FIG_PATH, mem_type, "nphj_prefetching_{}_{}.png".format(event, mem_type)), bbox_inches="tight", format="png")
 	# plt.title("", fontsize=20)
 	# plt.savefig(os.path.join(FIG_PATH, mem_type, "nphj_prefetching_{}_{}.pdf".format(event, mem_type)), bbox_inches="tight", format="pdf")
-	# os.system("pdftops -eps {} {}".format(
+	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 	# 		os.path.join(FIG_PATH, mem_type, "nphj_prefetching_{}_{}.pdf".format(event, mem_type)),
 	# 		os.path.join(FIG_PATH, mem_type, "nphj_prefetching_{}_{}.eps".format(event, mem_type))
 	# 	)
@@ -188,7 +188,7 @@ def share_x_axis_plot(mem_type, event, general_time_list, general_counter_list):
 	plt.savefig(os.path.join(FIG_PATH, mem_type, "nphj_prefetching_runtime_{}_{}_bar_chart_column.png".format(event, mem_type)), bbox_inches="tight", format="png")
 	# plt.title("", fontsize=20)
 	# plt.savefig(os.path.join(FIG_PATH, mem_type, "nphj_prefetching_runtime_{}_{}_bar_chart_column.pdf".format(event, mem_type)), bbox_inches="tight", format="pdf")
-	# os.system("pdftops -eps {} {}".format(
+	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 	# 		os.path.join(FIG_PATH, mem_type, "nphj_prefetching_runtime_{}_{}_bar_chart_column.pdf".format(event, mem_type)),
 	# 		os.path.join(FIG_PATH, mem_type, "nphj_prefetching_runtime_{}_{}_bar_chart_column.eps".format(event, mem_type))
 	# 	)

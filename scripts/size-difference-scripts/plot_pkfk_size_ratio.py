@@ -79,7 +79,7 @@ if __name__ == "__main__":
 	plt.savefig(os.path.join(FIG_PATH, "pkfk_size_ratio_{}.png".format(mem_type)), bbox_inches="tight", format="png")
 	# plt.title("", fontsize=default_fontsize)
 	# plt.savefig(os.path.join(FIG_PATH, "pkfk_size_ratio_{}.pdf".format(mem_type)), bbox_inches="tight", format="pdf")
-	# os.system("pdftops -eps {} {}".format(
+	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
 	# 		os.path.join(FIG_PATH, "pkfk_size_ratio_{}.pdf".format(mem_type)),
 	# 		os.path.join(FIG_PATH, "pkfk_size_ratio_{}.eps".format(mem_type))
 	# 	)

@@ -130,7 +130,7 @@ inline void nt_store(void * dest, const void * src, size_t len) {
 	} else if (len <= 16) {
 		_mm_stream_si128((__m128i*)dest, *(__m128i*)src);
 	} else if (len <= 32) {
-		_mm256_stream_si256((__m256i*)dest, *(__m256i*) src);		
+		_mm256_stream_si256((__m256i*)dest, *(__m256i*) src);
 	} else if (len <= 64) {
 		_mm512_stream_si512((__m512i*)dest, *(__m512i*)src);
 	} else {
@@ -193,9 +193,9 @@ static inline int fast_atoi(const char * str){
 
 #ifdef IN_DEBUG
 /**
- * determin if a memory address if 64byte-aligned
+ * determine if a memory address if 64byte-aligned
  * assert ( ( (unsigned long) addr & 0x3f) == 0 );
- * determin if a memory address if 8byte-aligned
+ * determine if a memory address if 8byte-aligned
  * assert ( ( (unsigned long) addr & 0x7) == 0 );
  */
 
