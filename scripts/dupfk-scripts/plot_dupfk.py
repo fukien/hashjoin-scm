@@ -11,7 +11,7 @@ from utils import *
 
 PHJ_LOG_PATH = "../../logs/dupfk-logs/"
 NPHJ_LOG_PATH = "../../logs/dupfk-logs/"
-FIG_PATH = "../../figs/skew-figs/"
+FIG_PATH = "../../figs/dupfk-figs/"
 
 mem_type = "nvm"
 

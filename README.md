@@ -89,3 +89,25 @@ Since the experiments depend on special hardwares, the hardware configuration pr
 
 ## Further Support
 If you have any enquiries, please contact huang@comp.nus.edu.sg (Huang Wentao) for the further support.
+
+## Bibliography
+```
+@article{DBLP:journals/pvldb/HuangJZHT23,
+  author       = {Wentao Huang and
+                  Yunhong Ji and
+                  Xuan Zhou and
+                  Bingsheng He and
+                  Kian{-}Lee Tan},
+  title        = {A Design Space Exploration and Evaluation for Main-Memory Hash Joins
+                  in Storage Class Memory},
+  journal      = {Proc. {VLDB} Endow.},
+  volume       = {16},
+  number       = {6},
+  pages        = {1249--1263},
+  year         = {2023},
+  url          = {https://www.vldb.org/pvldb/vol16/p1249-huang.pdf},
+  timestamp    = {Tue, 18 Apr 2023 16:42:01 +0200},
+  biburl       = {https://dblp.org/rec/journals/pvldb/HuangJZHT23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+```
