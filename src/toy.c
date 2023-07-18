@@ -14,21 +14,34 @@
 #include "inc/task.h"
 #include "inc/utils.h"
 
-#include "papi/mypapi.h"
-#include "pmw/mypmw.h"
-
 #ifdef IN_DEBUG
 #include <assert.h>
 #include <stdint.h>
 #include <pthread.h>
 #endif /* IN_DEBUG */
 
-extern unsigned int NVMCount;
+#ifdef USE_PAPI
+#include "papi/mypapi.h"
+#endif /* USE_PAPI */
+
+#ifdef USE_PMWATCH
+#include "pmw/mypmw.h"
+#endif /* USE_PMWATCH */
+
+#ifdef USE_PAPI
 extern char* PAPI_event_names[NUM_PAPI_EVENT];
+#endif /* USE_PAPI */
+
+#ifdef USE_PMWATCH
+extern unsigned int NVMCount;
+#endif /* USE_PMWATCH */
+
 extern int node_mapping[CORE_NUM];
 extern int local_cores[SINGLE_SOCKET_CORE_NUM];
 extern int remote_cores[SINGLE_SOCKET_CORE_NUM];
 
+
+#ifdef USE_PMWATCH
 void test_PMWatch_PAPI() {
 
 	struct timespec tmp1, tmp2;
@@ -86,6 +99,7 @@ void test_PMWatch_PAPI() {
 
 	printf("TUPLE SIZE: %zu\n", (size_t) TUPLE_T_SIZE);
 }
+#endif /* USE_PMWATCH */
 
 
 void test_data_cfg () {
