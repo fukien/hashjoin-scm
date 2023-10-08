@@ -10,8 +10,8 @@
 
 char *delimiter = "|";
 
-#define TPCH_DIR_PATH "/work/huang/workspace/pm-join/tpch-data"
-#define NVM_DIR_PATH "/dcpmm/huang/pm-join/tpch-data"
+#define TPCH_DIR_PATH "/work/huang/workspace/hashjoin-scm/tpch-data"
+#define NVM_DIR_PATH "/dcpmm/huang/hashjoin-scm/tpch-data"
 
 
 extern size_t part_num;

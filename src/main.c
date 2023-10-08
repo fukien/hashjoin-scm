@@ -40,8 +40,8 @@
 #endif /* USE_NVM */
 
 
-#define WORK_PATH_PREFIX "/optane/huang/pm-join/work"
-#define DUMP_PATH_PREFIX "/optane/huang/pm-join/dump"
+#define WORK_PATH_PREFIX "/optane/huang/hashjoin-scm/work"
+#define DUMP_PATH_PREFIX "/optane/huang/hashjoin-scm/dump"
 
 char cfg_path[CHAR_BUFFER_LEN];
 char dump_dir[CHAR_BUFFER_LEN];
@@ -248,19 +248,19 @@ int main(int argc, char** argv) {
 
 	if (strncmp(hostname, "ocna1", strlen(hostname)-1) == 0) {
 #ifdef RUN_BILLION
-		snprintf(cfg_path, CHAR_BUFFER_LEN, "/work/huang/workspace/pm-join/config/billion-data/%s/%s_%s.cfg", workload, param, subtype);
+		snprintf(cfg_path, CHAR_BUFFER_LEN, "/work/huang/workspace/hashjoin-scm/config/billion-data/%s/%s_%s.cfg", workload, param, subtype);
 #elif RUN_FNDLY
-		snprintf(cfg_path, CHAR_BUFFER_LEN, "/work/huang/workspace/pm-join/config/fndly-data/%s/%s_%s.cfg", workload, param, subtype);
+		snprintf(cfg_path, CHAR_BUFFER_LEN, "/work/huang/workspace/hashjoin-scm/config/fndly-data/%s/%s_%s.cfg", workload, param, subtype);
 #else /* RUN_BILLION */
-		snprintf(cfg_path, CHAR_BUFFER_LEN, "/work/huang/workspace/pm-join/config/data/%s/%s_%s.cfg", workload, param, subtype);
+		snprintf(cfg_path, CHAR_BUFFER_LEN, "/work/huang/workspace/hashjoin-scm/config/data/%s/%s_%s.cfg", workload, param, subtype);
 #endif /* RUN_BILLION */
 	} else if ( (strncmp(hostname, "optane", strlen(hostname)-1) == 0) || (strncmp(hostname, "dual", strlen(hostname)-1) == 0) ) {
 #ifdef RUN_BILLION
-		snprintf(cfg_path, CHAR_BUFFER_LEN, "/home/huang/workspace/pm-join/config/billion-data/%s/%s_%s.cfg", workload, param, subtype);
+		snprintf(cfg_path, CHAR_BUFFER_LEN, "/home/huang/workspace/hashjoin-scm/config/billion-data/%s/%s_%s.cfg", workload, param, subtype);
 #elif RUN_FNDLY
-		snprintf(cfg_path, CHAR_BUFFER_LEN, "/home/huang/workspace/pm-join/config/fndly-data/%s/%s_%s.cfg", workload, param, subtype);
+		snprintf(cfg_path, CHAR_BUFFER_LEN, "/home/huang/workspace/hashjoin-scm/config/fndly-data/%s/%s_%s.cfg", workload, param, subtype);
 #else /* RUN_BILLION */
-		snprintf(cfg_path, CHAR_BUFFER_LEN, "/home/huang/workspace/pm-join/config/data/%s/%s_%s.cfg", workload, param, subtype);
+		snprintf(cfg_path, CHAR_BUFFER_LEN, "/home/huang/workspace/hashjoin-scm/config/data/%s/%s_%s.cfg", workload, param, subtype);
 #endif /* RUN_BILLION */
 	} else {
 		printf("[ERROR] Unknown hostname: %s\n", hostname);

@@ -11,7 +11,7 @@
 #include "../inc/store.h"
 #include "../inc/utils.h"
 
-#define WORK_PATH_PREFIX "/optane/huang/pm-join/work"
+#define WORK_PATH_PREFIX "/optane/huang/hashjoin-scm/work"
 
 #ifdef USE_PAPI
 #include "../papi/mypapi.h"
@@ -71,7 +71,7 @@ int main(int argc, char **argv) {
 	size_t outer_loop_num = 1 << 18;
 	size_t inner_loop_num = 1 << 7;
 
-	char* filepath = "/optane/huang/pm-join/work/debug.bin";
+	char* filepath = "/optane/huang/hashjoin-scm/work/debug.bin";
 	double runtime = 0.0;
 
 	size_t sum = 0;

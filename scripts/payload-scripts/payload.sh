@@ -2,7 +2,7 @@ date
 
 
 
-DIR_PATH=/work/huang/workspace/pm-join/logs/payload-logs
+DIR_PATH=../../logs/payload-logs
 mkdir -p $DIR_PATH
 
 

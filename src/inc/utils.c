@@ -295,7 +295,7 @@ void mc_cfg(int *local_cores, int *remote_cores) {
 	char* hostname = get_command_output_short("hostname");
 
 	if (strncmp(hostname, "ocna1", strlen(hostname)-1) == 0) {
-		snprintf(cfg_path, CHAR_BUFFER_LEN, "/work/huang/workspace/pm-join/config/mc/%s.cfg", substr( hostname, 0, strlen(hostname) - 1 ));
+		snprintf(cfg_path, CHAR_BUFFER_LEN, "/home/huang/workspace/hashjoin-scm/config/mc/%s.cfg", substr( hostname, 0, strlen(hostname) - 1 ));
 	} else {
 		printf("[ERROR] Unknown hostname: %s\n", hostname);
 		exit(EXIT_FAILURE);

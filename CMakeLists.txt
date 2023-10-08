@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16.3)
-project(pm_join)
+project(hashjoin-scm)
 
 set(CMAKE_C_STANDARD 11)
 

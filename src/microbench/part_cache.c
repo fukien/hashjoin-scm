@@ -12,7 +12,7 @@
 
 #include "micro_utils.h"
 
-#define WORK_PATH_PREFIX "/optane/huang/pm-join/work"
+#define WORK_PATH_PREFIX "/optane/huang/hashjoin-scm/work"
 
 #ifdef USE_NVM
 #define TEST_THREAD_NUM 12

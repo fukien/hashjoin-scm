@@ -207,7 +207,7 @@ void test_simd_output() {
 	free(fff);
 }
 
-#define DEBUGGING_PATH "/optane/huang/pm-join/work/debug"
+#define DEBUGGING_PATH "/optane/huang/hashjoin-scm/work/debug"
 #define T_NUM 200
 #define LOOP_BUN 32
 

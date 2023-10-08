@@ -40,13 +40,13 @@
 
 #ifndef DATA_PATH_PREFIX
 #ifdef RUN_BILLION
-#define DATA_PATH_PREFIX "/dcpmm/huang/pm-join/billion-data"
+#define DATA_PATH_PREFIX "/dcpmm/huang/hashjoin-scm/billion-data"
 #elif RUN_FNDLY
-#define DATA_PATH_PREFIX "/dcpmm/huang/pm-join/fndly-data"
+#define DATA_PATH_PREFIX "/dcpmm/huang/hashjoin-scm/fndly-data"
 #elif RUN_PAYLOAD
-#define DATA_PATH_PREFIX "/dcpmm/huang/pm-join/data"
+#define DATA_PATH_PREFIX "/dcpmm/huang/hashjoin-scm/data"
 #else /* RUN_BILLION */
-#define DATA_PATH_PREFIX "/optane/huang/pm-join/data"
+#define DATA_PATH_PREFIX "/optane/huang/hashjoin-scm/data"
 #endif /* RUN_BILLION */
 #endif /* DATA_PATH_PREFIX */
 

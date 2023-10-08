@@ -30,7 +30,7 @@
 #define PADDING_SIZE SWWCB_SIZE
 #endif /* PADDING_SIZE */
 
-#define TPCH_DATA_PREFIX_PATH "/dcpmm/huang/pm-join/tpch-data"
+#define TPCH_DATA_PREFIX_PATH "/dcpmm/huang/hashjoin-scm/tpch-data"
 
 #if QUERY == Q14
 typedef fltrq14_part_t fltrq_part_t;

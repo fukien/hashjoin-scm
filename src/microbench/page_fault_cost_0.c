@@ -4,7 +4,7 @@
 #include "../inc/store.h"
 #include "../inc/utils.h"
 
-#define WORK_PATH_PREFIX "/optane/huang/pm-join/work"
+#define WORK_PATH_PREFIX "/optane/huang/hashjoin-scm/work"
 
 #ifdef USE_PMWATCH
 #include "../pmw/mypmw.h"
