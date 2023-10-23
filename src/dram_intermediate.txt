@@ -1,5 +1,0 @@
-PHJ:
-
-1. part/join/skew queues
-2. output (offset of destination partition)
-3. dst (iteration index of each output partition)

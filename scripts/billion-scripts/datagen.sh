@@ -1,10 +1,6 @@
 date
 
 
-MIN_POW_NUM=4
-MAX_POW_NUM=9
-
-
 mkdir ../../build
 cd ../../build
 rm -rf *

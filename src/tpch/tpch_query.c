@@ -25,9 +25,6 @@
 #define MEM_TYPE "dram"
 #endif /* USE_NVM */
 
-#define WORK_PATH_PREFIX "/optane/huang/hashjoin-scm/work"
-#define DUMP_PATH_PREFIX "/optane/huang/hashjoin-scm/dump"
-
 
 char dump_dir[CHAR_BUFFER_LEN];
 extern char work_dir[CHAR_BUFFER_LEN];

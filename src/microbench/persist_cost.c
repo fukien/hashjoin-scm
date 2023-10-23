@@ -4,8 +4,6 @@
 #include "../inc/store.h"
 #include "../inc/utils.h"
 
-#define WORK_PATH_PREFIX "/optane/huang/hashjoin-scm/work"
-
 extern char work_dir[CHAR_BUFFER_LEN];
 
 const size_t buffer_size = 1 << 28;				// 256MB

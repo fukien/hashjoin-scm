@@ -9,13 +9,7 @@
 
 #define L1_CACHE_SIZE 32 * 1 << 10
 #define L2_CACHE_SIZE 1 << 20
-#ifdef OCNA1
 #define L3_CACHE_SIZE (size_t) (27.5 * 1 << 20) / 20	// actually, it's 27.5M
-#endif /* OCNA1 */
-#ifdef OPTANE 
-#define L3_CACHE_SIZE (size_t) 22 * 1 << 20 /16
-#endif /* OPTANE */
-
 
 #define L1_ASSOCIATIVITY 8
 #define L2_ASSOCIATIVITY 16
@@ -38,20 +32,8 @@
 #define L2_TLB_ASSOCIATIVITY 6
 
 
-#ifndef DATA_PATH_PREFIX
-#ifdef RUN_BILLION
-#define DATA_PATH_PREFIX "/dcpmm/huang/hashjoin-scm/billion-data"
-#elif RUN_FNDLY
-#define DATA_PATH_PREFIX "/dcpmm/huang/hashjoin-scm/fndly-data"
-#elif RUN_PAYLOAD
-#define DATA_PATH_PREFIX "/dcpmm/huang/hashjoin-scm/data"
-#else /* RUN_BILLION */
-#define DATA_PATH_PREFIX "/optane/huang/hashjoin-scm/data"
-#endif /* RUN_BILLION */
-#endif /* DATA_PATH_PREFIX */
-
-#define AVX512_SIZE 512/8
-#define M256I_SIZE 256/8
+#define AVX512_SIZE (512/8)
+#define M256I_SIZE (256/8)
 
 #ifndef CACHELINE_SIZE
 #define CACHELINE_SIZE 64

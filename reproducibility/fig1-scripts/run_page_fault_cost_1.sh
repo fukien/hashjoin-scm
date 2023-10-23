@@ -1,0 +1,1 @@
+../../scripts/pagefault-cost-scripts/run_page_fault_cost_1.sh

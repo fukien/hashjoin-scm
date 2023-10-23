@@ -1,5 +1,3 @@
-set(PAPI_INC_PATH "/home/huang/papi/src/install/include")
-set(PAPI_LIB_PATH "/home/huang/papi/src/install/lib")
 include_directories(${PAPI_INC_PATH})
 link_directories(${PAPI_LIB_PATH})
 link_libraries(-lpapi)

@@ -35,8 +35,8 @@ void generate_workload(int seed) {
 #ifndef RUN_BILLION
 #ifndef RUN_FNDLY
 	double zipf_theta[NUM_ZIPF_THETA] = {0.050, 0.250, 0.500, 0.750, 0.900};
-	double selectivity[NUM_SELECTIVITY] = {0.200, 0.400, 0.600, 0.800};
-	double density[NUM_DENSITY] = {0.200, 0.400, 0.600, 0.800};
+	// double selectivity[NUM_SELECTIVITY] = {0.200, 0.400, 0.600, 0.800};
+	// double density[NUM_DENSITY] = {0.200, 0.400, 0.600, 0.800};
 #endif /* RUN_FNDLY */
 #endif /* RUN_BILLION */
 
@@ -90,6 +90,8 @@ void generate_workload(int seed) {
 		gen_fk_zipfian_eth(workload_ABC_S_num, workload_A_R_num, zipf_theta[idx]);
 	}
 
+
+	/**
 	for (size_t idx = 0; idx < NUM_SELECTIVITY; idx ++) {
 		srand(seed);
 		gen_fk_selectivity(workload_A_R_num, workload_ABC_S_num, 1, workload_A_R_num, selectivity[idx]);
@@ -100,6 +102,8 @@ void generate_workload(int seed) {
 		gen_density(workload_A_R_num, 1, workload_A_R_num, density[idx], "AR");
 		gen_density(workload_ABC_S_num, 1, workload_A_R_num, density[idx], "AS");
 	}
+	*/
+
 
 	// for (size_t idx = 0; idx < NUM_SPARSITY; idx ++) {
 	// 	srand(seed);

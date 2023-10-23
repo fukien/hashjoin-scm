@@ -291,20 +291,10 @@ void data_cfg(datameta_t * const datameta, const char * cfg_path) {
 
 
 void mc_cfg(int *local_cores, int *remote_cores) {
-	char cfg_path[CHAR_BUFFER_LEN];
-	char* hostname = get_command_output_short("hostname");
-
-	if (strncmp(hostname, "ocna1", strlen(hostname)-1) == 0) {
-		snprintf(cfg_path, CHAR_BUFFER_LEN, "/home/huang/workspace/hashjoin-scm/config/mc/%s.cfg", substr( hostname, 0, strlen(hostname) - 1 ));
-	} else {
-		printf("[ERROR] Unknown hostname: %s\n", hostname);
-		exit(EXIT_FAILURE);
-	}
-
 	config_t cfg;
 	config_init(&cfg);
 
-	if(! config_read_file(&cfg, cfg_path)) {
+	if(! config_read_file(&cfg, CPU_CFG_PATH)) {
 		fprintf(stderr, "%s:%d - %s\n", config_error_file(&cfg),
 			config_error_line(&cfg), config_error_text(&cfg));
 		config_destroy(&cfg);

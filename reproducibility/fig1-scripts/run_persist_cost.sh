@@ -1,0 +1,1 @@
+../../scripts/persist-cost-scripts/run_persist_cost.sh

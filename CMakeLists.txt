@@ -10,6 +10,28 @@ set(CMAKE_C_FLAGS "-O3 -march=native -Wall")
 #ifdef IN_DEBUG
 #endif /* IN_DEBUG */
 
+
+
+set(PAPI_INC_PATH "/home/huang/papi/src/install/include")
+set(PAPI_LIB_PATH "/home/huang/papi/src/install/lib")
+set(IPMWATCH_INC_PATH "/work/huang/workspace/intel-pmwatch/src/inc")
+add_definitions(-DCPU_CFG_PATH="${CMAKE_CURRENT_SOURCE_DIR}/config/mc/cpu.cfg")
+add_definitions(-DCORE_NUM=40)
+add_definitions(-DSINGLE_SOCKET_CORE_NUM=20)
+
+
+
+add_definitions(-DWORK_PATH_PREFIX="/pmemfs0/hashjoin-scm/work")
+add_definitions(-DDUMP_PATH_PREFIX="/pmemfs0/hashjoin-scm/dump")
+
+if(RUN_BILLION)
+	add_definitions(-DDATA_PATH_PREFIX="/pmemfs1/hashjoin-scm/billion-data")
+elseif(RUN_FNDLY)
+	add_definitions(-DDATA_PATH_PREFIX="/pmemfs1/hashjoin-scm/fndly-data")
+else()
+	add_definitions(-DDATA_PATH_PREFIX="/pmemfs0/hashjoin-scm/data")
+endif()
+
 set(SRC_PATH "src")
 set(BIN_PATH "bin")
 set(INC_PATH "src/inc")
@@ -19,8 +41,9 @@ set(ALGO_PATH "src/algo")
 set(JOB_PATH "src/job")
 set(SSB_PATH "src/ssb")
 set(TPCH_PATH "src/tpch")
-set(PAPI_INC_PATH "/home/huang/papi/src/install/include")
-set(PAPI_LIB_PATH "/home/huang/papi/src/install/lib")
+
+add_definitions(-DDATA_CFG_PATH_PREFIX="${CMAKE_CURRENT_SOURCE_DIR}/config")
+
 
 if(USE_PMWATCH)
 	add_definitions(-DUSE_PMWATCH)
@@ -177,28 +200,6 @@ endif()
 
 if (NONTEMP_STORE_MATER_ON_NVM)
 	add_definitions(-DNONTEMP_STORE_MATER_ON_NVM)
-endif()
-
-
-cmake_host_system_information(RESULT _host_name QUERY HOSTNAME)
-message("-- _host_name VARIABLE IS SET TO: " ${_host_name})
-if(${_host_name} STREQUAL "ocna1")
-	add_definitions(-DOCNA1)
-	add_definitions(-DCORE_NUM=40)
-	add_definitions(-DSINGLE_SOCKET_CORE_NUM=20)
-	set(IPMWATCH_INC_PATH "/work/huang/workspace/intel-pmwatch/src/inc")
-elseif(${_host_name} STREQUAL "optane")
-	add_definitions(-DOPTANE)
-	add_definitions(-DCORE_NUM=32)
-	add_definitions(-DSINGLE_SOCKET_CORE_NUM=16)
-	set(IPMWATCH_INC_PATH "/home/huang/intel-pmwatch-3.2.1/src/inc")
-elseif(${_host_name} STREQUAL "dual")
-	add_definitions(-DOPTANE)
-	add_definitions(-DCORE_NUM=32)
-	add_definitions(-DSINGLE_SOCKET_CORE_NUM=16)
-	set(IPMWATCH_INC_PATH "/home/huang/intel-pmwatch-3.2.1/src/inc")
-else()
-	message( FATAL_ERROR "-- _host_name: " ${_host_name} " NOT FOUND " )
 endif()
 
 
@@ -382,15 +383,6 @@ link_libraries(Papi -lpapi)
 add_subdirectory(${ALGO_PATH})
 
 
-add_executable(toy ${SRC_PATH}/toy.c)
-set_target_properties(toy PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH})
-# set_target_properties(toy PROPERTIES LINK_FLAGS "-Wl,-rpath=/work/huang/workspace/debug_pmdk/src/debug")
-# set_target_properties(toy PROPERTIES LINK_FLAGS "-Wl,-rpath=/usr/local/lib/pmdk_debug")
-target_link_libraries(toy -lpmem -lconfig -lpthread)
-target_include_directories(toy PRIVATE ${IPMWATCH_INC_PATH})
-target_include_directories(toy PRIVATE ${PAPI_INC_PATH})
-
-
 add_executable(gen ${SRC_PATH}/gen.c)
 set_target_properties(gen PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH})
 target_link_libraries(gen -lpmem)
@@ -409,75 +401,17 @@ target_include_directories(main PRIVATE ${IPMWATCH_INC_PATH})
 target_include_directories(main PRIVATE ${PAPI_INC_PATH})
 
 
-add_executable(part_cache ${SRC_PATH}/microbench/part_cache.c)
-set_target_properties(part_cache PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH}/microbench)
-# set_target_properties(part_cache PROPERTIES LINK_FLAGS "-Wl,-rpath=/work/huang/workspace/debug_pmdk/src/debug")
-# set_target_properties(part_cache PROPERTIES LINK_FLAGS "-Wl,-rpath=/usr/local/lib/pmdk_debug")
-target_link_libraries(part_cache -lpthread -lpmem -lnuma Algo)
-target_include_directories(part_cache PRIVATE ${IPMWATCH_INC_PATH})
-target_include_directories(part_cache PRIVATE ${PAPI_INC_PATH})
-
-
-add_executable(part_tlb ${SRC_PATH}/microbench/part_tlb.c)
-set_target_properties(part_tlb PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH}/microbench)
-# set_target_properties(part_tlb PROPERTIES LINK_FLAGS "-Wl,-rpath=/work/huang/workspace/debug_pmdk/src/debug")
-# set_target_properties(part_tlb PROPERTIES LINK_FLAGS "-Wl,-rpath=/usr/local/lib/pmdk_debug")
-target_link_libraries(part_tlb -lpthread -lpmem -lnuma Algo)
-target_include_directories(part_tlb PRIVATE ${IPMWATCH_INC_PATH})
-target_include_directories(part_tlb PRIVATE ${PAPI_INC_PATH})
-
-
 add_executable(persist_cost ${SRC_PATH}/microbench/persist_cost.c)
 set_target_properties(persist_cost PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH}/microbench)
 target_link_libraries(persist_cost -lpmem)
 target_include_directories(persist_cost PRIVATE ${IPMWATCH_INC_PATH})
 target_include_directories(persist_cost PRIVATE ${PAPI_INC_PATH})
 
-add_executable(page_fault_cost_0 ${SRC_PATH}/microbench/page_fault_cost_0.c)
-set_target_properties(page_fault_cost_0 PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH}/microbench)
-target_link_libraries(page_fault_cost_0 -lpmem)
-target_include_directories(page_fault_cost_0 PRIVATE ${IPMWATCH_INC_PATH})
-target_include_directories(page_fault_cost_0 PRIVATE ${PAPI_INC_PATH})
-
 add_executable(page_fault_cost_1 ${SRC_PATH}/microbench/page_fault_cost_1.c)
 set_target_properties(page_fault_cost_1 PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH}/microbench)
 target_link_libraries(page_fault_cost_1 -lpmem)
 target_include_directories(page_fault_cost_1 PRIVATE ${IPMWATCH_INC_PATH})
 target_include_directories(page_fault_cost_1 PRIVATE ${PAPI_INC_PATH})
-
-add_executable(page_fault_cost_2 ${SRC_PATH}/microbench/page_fault_cost_2.c)
-set_target_properties(page_fault_cost_2 PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH}/microbench)
-target_link_libraries(page_fault_cost_2 -lpmem)
-target_include_directories(page_fault_cost_2 PRIVATE ${IPMWATCH_INC_PATH})
-target_include_directories(page_fault_cost_2 PRIVATE ${PAPI_INC_PATH})
-
-add_executable(buffer_test_0 ${SRC_PATH}/microbench/buffer_test_0.c)
-set_target_properties(buffer_test_0 PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH}/microbench)
-target_link_libraries(buffer_test_0 -lpmem)
-target_include_directories(buffer_test_0 PRIVATE ${IPMWATCH_INC_PATH})
-target_include_directories(buffer_test_0 PRIVATE ${PAPI_INC_PATH})
-
-
-# add_executable(job_toy ${JOB_PATH}/job_toy.c)
-# set_target_properties(job_toy PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH}/job)
-
-
-# add_subdirectory(${SSB_PATH}/inc)
-# add_subdirectory(${SSB_PATH}/algo)
-
-# add_executable(ssb_toy ${SSB_PATH}/ssb_toy.c)
-# set_target_properties(ssb_toy PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH}/ssb)
-# target_link_libraries(ssb_toy SSBInc)
-
-# add_executable(ssb_tbl2bin ${SSB_PATH}/ssb_tbl2bin.c)
-# set_target_properties(ssb_tbl2bin PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH}/ssb)
-# target_link_libraries(ssb_tbl2bin -lpmem SSBInc)
-
-# add_executable(ssb_query ${SSB_PATH}/ssb_query.c)
-# set_target_properties(ssb_query PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BIN_PATH}/ssb)
-# target_link_libraries(ssb_query -lpmem SSBInc SSBAlgo)
-# target_include_directories(ssb_query PRIVATE ${IPMWATCH_INC_PATH})
-# target_include_directories(ssb_query PRIVATE ${PAPI_INC_PATH})
 
 
 add_subdirectory(${TPCH_PATH}/inc)
