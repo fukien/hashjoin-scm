@@ -14,7 +14,7 @@ set(CMAKE_C_FLAGS "-O3 -march=native -Wall")
 
 set(PAPI_INC_PATH "/home/huang/papi/src/install/include")
 set(PAPI_LIB_PATH "/home/huang/papi/src/install/lib")
-set(IPMWATCH_INC_PATH "/work/huang/workspace/intel-pmwatch/src/inc")
+set(IPMWATCH_INC_PATH "/home/huang/intel-pmwatch/src/inc")
 add_definitions(-DCPU_CFG_PATH="${CMAKE_CURRENT_SOURCE_DIR}/config/mc/cpu.cfg")
 add_definitions(-DCORE_NUM=40)
 add_definitions(-DSINGLE_SOCKET_CORE_NUM=20)
