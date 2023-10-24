@@ -20,13 +20,14 @@ cd ..
 
 # reproduce the experiments of Figure 4a
 cd fig4a-scripts
-bash run_fig4a.sh
+sudo bash run_fig4a.sh
 cd ..
 
-# reproduce the experiments of Figure 4b
-cd fig4b-scripts
-bash run_fig4b.sh
-cd ..
+# # reproduce the experiments of Figure 4b 
+# # you may need "sudo" to access the counters
+# cd fig4b-scripts
+# bash run_fig4b.sh
+# cd ..
 
 # reproduce the experiments of Figure 5
 cd fig5-scripts

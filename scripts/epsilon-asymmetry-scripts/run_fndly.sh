@@ -11,7 +11,7 @@ mkdir -p $DIR_PATH
 
 
 
-rm -rf /dcpmm/huang/pm-join/fndly-data/uniform
+rm -rf /pmemfs1/hashjoin-scm/fndly-data/uniform
 cd ../../
 ./clean.sh
 mkdir build
@@ -20,8 +20,8 @@ cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=512 -DFNDLY_S_CARDINALITY=16384
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
 ../../bin/fndly_gen
-mv /dcpmm/huang/pm-join/fndly-data/uniform/pk_AR.bin /dcpmm/huang/pm-join/fndly-data/uniform/pk_LR.bin
-mv /dcpmm/huang/pm-join/fndly-data/uniform/fk_AS.bin /dcpmm/huang/pm-join/fndly-data/uniform/fk_LS.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_LR.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_LS.bin
 
 RDX_BC_FNDLY_L_NVM_LOG=$DIR_PATH/rdx_bc_fndly_l_nvm.log
 rm $RDX_BC_FNDLY_L_NVM_LOG
@@ -73,7 +73,7 @@ numactl --membind=0 ../../bin/main --algo=phj_radix_bw_reg_hro --workload=unifor
 
 
 
-rm -rf /dcpmm/huang/pm-join/fndly-data/uniform
+rm -rf /pmemfs1/hashjoin-scm/fndly-data/uniform
 cd ../../
 ./clean.sh
 mkdir build
@@ -82,8 +82,8 @@ cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=2048 -DFNDLY_S_CARDINALITY=16384
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
 ../../bin/fndly_gen
-mv /dcpmm/huang/pm-join/fndly-data/uniform/pk_AR.bin /dcpmm/huang/pm-join/fndly-data/uniform/pk_PR.bin
-mv /dcpmm/huang/pm-join/fndly-data/uniform/fk_AS.bin /dcpmm/huang/pm-join/fndly-data/uniform/fk_PS.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_PR.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_PS.bin
 
 RDX_BC_FNDLY_P_NVM_LOG=$DIR_PATH/rdx_bc_fndly_p_nvm.log
 rm $RDX_BC_FNDLY_P_NVM_LOG
@@ -134,7 +134,7 @@ numactl --membind=0 ../../bin/main --algo=phj_radix_bw_reg_hro --workload=unifor
 
 
 
-rm -rf /dcpmm/huang/pm-join/fndly-data/uniform
+rm -rf /pmemfs1/hashjoin-scm/fndly-data/uniform
 cd ../../
 ./clean.sh
 mkdir build
@@ -143,8 +143,8 @@ cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=256 -DFNDLY_S_CARDINALITY=1024
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
 ../../bin/fndly_gen
-mv /dcpmm/huang/pm-join/fndly-data/uniform/pk_AR.bin /dcpmm/huang/pm-join/fndly-data/uniform/pk_QR.bin
-mv /dcpmm/huang/pm-join/fndly-data/uniform/fk_AS.bin /dcpmm/huang/pm-join/fndly-data/uniform/fk_QS.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_QR.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_QS.bin
 
 RDX_BC_FNDLY_Q_NVM_LOG=$DIR_PATH/rdx_bc_fndly_q_nvm.log
 rm $RDX_BC_FNDLY_Q_NVM_LOG
@@ -194,7 +194,7 @@ numactl --membind=0 ../../bin/main --algo=phj_radix_bw_reg_hro --workload=unifor
 
 
 
-rm -rf /dcpmm/huang/pm-join/fndly-data/uniform
+rm -rf /pmemfs1/hashjoin-scm/fndly-data/uniform
 cd ../../
 ./clean.sh
 mkdir build
@@ -203,8 +203,8 @@ cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=4096 -DFNDLY_S_CARDINALITY=16384
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
 ../../bin/fndly_gen
-mv /dcpmm/huang/pm-join/fndly-data/uniform/pk_AR.bin /dcpmm/huang/pm-join/fndly-data/uniform/pk_UR.bin
-mv /dcpmm/huang/pm-join/fndly-data/uniform/fk_AS.bin /dcpmm/huang/pm-join/fndly-data/uniform/fk_US.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_UR.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_US.bin
 
 RDX_BC_FNDLY_U_NVM_LOG=$DIR_PATH/rdx_bc_fndly_u_nvm.log
 rm $RDX_BC_FNDLY_U_NVM_LOG
@@ -252,7 +252,7 @@ numactl --membind=0 ../../bin/main --algo=phj_radix_bw_reg_hro --workload=unifor
 
 
 
-rm -rf /dcpmm/huang/pm-join/fndly-data/uniform
+rm -rf /pmemfs1/hashjoin-scm/fndly-data/uniform
 cd ../../
 ./clean.sh
 mkdir build
@@ -261,8 +261,8 @@ cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=512 -DFNDLY_S_CARDINALITY=4096
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
 ../../bin/fndly_gen
-mv /dcpmm/huang/pm-join/fndly-data/uniform/pk_AR.bin /dcpmm/huang/pm-join/fndly-data/uniform/pk_TR.bin
-mv /dcpmm/huang/pm-join/fndly-data/uniform/fk_AS.bin /dcpmm/huang/pm-join/fndly-data/uniform/fk_TS.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_TR.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_TS.bin
 
 
 RDX_BC_FNDLY_T_NVM_LOG=$DIR_PATH/rdx_bc_fndly_t_nvm.log
@@ -311,7 +311,7 @@ numactl --membind=0 ../../bin/main --algo=phj_radix_bw_reg_hro --workload=unifor
 
 
 
-rm -rf /dcpmm/huang/pm-join/fndly-data/uniform
+rm -rf /pmemfs1/hashjoin-scm/fndly-data/uniform
 cd ../../
 ./clean.sh
 mkdir build
@@ -320,8 +320,8 @@ cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=128 -DFNDLY_S_CARDINALITY=1024
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
 ../../bin/fndly_gen
-mv /dcpmm/huang/pm-join/fndly-data/uniform/pk_AR.bin /dcpmm/huang/pm-join/fndly-data/uniform/pk_VR.bin
-mv /dcpmm/huang/pm-join/fndly-data/uniform/fk_AS.bin /dcpmm/huang/pm-join/fndly-data/uniform/fk_VS.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_VR.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_VS.bin
 
 RDX_BC_FNDLY_V_NVM_LOG=$DIR_PATH/rdx_bc_fndly_v_nvm.log
 rm $RDX_BC_FNDLY_V_NVM_LOG
@@ -369,7 +369,7 @@ numactl --membind=0 ../../bin/main --algo=phj_radix_bw_reg_hro --workload=unifor
 
 
 
-rm -rf /dcpmm/huang/pm-join/fndly-data/uniform
+rm -rf /pmemfs1/hashjoin-scm/fndly-data/uniform
 cd ../../
 ./clean.sh
 mkdir build
@@ -378,8 +378,8 @@ cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=256 -DFNDLY_S_CARDINALITY=4096
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
 ../../bin/fndly_gen
-mv /dcpmm/huang/pm-join/fndly-data/uniform/pk_AR.bin /dcpmm/huang/pm-join/fndly-data/uniform/pk_HR.bin
-mv /dcpmm/huang/pm-join/fndly-data/uniform/fk_AS.bin /dcpmm/huang/pm-join/fndly-data/uniform/fk_HS.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_HR.bin
+mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_HS.bin
 
 RDX_BC_FNDLY_H_NVM_LOG=$DIR_PATH/rdx_bc_fndly_h_nvm.log
 rm $RDX_BC_FNDLY_H_NVM_LOG
@@ -430,7 +430,7 @@ numactl --membind=0 ../../bin/main --algo=phj_radix_bw_reg_hro --workload=unifor
 
 
 
-rm -rf /dcpmm/huang/pm-join/fndly-data/uniform
+rm -rf /pmemfs1/hashjoin-scm/fndly-data/uniform
 
 
 

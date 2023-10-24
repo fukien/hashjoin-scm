@@ -17,10 +17,10 @@ cd fig4a-scripts
 python plot_fig4a.py
 cd ..
 
-# plot Figure 4b
-cd fig4b-scripts
-python plot_fig4b.py
-cd ..
+# # plot Figure 4b
+# cd fig4b-scripts
+# python plot_fig4b.py
+# cd ..
 
 # plot Figure 5
 cd fig5-scripts
