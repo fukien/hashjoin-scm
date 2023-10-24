@@ -78,9 +78,9 @@ cd ..
 # free the dataset space read/write asymmetry workloads
 rm -rf /pmemfs1/hashjoin-scm/data
 
-# reproduce the experiments of Figure 10 (read/write asymmetry)
+# reproduce the experiments of Figure 10(b) (read/write asymmetry)
 cd fig10-scripts
-bash run_fig10.sh
+bash run_fig10b.sh
 cd ..
 
 
