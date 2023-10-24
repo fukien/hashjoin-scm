@@ -27,14 +27,16 @@ void payload_gen_pkfk_uniform(const size_t pk_record_num, const size_t fk_record
 
 
 void generate_workload(int seed) {
-#define NUM_ZIPF_THETA 5
+// #define NUM_ZIPF_THETA 5
+#define NUM_ZIPF_THETA 4
 #define NUM_SELECTIVITY 4
 #define NUM_DENSITY 4
 #define NUM_SPARSITY 10
 
 #ifndef RUN_BILLION
 #ifndef RUN_FNDLY
-	double zipf_theta[NUM_ZIPF_THETA] = {0.050, 0.250, 0.500, 0.750, 0.900};
+	// double zipf_theta[NUM_ZIPF_THETA] = {0.050, 0.250, 0.500, 0.750, 0.900};
+	double zipf_theta[NUM_ZIPF_THETA] = {0.050, 0.250, 0.500, 0.750};
 	// double selectivity[NUM_SELECTIVITY] = {0.200, 0.400, 0.600, 0.800};
 	// double density[NUM_DENSITY] = {0.200, 0.400, 0.600, 0.800};
 #endif /* RUN_FNDLY */
