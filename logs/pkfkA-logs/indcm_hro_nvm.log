@@ -1,0 +1,20 @@
+CONFIGURATION:	WARMUP	USE_HYPERTHREADING	TUPLE_T_SIZE: 16	THREAD_NUM: 20	BUILDPART_THREAD_NUM: 12	BUILDPART_WRITE_THREAD_NUM: 11	INTERMEDIATEMEMSET_THREAD_NUM: 7	PROBEJOIN_THREAD_NUM: 20	RETRIEVE_THREAD_NUM: 19	XSOCKET_THREAD_NUM_DEFAULT: 4	PREFETCH_DISTANCE: 32	BUCKET_CAPACITY: 2	OVERFLOW_BUF_SIZE: 1024	NUM_RADIX_BITS: 11	NUM_RADIX_BITS_PASS1: 11	NUM_PASSES: 1	SWWCB_SIZE: 256	USE_SWWCB_OPTIMIZED_PART	USE_SWWCB_OPTIMIZED_RADIX_CLUSTER	INTERMEDIATE_SCALING_FACTOR: 2	PHJ_SC_BUCKET_CAPACITY: 2	PART_BUFFER_T_CAPACITY: 128
+[0;35mmatched_cnt: 268435456	check_sum: 4503599895805952
+[0;36mmemory_type: nvm	algo: phj_ind_uni_hro	workload: uniform_pkfk_A	buildpart_time: 0.547298781	probejoin_time: 0.259215364	total_time: 0.806514145
+[0;35mmatched_cnt: 268435456	check_sum: 4503599895805952
+[0;36mmemory_type: nvm	algo: phj_ind_uni_hro	workload: uniform_pkfk_A	buildpart_time: 0.544290289	probejoin_time: 0.259301269	total_time: 0.803591558
+[0;35mmatched_cnt: 268435456	check_sum: 4503599895805952
+[0;36mmemory_type: nvm	algo: phj_ind_uni_hro	workload: uniform_pkfk_A	buildpart_time: 0.543139191	probejoin_time: 0.259760908	total_time: 0.802900099
+[0;35mmatched_cnt: 268435456	check_sum: 4503599895805952
+[0;36mmemory_type: nvm	algo: phj_ind_uni_hro	workload: uniform_pkfk_A	buildpart_time: 0.546584863	probejoin_time: 0.259706201	total_time: 0.806291064
+[0;35mmatched_cnt: 268435456	check_sum: 4503599895805952
+[0;36mmemory_type: nvm	algo: phj_ind_uni_hro	workload: uniform_pkfk_A	buildpart_time: 0.548323501	probejoin_time: 0.259334638	total_time: 0.807658139
+[0;35mmatched_cnt: 268435456	check_sum: 4503599895805952
+[0;36mmemory_type: nvm	algo: phj_ind_uni_hro	workload: uniform_pkfk_A	buildpart_time: 0.543176184	probejoin_time: 0.259476148	total_time: 0.802652332
+[0;32m
+num_trials: 5	memory_type: nvm	algo: phj_ind_uni_hro	workload: uniform_pkfk_A	buildpart_time: 0.545102806	probejoin_time: 0.259515833	total_time: 0.804618638
+
+[0m
+
+
+

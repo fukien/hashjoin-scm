@@ -1,0 +1,20 @@
+CONFIGURATION:	WARMUP	USE_HYPERTHREADING	TUPLE_T_SIZE: 16	THREAD_NUM: 20	BUILDPART_THREAD_NUM: 20	BUILDPART_WRITE_THREAD_NUM: 11	INTERMEDIATEMEMSET_THREAD_NUM: 7	PROBEJOIN_THREAD_NUM: 20	RETRIEVE_THREAD_NUM: 19	XSOCKET_THREAD_NUM_DEFAULT: 4	RUN_FNDLY	NONTEMP_STORE_MATER	PREFETCH_DISTANCE: 32	BUCKET_CAPACITY: 2	OVERFLOW_BUF_SIZE: 1024	BW_REG	NUM_RADIX_BITS: 16	NUM_RADIX_BITS_PASS1: 14	NUM_PASSES: 2	SWWCB_SIZE: 256	USE_SWWCB_OPTIMIZED_PART	USE_SWWCB_OPTIMIZED_RADIX_CLUSTER	INTERMEDIATE_SCALING_FACTOR: 2	PHJ_SC_BUCKET_CAPACITY: 2	PART_BUFFER_T_CAPACITY: 128
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_P	buildpart_time: 69.492170588	probejoin_time: 38.920104788	total_time: 108.412275376
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_P	buildpart_time: 69.488857441	probejoin_time: 38.959144304	total_time: 108.448001745
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_P	buildpart_time: 69.342017203	probejoin_time: 38.942246147	total_time: 108.284263350
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_P	buildpart_time: 69.514121473	probejoin_time: 38.878609466	total_time: 108.392730939
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_P	buildpart_time: 69.337085402	probejoin_time: 38.839886494	total_time: 108.176971896
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_P	buildpart_time: 69.401320361	probejoin_time: 39.014442240	total_time: 108.415762601
+[0;32m
+num_trials: 5	memory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_P	buildpart_time: 69.416680376	probejoin_time: 38.926865730	total_time: 108.343546106
+
+[0m
+
+
+

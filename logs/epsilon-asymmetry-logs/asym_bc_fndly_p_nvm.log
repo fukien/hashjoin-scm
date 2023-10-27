@@ -1,0 +1,20 @@
+CONFIGURATION:	WARMUP	USE_HYPERTHREADING	TUPLE_T_SIZE: 16	THREAD_NUM: 20	BUILDPART_THREAD_NUM: 20	BUILDPART_WRITE_THREAD_NUM: 11	INTERMEDIATEMEMSET_THREAD_NUM: 7	PROBEJOIN_THREAD_NUM: 20	RETRIEVE_THREAD_NUM: 19	XSOCKET_THREAD_NUM_DEFAULT: 4	RUN_FNDLY	NONTEMP_STORE_MATER	PREFETCH_DISTANCE: 32	BUCKET_CAPACITY: 2	OVERFLOW_BUF_SIZE: 1024	BW_REG	NUM_RADIX_BITS: 16	NUM_RADIX_BITS_PASS1: 14	NUM_PASSES: 2	SWWCB_SIZE: 256	USE_SWWCB_OPTIMIZED_PART	USE_SWWCB_OPTIMIZED_RADIX_CLUSTER	INTERMEDIATE_SCALING_FACTOR: 2	PHJ_SC_BUCKET_CAPACITY: 2	PART_BUFFER_T_CAPACITY: 128
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_P	buildpart_time: 69.381581913	probejoin_time: 46.545594126	total_time: 115.927176039
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_P	buildpart_time: 69.468383060	probejoin_time: 46.561915982	total_time: 116.030299042
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_P	buildpart_time: 69.422542619	probejoin_time: 46.637613669	total_time: 116.060156288
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_P	buildpart_time: 69.456905639	probejoin_time: 46.599921823	total_time: 116.056827462
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_P	buildpart_time: 69.263943421	probejoin_time: 46.597754687	total_time: 115.861698108
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_P	buildpart_time: 69.316339287	probejoin_time: 46.556689226	total_time: 115.873028513
+[0;32m
+num_trials: 5	memory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_P	buildpart_time: 69.385622805	probejoin_time: 46.590779077	total_time: 115.976401883
+
+[0m
+
+
+

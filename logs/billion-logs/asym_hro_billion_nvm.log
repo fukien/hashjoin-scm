@@ -1,0 +1,26 @@
+CONFIGURATION:	WARMUP	USE_HYPERTHREADING	TUPLE_T_SIZE: 16	THREAD_NUM: 20	BUILDPART_THREAD_NUM: 20	BUILDPART_WRITE_THREAD_NUM: 11	INTERMEDIATEMEMSET_THREAD_NUM: 7	PROBEJOIN_THREAD_NUM: 20	RETRIEVE_THREAD_NUM: 19	XSOCKET_THREAD_NUM_DEFAULT: 4	RUN_BILLION	PREFETCH_DISTANCE: 32	BUCKET_CAPACITY: 2	OVERFLOW_BUF_SIZE: 1024	NUM_RADIX_BITS: 15	NUM_RADIX_BITS_PASS1: 14	NUM_PASSES: 2	SWWCB_SIZE: 256	USE_SWWCB_OPTIMIZED_PART	USE_SWWCB_OPTIMIZED_RADIX_CLUSTER	PHJ_MBP	INTERMEDIATE_SCALING_FACTOR: 2	PHJ_SC_BUCKET_CAPACITY: 2	PART_BUFFER_T_CAPACITY: 128
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[PHJ_MBP] avg_memset_time: 0.083790898	avg_build_time: 3.213866921	avg_probe_time: 20.423936788
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_A	buildpart_time: 86.358954816	probejoin_time: 23.733035092	total_time: 110.091989908
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[PHJ_MBP] avg_memset_time: 0.084172232	avg_build_time: 3.276494208	avg_probe_time: 20.862317974
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_A	buildpart_time: 84.109989677	probejoin_time: 24.293117302	total_time: 108.403106979
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[PHJ_MBP] avg_memset_time: 0.086924011	avg_build_time: 2.929593472	avg_probe_time: 17.726416988
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_A	buildpart_time: 63.082292085	probejoin_time: 20.753098046	total_time: 83.835390131
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[PHJ_MBP] avg_memset_time: 0.085732111	avg_build_time: 2.929404375	avg_probe_time: 17.762345056
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_A	buildpart_time: 63.117260936	probejoin_time: 20.787243388	total_time: 83.904504324
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[PHJ_MBP] avg_memset_time: 0.085964293	avg_build_time: 2.925057755	avg_probe_time: 17.747758137
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_A	buildpart_time: 63.055696198	probejoin_time: 20.771217806	total_time: 83.826914004
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[PHJ_MBP] avg_memset_time: 0.087458323	avg_build_time: 2.933802700	avg_probe_time: 17.752879357
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_A	buildpart_time: 63.079573805	probejoin_time: 20.784894150	total_time: 83.864467955
+[0;32m
+num_trials: 5	memory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_A	buildpart_time: 67.288962540	probejoin_time: 21.477914138	total_time: 88.766876679
+
+[0m
+
+
+

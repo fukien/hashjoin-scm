@@ -1,0 +1,20 @@
+CONFIGURATION:	WARMUP	USE_HYPERTHREADING	TUPLE_T_SIZE: 16	THREAD_NUM: 20	BUILDPART_THREAD_NUM: 20	BUILDPART_WRITE_THREAD_NUM: 11	INTERMEDIATEMEMSET_THREAD_NUM: 7	PROBEJOIN_THREAD_NUM: 20	RETRIEVE_THREAD_NUM: 19	XSOCKET_THREAD_NUM_DEFAULT: 4	RUN_FNDLY	NONTEMP_STORE_MATER	PREFETCH_DISTANCE: 32	BUCKET_CAPACITY: 2	OVERFLOW_BUF_SIZE: 1024	BW_REG	NUM_RADIX_BITS: 18	NUM_RADIX_BITS_PASS1: 12	NUM_PASSES: 2	SWWCB_SIZE: 256	USE_SWWCB_OPTIMIZED_PART	USE_SWWCB_OPTIMIZED_RADIX_CLUSTER	INTERMEDIATE_SCALING_FACTOR: 2	PHJ_SC_BUCKET_CAPACITY: 2	PART_BUFFER_T_CAPACITY: 128
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_P	buildpart_time: 89.348126671	probejoin_time: 13.491469087	total_time: 102.839595758
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_P	buildpart_time: 89.133765875	probejoin_time: 13.498058733	total_time: 102.631824608
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_P	buildpart_time: 88.873554313	probejoin_time: 13.484732841	total_time: 102.358287154
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_P	buildpart_time: 89.113199700	probejoin_time: 13.492940139	total_time: 102.606139839
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_P	buildpart_time: 89.122761285	probejoin_time: 13.495603807	total_time: 102.618365092
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_P	buildpart_time: 88.697209474	probejoin_time: 13.495019137	total_time: 102.192228611
+[0;32m
+num_trials: 5	memory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_P	buildpart_time: 88.988098129	probejoin_time: 13.493270931	total_time: 102.481369061
+
+[0m
+
+
+

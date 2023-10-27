@@ -1,0 +1,104 @@
+REGULAR
+elapsed time: 1.72919003
+elapsed time: 1.73337006
+elapsed time: 1.74390673
+elapsed time: 1.71825648
+elapsed time: 1.73173734
+elapsed time: 1.73006661
+elapsed time: 1.71967108
+elapsed time: 1.73004695
+elapsed time: 1.71897768
+elapsed time: 1.73178949
+elapsed time: 1.73019380
+
+CLFLUSH
+elapsed time: 2.27838699
+elapsed time: 2.28432728
+elapsed time: 2.29743051
+elapsed time: 2.27868620
+elapsed time: 2.28010902
+elapsed time: 2.27834939
+elapsed time: 2.28328171
+elapsed time: 2.28084179
+elapsed time: 2.28006811
+elapsed time: 2.29388634
+elapsed time: 2.28071868
+
+CLFLUSHOPT
+elapsed time: 1.88733815
+elapsed time: 1.88931707
+elapsed time: 1.89874840
+elapsed time: 1.84929273
+elapsed time: 1.89114387
+elapsed time: 1.80763843
+elapsed time: 1.88588778
+elapsed time: 1.80765667
+elapsed time: 1.80751937
+elapsed time: 1.88621656
+elapsed time: 1.80776082
+
+NT_STORE
+elapsed time: 8.67985012
+elapsed time: 8.71578871
+elapsed time: 8.62090451
+elapsed time: 8.68958509
+elapsed time: 8.69856766
+elapsed time: 8.71132321
+elapsed time: 8.71090863
+elapsed time: 8.71551739
+elapsed time: 8.70918790
+elapsed time: 8.70221072
+elapsed time: 8.71561916
+
+REGULAR + FENCE
+elapsed time: 1.73482772
+elapsed time: 1.73776297
+elapsed time: 1.74319425
+elapsed time: 1.80467720
+elapsed time: 1.75639858
+elapsed time: 1.78811359
+elapsed time: 1.74174536
+elapsed time: 1.80606398
+elapsed time: 1.80440189
+elapsed time: 1.75761491
+elapsed time: 1.79158932
+
+CLFLUSH + FENCE
+elapsed time: 2.46429005
+elapsed time: 2.47529040
+elapsed time: 2.46776816
+elapsed time: 2.46619070
+elapsed time: 2.46353420
+elapsed time: 2.46694191
+elapsed time: 2.46342883
+elapsed time: 2.46456891
+elapsed time: 2.46664835
+elapsed time: 2.46497104
+elapsed time: 2.46824394
+
+CLFLUSHOPT + FENCE
+elapsed time: 2.53575585
+elapsed time: 2.52204494
+elapsed time: 2.51857342
+elapsed time: 2.51879134
+elapsed time: 2.51699033
+elapsed time: 2.52780058
+elapsed time: 2.51619365
+elapsed time: 2.51664013
+elapsed time: 2.51574091
+elapsed time: 2.51500550
+elapsed time: 2.51442755
+
+NT_STORE + FENCE
+elapsed time: 8.82840892
+elapsed time: 8.82123833
+elapsed time: 8.82230108
+elapsed time: 8.83426031
+elapsed time: 8.82190576
+elapsed time: 8.82006354
+elapsed time: 8.83018794
+elapsed time: 8.82470417
+elapsed time: 8.82138532
+elapsed time: 8.82219951
+elapsed time: 8.83134247
+

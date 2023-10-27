@@ -1,0 +1,20 @@
+CONFIGURATION:	WARMUP	USE_HYPERTHREADING	TUPLE_T_SIZE: 16	THREAD_NUM: 20	BUILDPART_THREAD_NUM: 20	BUILDPART_WRITE_THREAD_NUM: 11	INTERMEDIATEMEMSET_THREAD_NUM: 7	PROBEJOIN_THREAD_NUM: 20	RETRIEVE_THREAD_NUM: 19	XSOCKET_THREAD_NUM_DEFAULT: 4	RUN_FNDLY	NONTEMP_STORE_MATER	PREFETCH_DISTANCE: 32	BUCKET_CAPACITY: 2	OVERFLOW_BUF_SIZE: 1024	BW_REG	NUM_RADIX_BITS: 18	NUM_RADIX_BITS_PASS1: 12	NUM_PASSES: 2	SWWCB_SIZE: 256	USE_SWWCB_OPTIMIZED_PART	USE_SWWCB_OPTIMIZED_RADIX_CLUSTER	INTERMEDIATE_SCALING_FACTOR: 2	PHJ_SC_BUCKET_CAPACITY: 2	PART_BUFFER_T_CAPACITY: 128
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_U	buildpart_time: 98.853478859	probejoin_time: 41.042868160	total_time: 139.896347019
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_U	buildpart_time: 98.832354760	probejoin_time: 40.794419594	total_time: 139.626774354
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_U	buildpart_time: 98.842231620	probejoin_time: 41.037790454	total_time: 139.880022074
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_U	buildpart_time: 98.881714096	probejoin_time: 41.024261424	total_time: 139.905975520
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_U	buildpart_time: 98.944359216	probejoin_time: 40.959566690	total_time: 139.903925906
+[0;35mmatched_cnt: 17179869184	check_sum: 17179869184
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_U	buildpart_time: 98.802465884	probejoin_time: 40.987194199	total_time: 139.789660083
+[0;32m
+num_trials: 5	memory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_U	buildpart_time: 98.860625115	probejoin_time: 40.960646472	total_time: 139.821271587
+
+[0m
+
+
+

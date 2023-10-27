@@ -1,0 +1,20 @@
+CONFIGURATION:	WARMUP	USE_HYPERTHREADING	TUPLE_T_SIZE: 16	THREAD_NUM: 20	BUILDPART_THREAD_NUM: 20	BUILDPART_WRITE_THREAD_NUM: 11	INTERMEDIATEMEMSET_THREAD_NUM: 7	PROBEJOIN_THREAD_NUM: 20	RETRIEVE_THREAD_NUM: 19	XSOCKET_THREAD_NUM_DEFAULT: 4	RUN_FNDLY	NONTEMP_STORE_MATER	PREFETCH_DISTANCE: 32	BUCKET_CAPACITY: 2	OVERFLOW_BUF_SIZE: 1024	BW_REG	NUM_RADIX_BITS: 18	NUM_RADIX_BITS_PASS1: 12	NUM_PASSES: 2	SWWCB_SIZE: 256	USE_SWWCB_OPTIMIZED_PART	USE_SWWCB_OPTIMIZED_RADIX_CLUSTER	INTERMEDIATE_SCALING_FACTOR: 2	PHJ_SC_BUCKET_CAPACITY: 2	PART_BUFFER_T_CAPACITY: 128
+[0;35mmatched_cnt: 17179869184	check_sum: 9223372054034644992
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_L	buildpart_time: 81.414439118	probejoin_time: 12.460988496	total_time: 93.875427614
+[0;35mmatched_cnt: 17179869184	check_sum: 9223372054034644992
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_L	buildpart_time: 82.070575994	probejoin_time: 12.451321341	total_time: 94.521897335
+[0;35mmatched_cnt: 17179869184	check_sum: 9223372054034644992
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_L	buildpart_time: 82.147671238	probejoin_time: 12.486118738	total_time: 94.633789976
+[0;35mmatched_cnt: 17179869184	check_sum: 9223372054034644992
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_L	buildpart_time: 81.964162182	probejoin_time: 12.615306511	total_time: 94.579468693
+[0;35mmatched_cnt: 17179869184	check_sum: 9223372054034644992
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_L	buildpart_time: 81.468131000	probejoin_time: 12.457168359	total_time: 93.925299359
+[0;35mmatched_cnt: 17179869184	check_sum: 9223372054034644992
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_L	buildpart_time: 82.059081718	probejoin_time: 12.465743666	total_time: 94.524825384
+[0;32m
+num_trials: 5	memory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_L	buildpart_time: 81.941924426	probejoin_time: 12.495131723	total_time: 94.437056149
+
+[0m
+
+
+

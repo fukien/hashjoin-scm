@@ -1,0 +1,20 @@
+CONFIGURATION:	WARMUP	USE_HYPERTHREADING	TUPLE_T_SIZE: 16	THREAD_NUM: 20	BUILDPART_THREAD_NUM: 20	BUILDPART_WRITE_THREAD_NUM: 11	INTERMEDIATEMEMSET_THREAD_NUM: 7	PROBEJOIN_THREAD_NUM: 20	RETRIEVE_THREAD_NUM: 19	XSOCKET_THREAD_NUM_DEFAULT: 4	RUN_FNDLY	NONTEMP_STORE_MATER	PREFETCH_DISTANCE: 32	BUCKET_CAPACITY: 2	OVERFLOW_BUF_SIZE: 1024	BW_REG	NUM_RADIX_BITS: 13	NUM_RADIX_BITS_PASS1: 12	NUM_PASSES: 2	SWWCB_SIZE: 256	USE_SWWCB_OPTIMIZED_PART	USE_SWWCB_OPTIMIZED_RADIX_CLUSTER	INTERMEDIATE_SCALING_FACTOR: 2	PHJ_SC_BUCKET_CAPACITY: 2	PART_BUFFER_T_CAPACITY: 128
+[0;35mmatched_cnt: 4294967296	check_sum: 1152921508901814272
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_H	buildpart_time: 11.357003388	probejoin_time: 5.197672189	total_time: 16.554675577
+[0;35mmatched_cnt: 4294967296	check_sum: 1152921508901814272
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_H	buildpart_time: 11.279190780	probejoin_time: 5.209902164	total_time: 16.489092944
+[0;35mmatched_cnt: 4294967296	check_sum: 1152921508901814272
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_H	buildpart_time: 11.328780533	probejoin_time: 5.218650608	total_time: 16.547431141
+[0;35mmatched_cnt: 4294967296	check_sum: 1152921508901814272
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_H	buildpart_time: 11.348727804	probejoin_time: 5.209881127	total_time: 16.558608931
+[0;35mmatched_cnt: 4294967296	check_sum: 1152921508901814272
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_H	buildpart_time: 11.258162154	probejoin_time: 5.213388559	total_time: 16.471550713
+[0;35mmatched_cnt: 4294967296	check_sum: 1152921508901814272
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_H	buildpart_time: 11.375929713	probejoin_time: 5.208038528	total_time: 16.583968241
+[0;32m
+num_trials: 5	memory_type: nvm	algo: phj_asymm_radix_hro	workload: uniform_pkfk_H	buildpart_time: 11.318158197	probejoin_time: 5.211972197	total_time: 16.530130394
+
+[0m
+
+
+

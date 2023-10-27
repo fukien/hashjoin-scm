@@ -1,0 +1,1246 @@
+CONFIGURATION:	WARMUP	USE_HYPERTHREADING	TUPLE_T_SIZE: 16	THREAD_NUM: 20	BUILDPART_THREAD_NUM: 8	BUILDPART_WRITE_THREAD_NUM: 11	INTERMEDIATEMEMSET_THREAD_NUM: 7	PROBEJOIN_THREAD_NUM: 20	RETRIEVE_THREAD_NUM: 19	XSOCKET_THREAD_NUM_DEFAULT: 4	PREFETCH_DISTANCE: 32	BUCKET_CAPACITY: 4	BUCKET_XPLINE_ALIGNED	OVERFLOW_BUF_SIZE: 1024	NUM_RADIX_BITS: 11	NUM_RADIX_BITS_PASS1: 15	NUM_PASSES: 1	SWWCB_SIZE: 256	USE_SWWCB_OPTIMIZED_PART	USE_SWWCB_OPTIMIZED_RADIX_CLUSTER	INTERMEDIATE_SCALING_FACTOR: 2	PHJ_SC_BUCKET_CAPACITY: 2	PART_BUFFER_T_CAPACITY: 128
+[0;35mmatched_cnt: 268435456	check_sum: 4503599895805952
+[PMWatch] DIMM: 0
+[PMWatch] DIMM: 0	total_bytes_read: 24867084032	800230400	24066853632
+[PMWatch] DIMM: 0	total_bytes_written: 902318848	888530944	13787904
+[PMWatch] DIMM: 0	media_read_ops: 97137047	3125900	94011147
+[PMWatch] DIMM: 0	media_write_ops: 3524683	3470824	53859
+[PMWatch] DIMM: 0	read_64B_ops_received: 402646920	26386896	376260024
+[PMWatch] DIMM: 0	write_64B_ops_received: 14098732	13883296	215436
+[PMWatch] DIMM: 0	host_reads: 134512459	4165294	130347165
+[PMWatch] DIMM: 0	host_writes: 3473904	3456713	17191
+[PMWatch] DIMM: 0	read_hit_ratio: 0.264150	0.249537	0.278763
+[PMWatch] DIMM: 0	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 0	read_amplification: 2.943399679	3.001852930	 2.884946427
+[PMWatch] DIMM: 0	write_amplification: 8.274117519	4.016328807	 12.531906230
+
+[PMWatch] DIMM: 1
+[PMWatch] DIMM: 1	total_bytes_read: 24829721344	800372480	24029348864
+[PMWatch] DIMM: 1	total_bytes_written: 901136128	889023232	12112896
+[PMWatch] DIMM: 1	media_read_ops: 96991099	3126455	93864644
+[PMWatch] DIMM: 1	media_write_ops: 3520063	3472747	47316
+[PMWatch] DIMM: 1	read_64B_ops_received: 402044648	26396808	375647840
+[PMWatch] DIMM: 1	write_64B_ops_received: 14080252	13890988	189264
+[PMWatch] DIMM: 1	host_reads: 134298577	4165169	130133408
+[PMWatch] DIMM: 1	host_writes: 3468640	3457584	11056
+[PMWatch] DIMM: 1	read_hit_ratio: 0.264043	0.249381	0.278704
+[PMWatch] DIMM: 1	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 1	read_amplification: 2.943829042	3.002476010	 2.885182074
+[PMWatch] DIMM: 1	write_amplification: 10.568105162	4.017541729	 17.118668596
+
+[PMWatch] DIMM: 2
+[PMWatch] DIMM: 2	total_bytes_read: 24791881472	800157184	23991724288
+[PMWatch] DIMM: 2	total_bytes_written: 900107520	888880128	11227392
+[PMWatch] DIMM: 2	media_read_ops: 96843287	3125614	93717673
+[PMWatch] DIMM: 2	media_write_ops: 3516045	3472188	43857
+[PMWatch] DIMM: 2	read_64B_ops_received: 401437328	26391208	375046120
+[PMWatch] DIMM: 2	write_64B_ops_received: 14064180	13888752	175428
+[PMWatch] DIMM: 2	host_reads: 134085791	4164994	129920797
+[PMWatch] DIMM: 2	host_writes: 3465677	3457400	8277
+[PMWatch] DIMM: 2	read_hit_ratio: 0.264103	0.249551	0.278655
+[PMWatch] DIMM: 2	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 2	read_amplification: 2.943586558	3.001794480	 2.885378636
+[PMWatch] DIMM: 2	write_amplification: 12.605872274	4.017108810	 21.194635738
+
+[PMWatch] DIMM: 3
+[PMWatch] DIMM: 3	total_bytes_read: 24751881472	800302336	23951579136
+[PMWatch] DIMM: 3	total_bytes_written: 899968256	889214720	10753536
+[PMWatch] DIMM: 3	media_read_ops: 96687037	3126181	93560856
+[PMWatch] DIMM: 3	media_write_ops: 3515501	3473495	42006
+[PMWatch] DIMM: 3	read_64B_ops_received: 400810152	26398704	374411448
+[PMWatch] DIMM: 3	write_64B_ops_received: 14062004	13893980	168024
+[PMWatch] DIMM: 3	host_reads: 133859970	4165899	129694071
+[PMWatch] DIMM: 3	host_writes: 3464331	3458794	5537
+[PMWatch] DIMM: 3	read_hit_ratio: 0.264091	0.249578	0.278603
+[PMWatch] DIMM: 3	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 3	read_amplification: 2.943636505	3.001686791	 2.885586219
+[PMWatch] DIMM: 3	write_amplification: 17.181337927	4.017001302	 30.345674553
+
+[PMWatch] DIMM: 4
+[PMWatch] DIMM: 4	total_bytes_read: 24709379584	800517120	23908862464
+[PMWatch] DIMM: 4	total_bytes_written: 899591168	889351936	10239232
+[PMWatch] DIMM: 4	media_read_ops: 96521014	3127020	93393994
+[PMWatch] DIMM: 4	media_write_ops: 3514028	3474031	39997
+[PMWatch] DIMM: 4	read_64B_ops_received: 400140168	26404204	373735964
+[PMWatch] DIMM: 4	write_64B_ops_received: 14056112	13896124	159988
+[PMWatch] DIMM: 4	host_reads: 133631042	4165187	129465855
+[PMWatch] DIMM: 4	host_writes: 3462483	3458661	3822
+[PMWatch] DIMM: 4	read_hit_ratio: 0.263935	0.249249	0.278621
+[PMWatch] DIMM: 4	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 4	read_amplification: 2.944261509	3.003005627	 2.885517390
+[PMWatch] DIMM: 4	write_amplification: 22.938767477	4.017775665	 41.859759288
+
+[PMWatch] DIMM: 5
+[PMWatch] DIMM: 5	total_bytes_read: 24664693504	799669248	23865024256
+[PMWatch] DIMM: 5	total_bytes_written: 899477504	889486336	9991168
+[PMWatch] DIMM: 5	media_read_ops: 96346459	3123708	93222751
+[PMWatch] DIMM: 5	media_write_ops: 3513584	3474556	39028
+[PMWatch] DIMM: 5	read_64B_ops_received: 399440172	26393056	373047116
+[PMWatch] DIMM: 5	write_64B_ops_received: 14054336	13898224	156112
+[PMWatch] DIMM: 5	host_reads: 133404085	4165650	129238435
+[PMWatch] DIMM: 5	host_writes: 3462057	3459231	2826
+[PMWatch] DIMM: 5	read_hit_ratio: 0.264402	0.250127	0.278676
+[PMWatch] DIMM: 5	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 5	read_amplification: 2.942393254	2.999491556	 2.885294951
+[PMWatch] DIMM: 5	write_amplification: 29.629525602	4.017720702	 55.241330502
+
+[PMWatch] DIMM: 6
+[PMWatch] DIMM: 6	total_bytes_read: 240128	36096	204032
+[PMWatch] DIMM: 6	total_bytes_written: 3447808	507648	2940160
+[PMWatch] DIMM: 6	media_read_ops: 938	141	797
+[PMWatch] DIMM: 6	media_write_ops: 13468	1983	11485
+[PMWatch] DIMM: 6	read_64B_ops_received: 57624	8496	49128
+[PMWatch] DIMM: 6	write_64B_ops_received: 53872	7932	45940
+[PMWatch] DIMM: 6	host_reads: 108	54	54
+[PMWatch] DIMM: 6	host_writes: 34	17	17
+[PMWatch] DIMM: 6	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 6	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 6	read_amplification: 34.740740741	10.444444444	 59.037037037
+[PMWatch] DIMM: 6	write_amplification: 1584.470588235	466.588235294	 2702.352941176
+
+[PMWatch] DIMM: 7
+[PMWatch] DIMM: 7	total_bytes_read: 233984	35328	198656
+[PMWatch] DIMM: 7	total_bytes_written: 3441664	506624	2935040
+[PMWatch] DIMM: 7	media_read_ops: 914	138	776
+[PMWatch] DIMM: 7	media_write_ops: 13444	1979	11465
+[PMWatch] DIMM: 7	read_64B_ops_received: 57432	8468	48964
+[PMWatch] DIMM: 7	write_64B_ops_received: 53776	7916	45860
+[PMWatch] DIMM: 7	host_reads: 108	54	54
+[PMWatch] DIMM: 7	host_writes: 34	17	17
+[PMWatch] DIMM: 7	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 7	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 7	read_amplification: 33.851851852	10.222222222	 57.481481481
+[PMWatch] DIMM: 7	write_amplification: 1581.647058824	465.647058824	 2697.647058824
+
+[PMWatch] DIMM: 8
+[PMWatch] DIMM: 8	total_bytes_read: 242944	36352	206592
+[PMWatch] DIMM: 8	total_bytes_written: 3448576	507904	2940672
+[PMWatch] DIMM: 8	media_read_ops: 949	142	807
+[PMWatch] DIMM: 8	media_write_ops: 13471	1984	11487
+[PMWatch] DIMM: 8	read_64B_ops_received: 57680	8504	49176
+[PMWatch] DIMM: 8	write_64B_ops_received: 53884	7936	45948
+[PMWatch] DIMM: 8	host_reads: 108	54	54
+[PMWatch] DIMM: 8	host_writes: 34	17	17
+[PMWatch] DIMM: 8	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 8	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 8	read_amplification: 35.148148148	10.518518519	 59.777777778
+[PMWatch] DIMM: 8	write_amplification: 1584.823529412	466.823529412	 2702.823529412
+
+[PMWatch] DIMM: 9
+[PMWatch] DIMM: 9	total_bytes_read: 244736	37888	206848
+[PMWatch] DIMM: 9	total_bytes_written: 3447552	509184	2938368
+[PMWatch] DIMM: 9	media_read_ops: 956	148	808
+[PMWatch] DIMM: 9	media_write_ops: 13467	1989	11478
+[PMWatch] DIMM: 9	read_64B_ops_received: 57692	8548	49144
+[PMWatch] DIMM: 9	write_64B_ops_received: 53868	7956	45912
+[PMWatch] DIMM: 9	host_reads: 108	54	54
+[PMWatch] DIMM: 9	host_writes: 34	17	17
+[PMWatch] DIMM: 9	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 9	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 9	read_amplification: 35.407407407	10.962962963	 59.851851852
+[PMWatch] DIMM: 9	write_amplification: 1584.352941176	468.000000000	 2700.705882353
+
+[PMWatch] DIMM: 10
+[PMWatch] DIMM: 10	total_bytes_read: 231424	33536	197888
+[PMWatch] DIMM: 10	total_bytes_written: 3431936	505088	2926848
+[PMWatch] DIMM: 10	media_read_ops: 904	131	773
+[PMWatch] DIMM: 10	media_write_ops: 13406	1973	11433
+[PMWatch] DIMM: 10	read_64B_ops_received: 57240	8416	48824
+[PMWatch] DIMM: 10	write_64B_ops_received: 53624	7892	45732
+[PMWatch] DIMM: 10	host_reads: 108	54	54
+[PMWatch] DIMM: 10	host_writes: 34	17	17
+[PMWatch] DIMM: 10	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 10	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 10	read_amplification: 33.481481481	9.703703704	 57.259259259
+[PMWatch] DIMM: 10	write_amplification: 1577.176470588	464.235294118	 2690.117647059
+
+[PMWatch] DIMM: 11
+[PMWatch] DIMM: 11	total_bytes_read: 228864	33280	195584
+[PMWatch] DIMM: 11	total_bytes_written: 3427328	504832	2922496
+[PMWatch] DIMM: 11	media_read_ops: 894	130	764
+[PMWatch] DIMM: 11	media_write_ops: 13388	1972	11416
+[PMWatch] DIMM: 11	read_64B_ops_received: 57128	8408	48720
+[PMWatch] DIMM: 11	write_64B_ops_received: 53552	7888	45664
+[PMWatch] DIMM: 11	host_reads: 108	54	54
+[PMWatch] DIMM: 11	host_writes: 34	17	17
+[PMWatch] DIMM: 11	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 11	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 11	read_amplification: 33.111111111	9.629629630	 56.592592593
+[PMWatch] DIMM: 11	write_amplification: 1575.058823529	464.000000000	 2686.117647059
+
+[PAPI] PAPI_event_name: PAPI_TOT_CYC	total_counter: 219424122414	buildpart_counter: 16334125074	probejoin_counter: 203089997340
+[PAPI] PAPI_event_name: PAPI_L1_TCM	total_counter: 867422048	buildpart_counter: 51545856	probejoin_counter: 815876192
+[PAPI] PAPI_event_name: PAPI_L2_TCM	total_counter: 836282104	buildpart_counter: 26157119	probejoin_counter: 810124985
+[PAPI] PAPI_event_name: PAPI_L3_TCM	total_counter: 805642978	buildpart_counter: 24844460	probejoin_counter: 780798518
+[PAPI] PAPI_event_name: perf::DTLB-STORE-MISSES	total_counter: 58334	buildpart_counter: 53166	probejoin_counter: 5168
+[PAPI] PAPI_event_name: perf::DTLB-LOAD-MISSES	total_counter: 14712	buildpart_counter: 7750	probejoin_counter: 6962
+[PAPI] PAPI_event_name: perf::ITLB-LOAD-MISSES	total_counter: 252343	buildpart_counter: 233620	probejoin_counter: 18723
+[0;36mmemory_type: nvm	algo: nphj_sc	workload: uniform_pkfk_A	buildpart_time: 0.583927934	probejoin_time: 3.612275006	total_time: 4.196202940
+[0;35mmatched_cnt: 268435456	check_sum: 4503599895805952
+[PMWatch] DIMM: 0
+[PMWatch] DIMM: 0	total_bytes_read: 24869051136	799445760	24069605376
+[PMWatch] DIMM: 0	total_bytes_written: 904837888	890027008	14810880
+[PMWatch] DIMM: 0	media_read_ops: 97144731	3122835	94021896
+[PMWatch] DIMM: 0	media_write_ops: 3534523	3476668	57855
+[PMWatch] DIMM: 0	read_64B_ops_received: 402717016	26398012	376319004
+[PMWatch] DIMM: 0	write_64B_ops_received: 14138092	13906672	231420
+[PMWatch] DIMM: 0	host_reads: 135167227	4164425	131002802
+[PMWatch] DIMM: 0	host_writes: 3482619	3461455	21164
+[PMWatch] DIMM: 0	read_hit_ratio: 0.266204	0.250116	0.282291
+[PMWatch] DIMM: 0	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 0	read_amplification: 2.935185766	2.999535350	 2.870836183
+[PMWatch] DIMM: 0	write_amplification: 7.476092913	4.017579891	 10.934605935
+
+[PMWatch] DIMM: 1
+[PMWatch] DIMM: 1	total_bytes_read: 24832949504	800013056	24032936448
+[PMWatch] DIMM: 1	total_bytes_written: 903036160	889844480	13191680
+[PMWatch] DIMM: 1	media_read_ops: 97003709	3125051	93878658
+[PMWatch] DIMM: 1	media_write_ops: 3527485	3475955	51530
+[PMWatch] DIMM: 1	read_64B_ops_received: 402124776	26404024	375720752
+[PMWatch] DIMM: 1	write_64B_ops_received: 14109940	13903820	206120
+[PMWatch] DIMM: 1	host_reads: 134961748	4163687	130798061
+[PMWatch] DIMM: 1	host_writes: 3475669	3460479	15190
+[PMWatch] DIMM: 1	read_hit_ratio: 0.265857	0.249451	0.282263
+[PMWatch] DIMM: 1	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 1	read_amplification: 2.936572711	3.002195890	 2.870949532
+[PMWatch] DIMM: 1	write_amplification: 8.793671220	4.017888853	 13.569453588
+
+[PMWatch] DIMM: 2
+[PMWatch] DIMM: 2	total_bytes_read: 24793225216	799469824	23993755392
+[PMWatch] DIMM: 2	total_bytes_written: 902044416	889926912	12117504
+[PMWatch] DIMM: 2	media_read_ops: 96848536	3122929	93725607
+[PMWatch] DIMM: 2	media_write_ops: 3523611	3476277	47334
+[PMWatch] DIMM: 2	read_64B_ops_received: 401488588	26396824	375091764
+[PMWatch] DIMM: 2	write_64B_ops_received: 14094444	13905108	189336
+[PMWatch] DIMM: 2	host_reads: 134739383	4163932	130575451
+[PMWatch] DIMM: 2	host_writes: 3472715	3461218	11497
+[PMWatch] DIMM: 2	read_hit_ratio: 0.266108	0.250005	0.282211
+[PMWatch] DIMM: 2	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 2	read_amplification: 2.935568158	2.999980787	 2.871155528
+[PMWatch] DIMM: 2	write_amplification: 10.242849600	4.017403122	 16.468296077
+
+[PMWatch] DIMM: 3
+[PMWatch] DIMM: 3	total_bytes_read: 24754722304	799673856	23955048448
+[PMWatch] DIMM: 3	total_bytes_written: 900884480	889466368	11418112
+[PMWatch] DIMM: 3	media_read_ops: 96698134	3123726	93574408
+[PMWatch] DIMM: 3	media_write_ops: 3519080	3474478	44602
+[PMWatch] DIMM: 3	read_64B_ops_received: 400868856	26392816	374476040
+[PMWatch] DIMM: 3	write_64B_ops_received: 14076320	13897912	178408
+[PMWatch] DIMM: 3	host_reads: 134527917	4164091	130363826
+[PMWatch] DIMM: 3	host_writes: 3469933	3461170	8763
+[PMWatch] DIMM: 3	read_hit_ratio: 0.266024	0.249842	0.282206
+[PMWatch] DIMM: 3	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 3	read_amplification: 2.935904466	3.000631831	 2.871177101
+[PMWatch] DIMM: 3	write_amplification: 12.187308737	4.015379770	 20.359237704
+
+[PMWatch] DIMM: 4
+[PMWatch] DIMM: 4	total_bytes_read: 24713678592	799334656	23914343936
+[PMWatch] DIMM: 4	total_bytes_written: 900919552	890011904	10907648
+[PMWatch] DIMM: 4	media_read_ops: 96537807	3122401	93415406
+[PMWatch] DIMM: 4	media_write_ops: 3519217	3476609	42608
+[PMWatch] DIMM: 4	read_64B_ops_received: 400228096	26396040	373832056
+[PMWatch] DIMM: 4	write_64B_ops_received: 14076868	13906436	170432
+[PMWatch] DIMM: 4	host_reads: 134297547	4164230	130133317
+[PMWatch] DIMM: 4	host_writes: 3467629	3461331	6298
+[PMWatch] DIMM: 4	read_hit_ratio: 0.266171	0.250185	0.282156
+[PMWatch] DIMM: 4	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 4	read_amplification: 2.935317236	2.999258927	 2.871375545
+[PMWatch] DIMM: 4	write_amplification: 15.539472467	4.017655636	 27.061289298
+
+[PMWatch] DIMM: 5
+[PMWatch] DIMM: 5	total_bytes_read: 24671258368	799285760	23871972608
+[PMWatch] DIMM: 5	total_bytes_written: 900684032	890194432	10489600
+[PMWatch] DIMM: 5	media_read_ops: 96372103	3122210	93249893
+[PMWatch] DIMM: 5	media_write_ops: 3518297	3477322	40975
+[PMWatch] DIMM: 5	read_64B_ops_received: 399561600	26398128	373163472
+[PMWatch] DIMM: 5	write_64B_ops_received: 14073188	13909288	163900
+[PMWatch] DIMM: 5	host_reads: 134078598	4164516	129914082
+[PMWatch] DIMM: 5	host_writes: 3466064	3461373	4691
+[PMWatch] DIMM: 5	read_hit_ratio: 0.266251	0.250283	0.282219
+[PMWatch] DIMM: 5	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 5	read_amplification: 2.934997261	2.998869496	 2.871125026
+[PMWatch] DIMM: 5	write_amplification: 19.478838100	4.018430837	 34.939245363
+
+[PMWatch] DIMM: 6
+[PMWatch] DIMM: 6	total_bytes_read: 241664	35328	206336
+[PMWatch] DIMM: 6	total_bytes_written: 3451136	507648	2943488
+[PMWatch] DIMM: 6	media_read_ops: 944	138	806
+[PMWatch] DIMM: 6	media_write_ops: 13481	1983	11498
+[PMWatch] DIMM: 6	read_64B_ops_received: 57700	8484	49216
+[PMWatch] DIMM: 6	write_64B_ops_received: 53924	7932	45992
+[PMWatch] DIMM: 6	host_reads: 108	54	54
+[PMWatch] DIMM: 6	host_writes: 34	17	17
+[PMWatch] DIMM: 6	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 6	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 6	read_amplification: 34.962962963	10.222222222	 59.703703704
+[PMWatch] DIMM: 6	write_amplification: 1586.000000000	466.588235294	 2705.411764706
+
+[PMWatch] DIMM: 7
+[PMWatch] DIMM: 7	total_bytes_read: 233728	35584	198144
+[PMWatch] DIMM: 7	total_bytes_written: 3443456	507904	2935552
+[PMWatch] DIMM: 7	media_read_ops: 913	139	774
+[PMWatch] DIMM: 7	media_write_ops: 13451	1984	11467
+[PMWatch] DIMM: 7	read_64B_ops_received: 57456	8492	48964
+[PMWatch] DIMM: 7	write_64B_ops_received: 53804	7936	45868
+[PMWatch] DIMM: 7	host_reads: 108	54	54
+[PMWatch] DIMM: 7	host_writes: 34	17	17
+[PMWatch] DIMM: 7	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 7	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 7	read_amplification: 33.814814815	10.296296296	 57.333333333
+[PMWatch] DIMM: 7	write_amplification: 1582.470588235	466.823529412	 2698.117647059
+
+[PMWatch] DIMM: 8
+[PMWatch] DIMM: 8	total_bytes_read: 270848	37632	233216
+[PMWatch] DIMM: 8	total_bytes_written: 3476224	509440	2966784
+[PMWatch] DIMM: 8	media_read_ops: 1058	147	911
+[PMWatch] DIMM: 8	media_write_ops: 13579	1990	11589
+[PMWatch] DIMM: 8	read_64B_ops_received: 58548	8548	50000
+[PMWatch] DIMM: 8	write_64B_ops_received: 54316	7960	46356
+[PMWatch] DIMM: 8	host_reads: 108	54	54
+[PMWatch] DIMM: 8	host_writes: 34	17	17
+[PMWatch] DIMM: 8	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 8	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 8	read_amplification: 39.185185185	10.888888889	 67.481481481
+[PMWatch] DIMM: 8	write_amplification: 1597.529411765	468.235294118	 2726.823529412
+
+[PMWatch] DIMM: 9
+[PMWatch] DIMM: 9	total_bytes_read: 241152	35584	205568
+[PMWatch] DIMM: 9	total_bytes_written: 3447040	508672	2938368
+[PMWatch] DIMM: 9	media_read_ops: 942	139	803
+[PMWatch] DIMM: 9	media_write_ops: 13465	1987	11478
+[PMWatch] DIMM: 9	read_64B_ops_received: 57628	8504	49124
+[PMWatch] DIMM: 9	write_64B_ops_received: 53860	7948	45912
+[PMWatch] DIMM: 9	host_reads: 108	54	54
+[PMWatch] DIMM: 9	host_writes: 34	17	17
+[PMWatch] DIMM: 9	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 9	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 9	read_amplification: 34.888888889	10.296296296	 59.481481481
+[PMWatch] DIMM: 9	write_amplification: 1584.117647059	467.529411765	 2700.705882353
+
+[PMWatch] DIMM: 10
+[PMWatch] DIMM: 10	total_bytes_read: 226816	33024	193792
+[PMWatch] DIMM: 10	total_bytes_written: 3429632	505344	2924288
+[PMWatch] DIMM: 10	media_read_ops: 886	129	757
+[PMWatch] DIMM: 10	media_write_ops: 13397	1974	11423
+[PMWatch] DIMM: 10	read_64B_ops_received: 57132	8412	48720
+[PMWatch] DIMM: 10	write_64B_ops_received: 53588	7896	45692
+[PMWatch] DIMM: 10	host_reads: 108	54	54
+[PMWatch] DIMM: 10	host_writes: 34	17	17
+[PMWatch] DIMM: 10	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 10	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 10	read_amplification: 32.814814815	9.555555556	 56.074074074
+[PMWatch] DIMM: 10	write_amplification: 1576.117647059	464.470588235	 2687.764705882
+
+[PMWatch] DIMM: 11
+[PMWatch] DIMM: 11	total_bytes_read: 244224	36352	207872
+[PMWatch] DIMM: 11	total_bytes_written: 3442432	508160	2934272
+[PMWatch] DIMM: 11	media_read_ops: 954	142	812
+[PMWatch] DIMM: 11	media_write_ops: 13447	1985	11462
+[PMWatch] DIMM: 11	read_64B_ops_received: 57604	8508	49096
+[PMWatch] DIMM: 11	write_64B_ops_received: 53788	7940	45848
+[PMWatch] DIMM: 11	host_reads: 108	54	54
+[PMWatch] DIMM: 11	host_writes: 34	17	17
+[PMWatch] DIMM: 11	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 11	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 11	read_amplification: 35.333333333	10.518518519	 60.148148148
+[PMWatch] DIMM: 11	write_amplification: 1582.000000000	467.058823529	 2696.941176471
+
+[PAPI] PAPI_event_name: PAPI_TOT_CYC	total_counter: 218913729864	buildpart_counter: 16012207018	probejoin_counter: 202901522846
+[PAPI] PAPI_event_name: PAPI_L1_TCM	total_counter: 848142415	buildpart_counter: 28445266	probejoin_counter: 819697149
+[PAPI] PAPI_event_name: PAPI_L2_TCM	total_counter: 840557400	buildpart_counter: 25182269	probejoin_counter: 815375131
+[PAPI] PAPI_event_name: PAPI_L3_TCM	total_counter: 809933665	buildpart_counter: 24810908	probejoin_counter: 785122757
+[PAPI] PAPI_event_name: perf::DTLB-STORE-MISSES	total_counter: 11148	buildpart_counter: 5407	probejoin_counter: 5741
+[PAPI] PAPI_event_name: perf::DTLB-LOAD-MISSES	total_counter: 11257	buildpart_counter: 2024	probejoin_counter: 9233
+[PAPI] PAPI_event_name: perf::ITLB-LOAD-MISSES	total_counter: 48079	buildpart_counter: 20733	probejoin_counter: 27346
+[0;36mmemory_type: nvm	algo: nphj_sc	workload: uniform_pkfk_A	buildpart_time: 0.585496776	probejoin_time: 3.613344652	total_time: 4.198841428
+[0;35mmatched_cnt: 268435456	check_sum: 4503599895805952
+[PMWatch] DIMM: 0
+[PMWatch] DIMM: 0	total_bytes_read: 24870302976	798825728	24071477248
+[PMWatch] DIMM: 0	total_bytes_written: 904886272	889494528	15391744
+[PMWatch] DIMM: 0	media_read_ops: 97149621	3120413	94029208
+[PMWatch] DIMM: 0	media_write_ops: 3534712	3474588	60124
+[PMWatch] DIMM: 0	read_64B_ops_received: 402737332	26380004	376357328
+[PMWatch] DIMM: 0	write_64B_ops_received: 14138848	13898352	240496
+[PMWatch] DIMM: 0	host_reads: 135554487	4163450	131391037
+[PMWatch] DIMM: 0	host_writes: 3484086	3460478	23608
+[PMWatch] DIMM: 0	read_hit_ratio: 0.267439	0.250522	0.284356
+[PMWatch] DIMM: 0	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 0	read_amplification: 2.930243445	2.997910867	 2.862576022
+[PMWatch] DIMM: 0	write_amplification: 7.101682561	4.016309886	 10.187055236
+
+[PMWatch] DIMM: 1
+[PMWatch] DIMM: 1	total_bytes_read: 24834522368	799393280	24035129088
+[PMWatch] DIMM: 1	total_bytes_written: 903163904	889669376	13494528
+[PMWatch] DIMM: 1	media_read_ops: 97009853	3122630	93887223
+[PMWatch] DIMM: 1	media_write_ops: 3527984	3475271	52713
+[PMWatch] DIMM: 1	read_64B_ops_received: 402151348	26391604	375759744
+[PMWatch] DIMM: 1	write_64B_ops_received: 14111936	13901084	210852
+[PMWatch] DIMM: 1	host_reads: 135351421	4163814	131187607
+[PMWatch] DIMM: 1	host_writes: 3477449	3460819	16630
+[PMWatch] DIMM: 1	read_hit_ratio: 0.267192	0.250055	0.284329
+[PMWatch] DIMM: 1	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 1	read_amplification: 2.931232155	2.999778568	 2.862685741
+[PMWatch] DIMM: 1	write_amplification: 8.347858696	4.016703561	 12.679013830
+
+[PMWatch] DIMM: 2
+[PMWatch] DIMM: 2	total_bytes_read: 24794748160	799524864	23995223296
+[PMWatch] DIMM: 2	total_bytes_written: 902500096	889958656	12541440
+[PMWatch] DIMM: 2	media_read_ops: 96854485	3123144	93731341
+[PMWatch] DIMM: 2	media_write_ops: 3525391	3476401	48990
+[PMWatch] DIMM: 2	read_64B_ops_received: 401519504	26398180	375121324
+[PMWatch] DIMM: 2	write_64B_ops_received: 14101564	13905604	195960
+[PMWatch] DIMM: 2	host_reads: 135120163	4163663	130956500
+[PMWatch] DIMM: 2	host_writes: 3473971	3461283	12688
+[PMWatch] DIMM: 2	read_hit_ratio: 0.267080	0.249905	0.284256
+[PMWatch] DIMM: 2	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 2	read_amplification: 2.931678759	3.000381155	 2.862976362
+[PMWatch] DIMM: 2	write_amplification: 9.730992740	4.017470978	 15.444514502
+
+[PMWatch] DIMM: 3
+[PMWatch] DIMM: 3	total_bytes_read: 24755125248	798989568	23956135680
+[PMWatch] DIMM: 3	total_bytes_written: 901481984	889920256	11561728
+[PMWatch] DIMM: 3	media_read_ops: 96699708	3121053	93578655
+[PMWatch] DIMM: 3	media_write_ops: 3521414	3476251	45163
+[PMWatch] DIMM: 3	read_64B_ops_received: 400884488	26389216	374495272
+[PMWatch] DIMM: 3	write_64B_ops_received: 14085656	13905004	180652
+[PMWatch] DIMM: 3	host_reads: 134910266	4164332	130745934
+[PMWatch] DIMM: 3	host_writes: 3471593	3462521	9072
+[PMWatch] DIMM: 3	read_hit_ratio: 0.267399	0.250527	0.284271
+[PMWatch] DIMM: 3	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 3	read_amplification: 2.930403305	2.997890658	 2.862915951
+[PMWatch] DIMM: 3	write_amplification: 11.964500303	4.015861276	 19.913139330
+
+[PMWatch] DIMM: 4
+[PMWatch] DIMM: 4	total_bytes_read: 24714986752	799854848	23915131904
+[PMWatch] DIMM: 4	total_bytes_written: 901565952	890598656	10967296
+[PMWatch] DIMM: 4	media_read_ops: 96542917	3124433	93418484
+[PMWatch] DIMM: 4	media_write_ops: 3521742	3478901	42841
+[PMWatch] DIMM: 4	read_64B_ops_received: 400258636	26413336	373845300
+[PMWatch] DIMM: 4	write_64B_ops_received: 14086968	13915604	171364
+[PMWatch] DIMM: 4	host_reads: 134688903	4164563	130524340
+[PMWatch] DIMM: 4	host_writes: 3469654	3463021	6633
+[PMWatch] DIMM: 4	read_hit_ratio: 0.267020	0.249757	0.284283
+[PMWatch] DIMM: 4	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 4	read_amplification: 2.931919328	3.000970810	 2.862867845
+[PMWatch] DIMM: 4	write_amplification: 14.926704728	4.018342366	 25.835067089
+
+[PMWatch] DIMM: 5
+[PMWatch] DIMM: 5	total_bytes_read: 24672614400	799023360	23873591040
+[PMWatch] DIMM: 5	total_bytes_written: 900970496	890328576	10641920
+[PMWatch] DIMM: 5	media_read_ops: 96377400	3121185	93256215
+[PMWatch] DIMM: 5	media_write_ops: 3519416	3477846	41570
+[PMWatch] DIMM: 5	read_64B_ops_received: 399587264	26396124	373191140
+[PMWatch] DIMM: 5	write_64B_ops_received: 14077664	13911384	166280
+[PMWatch] DIMM: 5	host_reads: 134469529	4163694	130305835
+[PMWatch] DIMM: 5	host_writes: 3467144	3461954	5190
+[PMWatch] DIMM: 5	read_hit_ratio: 0.267354	0.250381	0.284328
+[PMWatch] DIMM: 5	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 5	read_amplification: 2.930582071	2.998476833	 2.862687308
+[PMWatch] DIMM: 5	write_amplification: 18.028448765	4.018361885	 32.038535645
+
+[PMWatch] DIMM: 6
+[PMWatch] DIMM: 6	total_bytes_read: 239616	35072	204544
+[PMWatch] DIMM: 6	total_bytes_written: 3449600	506880	2942720
+[PMWatch] DIMM: 6	media_read_ops: 936	137	799
+[PMWatch] DIMM: 6	media_write_ops: 13475	1980	11495
+[PMWatch] DIMM: 6	read_64B_ops_received: 57644	8468	49176
+[PMWatch] DIMM: 6	write_64B_ops_received: 53900	7920	45980
+[PMWatch] DIMM: 6	host_reads: 108	54	54
+[PMWatch] DIMM: 6	host_writes: 34	17	17
+[PMWatch] DIMM: 6	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 6	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 6	read_amplification: 34.666666667	10.148148148	 59.185185185
+[PMWatch] DIMM: 6	write_amplification: 1585.294117647	465.882352941	 2704.705882353
+
+[PMWatch] DIMM: 7
+[PMWatch] DIMM: 7	total_bytes_read: 244480	40448	204032
+[PMWatch] DIMM: 7	total_bytes_written: 3450112	510720	2939392
+[PMWatch] DIMM: 7	media_read_ops: 955	158	797
+[PMWatch] DIMM: 7	media_write_ops: 13477	1995	11482
+[PMWatch] DIMM: 7	read_64B_ops_received: 57728	8612	49116
+[PMWatch] DIMM: 7	write_64B_ops_received: 53908	7980	45928
+[PMWatch] DIMM: 7	host_reads: 108	54	54
+[PMWatch] DIMM: 7	host_writes: 34	17	17
+[PMWatch] DIMM: 7	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 7	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 7	read_amplification: 35.370370370	11.703703704	 59.037037037
+[PMWatch] DIMM: 7	write_amplification: 1585.529411765	469.411764706	 2701.647058824
+
+[PMWatch] DIMM: 8
+[PMWatch] DIMM: 8	total_bytes_read: 242944	34816	208128
+[PMWatch] DIMM: 8	total_bytes_written: 3450112	506368	2943744
+[PMWatch] DIMM: 8	media_read_ops: 949	136	813
+[PMWatch] DIMM: 8	media_write_ops: 13477	1978	11499
+[PMWatch] DIMM: 8	read_64B_ops_received: 57704	8456	49248
+[PMWatch] DIMM: 8	write_64B_ops_received: 53908	7912	45996
+[PMWatch] DIMM: 8	host_reads: 108	54	54
+[PMWatch] DIMM: 8	host_writes: 34	17	17
+[PMWatch] DIMM: 8	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 8	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 8	read_amplification: 35.148148148	10.074074074	 60.222222222
+[PMWatch] DIMM: 8	write_amplification: 1585.529411765	465.411764706	 2705.647058824
+
+[PMWatch] DIMM: 9
+[PMWatch] DIMM: 9	total_bytes_read: 235520	34560	200960
+[PMWatch] DIMM: 9	total_bytes_written: 3439104	506624	2932480
+[PMWatch] DIMM: 9	media_read_ops: 920	135	785
+[PMWatch] DIMM: 9	media_write_ops: 13434	1979	11455
+[PMWatch] DIMM: 9	read_64B_ops_received: 57416	8456	48960
+[PMWatch] DIMM: 9	write_64B_ops_received: 53736	7916	45820
+[PMWatch] DIMM: 9	host_reads: 108	54	54
+[PMWatch] DIMM: 9	host_writes: 34	17	17
+[PMWatch] DIMM: 9	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 9	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 9	read_amplification: 34.074074074	10.000000000	 58.148148148
+[PMWatch] DIMM: 9	write_amplification: 1580.470588235	465.647058824	 2695.294117647
+
+[PMWatch] DIMM: 10
+[PMWatch] DIMM: 10	total_bytes_read: 227328	34304	193024
+[PMWatch] DIMM: 10	total_bytes_written: 3429632	505856	2923776
+[PMWatch] DIMM: 10	media_read_ops: 888	134	754
+[PMWatch] DIMM: 10	media_write_ops: 13397	1976	11421
+[PMWatch] DIMM: 10	read_64B_ops_received: 57140	8440	48700
+[PMWatch] DIMM: 10	write_64B_ops_received: 53588	7904	45684
+[PMWatch] DIMM: 10	host_reads: 108	54	54
+[PMWatch] DIMM: 10	host_writes: 34	17	17
+[PMWatch] DIMM: 10	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 10	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 10	read_amplification: 32.888888889	9.925925926	 55.851851852
+[PMWatch] DIMM: 10	write_amplification: 1576.117647059	464.941176471	 2687.294117647
+
+[PMWatch] DIMM: 11
+[PMWatch] DIMM: 11	total_bytes_read: 246016	37632	208384
+[PMWatch] DIMM: 11	total_bytes_written: 3445248	508928	2936320
+[PMWatch] DIMM: 11	media_read_ops: 961	147	814
+[PMWatch] DIMM: 11	media_write_ops: 13458	1988	11470
+[PMWatch] DIMM: 11	read_64B_ops_received: 57676	8540	49136
+[PMWatch] DIMM: 11	write_64B_ops_received: 53832	7952	45880
+[PMWatch] DIMM: 11	host_reads: 108	54	54
+[PMWatch] DIMM: 11	host_writes: 34	17	17
+[PMWatch] DIMM: 11	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 11	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 11	read_amplification: 35.592592593	10.888888889	 60.296296296
+[PMWatch] DIMM: 11	write_amplification: 1583.294117647	467.764705882	 2698.823529412
+
+[PAPI] PAPI_event_name: PAPI_TOT_CYC	total_counter: 218891944160	buildpart_counter: 15987902154	probejoin_counter: 202904042006
+[PAPI] PAPI_event_name: PAPI_L1_TCM	total_counter: 851007954	buildpart_counter: 28524328	probejoin_counter: 822483626
+[PAPI] PAPI_event_name: PAPI_L2_TCM	total_counter: 842900445	buildpart_counter: 25288799	probejoin_counter: 817611646
+[PAPI] PAPI_event_name: PAPI_L3_TCM	total_counter: 811722285	buildpart_counter: 24896129	probejoin_counter: 786826156
+[PAPI] PAPI_event_name: perf::DTLB-STORE-MISSES	total_counter: 11487	buildpart_counter: 4875	probejoin_counter: 6612
+[PAPI] PAPI_event_name: perf::DTLB-LOAD-MISSES	total_counter: 12645	buildpart_counter: 1894	probejoin_counter: 10751
+[PAPI] PAPI_event_name: perf::ITLB-LOAD-MISSES	total_counter: 50126	buildpart_counter: 23559	probejoin_counter: 26567
+[0;36mmemory_type: nvm	algo: nphj_sc	workload: uniform_pkfk_A	buildpart_time: 0.584523464	probejoin_time: 3.613258371	total_time: 4.197781835
+[0;35mmatched_cnt: 268435456	check_sum: 4503599895805952
+[PMWatch] DIMM: 0
+[PMWatch] DIMM: 0	total_bytes_read: 24865371648	798641920	24066729728
+[PMWatch] DIMM: 0	total_bytes_written: 903983104	889160448	14822656
+[PMWatch] DIMM: 0	media_read_ops: 97130358	3119695	94010663
+[PMWatch] DIMM: 0	media_write_ops: 3531184	3473283	57901
+[PMWatch] DIMM: 0	read_64B_ops_received: 402646168	26371912	376274256
+[PMWatch] DIMM: 0	write_64B_ops_received: 14124736	13893132	231604
+[PMWatch] DIMM: 0	host_reads: 134664033	4160941	130503092
+[PMWatch] DIMM: 0	host_writes: 3481021	3459686	21335
+[PMWatch] DIMM: 0	read_hit_ratio: 0.264936	0.250243	0.279629
+[PMWatch] DIMM: 0	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 0	read_amplification: 2.940256481	2.999028345	 2.881484616
+[PMWatch] DIMM: 0	write_amplification: 7.435654954	4.015720502	 10.855589407
+
+[PMWatch] DIMM: 1
+[PMWatch] DIMM: 1	total_bytes_read: 24826280448	798923776	24027356672
+[PMWatch] DIMM: 1	total_bytes_written: 902646272	889295360	13350912
+[PMWatch] DIMM: 1	media_read_ops: 96977658	3120796	93856862
+[PMWatch] DIMM: 1	media_write_ops: 3525962	3473810	52152
+[PMWatch] DIMM: 1	read_64B_ops_received: 402014480	26378424	375636056
+[PMWatch] DIMM: 1	write_64B_ops_received: 14103848	13895240	208608
+[PMWatch] DIMM: 1	host_reads: 134453950	4161007	130292943
+[PMWatch] DIMM: 1	host_writes: 3474798	3459451	15347
+[PMWatch] DIMM: 1	read_hit_ratio: 0.264819	0.249990	0.279647
+[PMWatch] DIMM: 1	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 1	read_amplification: 2.940724813	3.000039173	 2.881410454
+[PMWatch] DIMM: 1	write_amplification: 8.804678459	4.016602634	 13.592754284
+
+[PMWatch] DIMM: 2
+[PMWatch] DIMM: 2	total_bytes_read: 24788641536	798625024	23990016512
+[PMWatch] DIMM: 2	total_bytes_written: 901249792	889173248	12076544
+[PMWatch] DIMM: 2	media_read_ops: 96830631	3119629	93711002
+[PMWatch] DIMM: 2	media_write_ops: 3520507	3473333	47174
+[PMWatch] DIMM: 2	read_64B_ops_received: 401404552	26371848	375032704
+[PMWatch] DIMM: 2	write_64B_ops_received: 14082028	13893332	188696
+[PMWatch] DIMM: 2	host_reads: 134240852	4160700	130080152
+[PMWatch] DIMM: 2	host_writes: 3470714	3459278	11436
+[PMWatch] DIMM: 2	read_hit_ratio: 0.264903	0.250215	0.279590
+[PMWatch] DIMM: 2	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 2	read_amplification: 2.940388684	2.999138606	 2.881638761
+[PMWatch] DIMM: 2	write_amplification: 10.258213416	4.016251946	 16.500174886
+
+[PMWatch] DIMM: 3
+[PMWatch] DIMM: 3	total_bytes_read: 24749058816	799289344	23949769472
+[PMWatch] DIMM: 3	total_bytes_written: 901637120	890096128	11540992
+[PMWatch] DIMM: 3	media_read_ops: 96676011	3122224	93553787
+[PMWatch] DIMM: 3	media_write_ops: 3522020	3476938	45082
+[PMWatch] DIMM: 3	read_64B_ops_received: 400792124	26396648	374395476
+[PMWatch] DIMM: 3	write_64B_ops_received: 14088080	13907752	180328
+[PMWatch] DIMM: 3	host_reads: 134018379	4161829	129856550
+[PMWatch] DIMM: 3	host_writes: 3469867	3461077	8790
+[PMWatch] DIMM: 3	read_hit_ratio: 0.264678	0.249795	0.279561
+[PMWatch] DIMM: 3	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 3	read_amplification: 2.941288541	3.000819111	 2.881757971
+[PMWatch] DIMM: 3	write_amplification: 12.266730770	4.018330710	 20.515130830
+
+[PMWatch] DIMM: 4
+[PMWatch] DIMM: 4	total_bytes_read: 24709423360	799198720	23910224640
+[PMWatch] DIMM: 4	total_bytes_written: 900656384	889720832	10935552
+[PMWatch] DIMM: 4	media_read_ops: 96521185	3121870	93399315
+[PMWatch] DIMM: 4	media_write_ops: 3518189	3475472	42717
+[PMWatch] DIMM: 4	read_64B_ops_received: 400157496	26389368	373768128
+[PMWatch] DIMM: 4	write_64B_ops_received: 14072756	13901888	170868
+[PMWatch] DIMM: 4	host_reads: 133807854	4161485	129646369
+[PMWatch] DIMM: 4	host_writes: 3467223	3460941	6282
+[PMWatch] DIMM: 4	read_hit_ratio: 0.264701	0.249818	0.279584
+[PMWatch] DIMM: 4	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 4	read_amplification: 2.941195397	3.000726904	 2.881663890
+[PMWatch] DIMM: 4	write_amplification: 15.608206116	4.016794276	 27.199617956
+
+[PMWatch] DIMM: 5
+[PMWatch] DIMM: 5	total_bytes_read: 24665562368	798481408	23867080960
+[PMWatch] DIMM: 5	total_bytes_written: 900459264	889939712	10519552
+[PMWatch] DIMM: 5	media_read_ops: 96349853	3119068	93230785
+[PMWatch] DIMM: 5	media_write_ops: 3517419	3476327	41092
+[PMWatch] DIMM: 5	read_64B_ops_received: 399469088	26381580	373087508
+[PMWatch] DIMM: 5	write_64B_ops_received: 14069676	13905308	164368
+[PMWatch] DIMM: 5	host_reads: 133572395	4161280	129411115
+[PMWatch] DIMM: 5	host_writes: 3465203	3460108	5095
+[PMWatch] DIMM: 5	read_hit_ratio: 0.265016	0.250455	0.279577
+[PMWatch] DIMM: 5	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 5	read_amplification: 2.939937303	2.998181329	 2.881693277
+[PMWatch] DIMM: 5	write_amplification: 18.139698699	4.018749704	 32.260647694
+
+[PMWatch] DIMM: 6
+[PMWatch] DIMM: 6	total_bytes_read: 236032	34304	201728
+[PMWatch] DIMM: 6	total_bytes_written: 3445248	506368	2938880
+[PMWatch] DIMM: 6	media_read_ops: 922	134	788
+[PMWatch] DIMM: 6	media_write_ops: 13458	1978	11480
+[PMWatch] DIMM: 6	read_64B_ops_received: 57520	8448	49072
+[PMWatch] DIMM: 6	write_64B_ops_received: 53832	7912	45920
+[PMWatch] DIMM: 6	host_reads: 108	54	54
+[PMWatch] DIMM: 6	host_writes: 34	17	17
+[PMWatch] DIMM: 6	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 6	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 6	read_amplification: 34.148148148	9.925925926	 58.370370370
+[PMWatch] DIMM: 6	write_amplification: 1583.294117647	465.411764706	 2701.176470588
+
+[PMWatch] DIMM: 7
+[PMWatch] DIMM: 7	total_bytes_read: 242688	34816	207872
+[PMWatch] DIMM: 7	total_bytes_written: 3450368	507136	2943232
+[PMWatch] DIMM: 7	media_read_ops: 948	136	812
+[PMWatch] DIMM: 7	media_write_ops: 13478	1981	11497
+[PMWatch] DIMM: 7	read_64B_ops_received: 57704	8468	49236
+[PMWatch] DIMM: 7	write_64B_ops_received: 53912	7924	45988
+[PMWatch] DIMM: 7	host_reads: 108	54	54
+[PMWatch] DIMM: 7	host_writes: 34	17	17
+[PMWatch] DIMM: 7	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 7	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 7	read_amplification: 35.111111111	10.074074074	 60.148148148
+[PMWatch] DIMM: 7	write_amplification: 1585.647058824	466.117647059	 2705.176470588
+
+[PMWatch] DIMM: 8
+[PMWatch] DIMM: 8	total_bytes_read: 231680	33536	198144
+[PMWatch] DIMM: 8	total_bytes_written: 3439360	506624	2932736
+[PMWatch] DIMM: 8	media_read_ops: 905	131	774
+[PMWatch] DIMM: 8	media_write_ops: 13435	1979	11456
+[PMWatch] DIMM: 8	read_64B_ops_received: 57360	8440	48920
+[PMWatch] DIMM: 8	write_64B_ops_received: 53740	7916	45824
+[PMWatch] DIMM: 8	host_reads: 108	54	54
+[PMWatch] DIMM: 8	host_writes: 34	17	17
+[PMWatch] DIMM: 8	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 8	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 8	read_amplification: 33.518518519	9.703703704	 57.333333333
+[PMWatch] DIMM: 8	write_amplification: 1580.588235294	465.647058824	 2695.529411765
+
+[PMWatch] DIMM: 9
+[PMWatch] DIMM: 9	total_bytes_read: 246784	34560	212224
+[PMWatch] DIMM: 9	total_bytes_written: 3447040	505856	2941184
+[PMWatch] DIMM: 9	media_read_ops: 964	135	829
+[PMWatch] DIMM: 9	media_write_ops: 13465	1976	11489
+[PMWatch] DIMM: 9	read_64B_ops_received: 57716	8444	49272
+[PMWatch] DIMM: 9	write_64B_ops_received: 53860	7904	45956
+[PMWatch] DIMM: 9	host_reads: 108	54	54
+[PMWatch] DIMM: 9	host_writes: 34	17	17
+[PMWatch] DIMM: 9	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 9	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 9	read_amplification: 35.703703704	10.000000000	 61.407407407
+[PMWatch] DIMM: 9	write_amplification: 1584.117647059	464.941176471	 2703.294117647
+
+[PMWatch] DIMM: 10
+[PMWatch] DIMM: 10	total_bytes_read: 223232	32768	190464
+[PMWatch] DIMM: 10	total_bytes_written: 3424768	504320	2920448
+[PMWatch] DIMM: 10	media_read_ops: 872	128	744
+[PMWatch] DIMM: 10	media_write_ops: 13378	1970	11408
+[PMWatch] DIMM: 10	read_64B_ops_received: 57000	8392	48608
+[PMWatch] DIMM: 10	write_64B_ops_received: 53512	7880	45632
+[PMWatch] DIMM: 10	host_reads: 108	54	54
+[PMWatch] DIMM: 10	host_writes: 34	17	17
+[PMWatch] DIMM: 10	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 10	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 10	read_amplification: 32.296296296	9.481481481	 55.111111111
+[PMWatch] DIMM: 10	write_amplification: 1573.882352941	463.529411765	 2684.235294118
+
+[PMWatch] DIMM: 11
+[PMWatch] DIMM: 11	total_bytes_read: 239104	34560	204544
+[PMWatch] DIMM: 11	total_bytes_written: 3438080	505856	2932224
+[PMWatch] DIMM: 11	media_read_ops: 934	135	799
+[PMWatch] DIMM: 11	media_write_ops: 13430	1976	11454
+[PMWatch] DIMM: 11	read_64B_ops_received: 57456	8444	49012
+[PMWatch] DIMM: 11	write_64B_ops_received: 53720	7904	45816
+[PMWatch] DIMM: 11	host_reads: 108	54	54
+[PMWatch] DIMM: 11	host_writes: 34	17	17
+[PMWatch] DIMM: 11	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 11	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 11	read_amplification: 34.592592593	10.000000000	 59.185185185
+[PMWatch] DIMM: 11	write_amplification: 1580.000000000	464.941176471	 2695.058823529
+
+[PAPI] PAPI_event_name: PAPI_TOT_CYC	total_counter: 218869912698	buildpart_counter: 15941529960	probejoin_counter: 202928382738
+[PAPI] PAPI_event_name: PAPI_L1_TCM	total_counter: 844686413	buildpart_counter: 28587697	probejoin_counter: 816098716
+[PAPI] PAPI_event_name: PAPI_L2_TCM	total_counter: 837365031	buildpart_counter: 25221404	probejoin_counter: 812143627
+[PAPI] PAPI_event_name: PAPI_L3_TCM	total_counter: 806696321	buildpart_counter: 24878077	probejoin_counter: 781818244
+[PAPI] PAPI_event_name: perf::DTLB-STORE-MISSES	total_counter: 9997	buildpart_counter: 4609	probejoin_counter: 5388
+[PAPI] PAPI_event_name: perf::DTLB-LOAD-MISSES	total_counter: 7249	buildpart_counter: 1806	probejoin_counter: 5443
+[PAPI] PAPI_event_name: perf::ITLB-LOAD-MISSES	total_counter: 48604	buildpart_counter: 22708	probejoin_counter: 25896
+[0;36mmemory_type: nvm	algo: nphj_sc	workload: uniform_pkfk_A	buildpart_time: 0.584967652	probejoin_time: 3.611819361	total_time: 4.196787013
+[0;35mmatched_cnt: 268435456	check_sum: 4503599895805952
+[PMWatch] DIMM: 0
+[PMWatch] DIMM: 0	total_bytes_read: 24864104704	798966784	24065137920
+[PMWatch] DIMM: 0	total_bytes_written: 905007360	889828352	15179008
+[PMWatch] DIMM: 0	media_read_ops: 97125409	3120964	94004445
+[PMWatch] DIMM: 0	media_write_ops: 3535185	3475892	59293
+[PMWatch] DIMM: 0	read_64B_ops_received: 402642376	26387424	376254952
+[PMWatch] DIMM: 0	write_64B_ops_received: 14140740	13903568	237172
+[PMWatch] DIMM: 0	host_reads: 134555673	4165608	130390065
+[PMWatch] DIMM: 0	host_writes: 3489526	3466373	23153
+[PMWatch] DIMM: 0	read_hit_ratio: 0.264915	0.250778	0.279052
+[PMWatch] DIMM: 0	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 0	read_amplification: 2.940339267	2.996886889	 2.883791645
+[PMWatch] DIMM: 0	write_amplification: 7.127333858	4.010984392	 10.243683324
+
+[PMWatch] DIMM: 1
+[PMWatch] DIMM: 1	total_bytes_read: 24826919936	798839552	24028080384
+[PMWatch] DIMM: 1	total_bytes_written: 903180032	889710848	13469184
+[PMWatch] DIMM: 1	media_read_ops: 96980156	3120467	93859689
+[PMWatch] DIMM: 1	media_write_ops: 3528047	3475433	52614
+[PMWatch] DIMM: 1	read_64B_ops_received: 402032812	26383600	375649212
+[PMWatch] DIMM: 1	write_64B_ops_received: 14112188	13901732	210456
+[PMWatch] DIMM: 1	host_reads: 134345208	4164972	130180236
+[PMWatch] DIMM: 1	host_writes: 3481774	3465434	16340
+[PMWatch] DIMM: 1	read_hit_ratio: 0.264893	0.250783	0.279002
+[PMWatch] DIMM: 1	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 1	read_amplification: 2.940429591	2.996867206	 2.883991976
+[PMWatch] DIMM: 1	write_amplification: 8.445672787	4.011541412	 12.879804162
+
+[PMWatch] DIMM: 2
+[PMWatch] DIMM: 2	total_bytes_read: 24790067968	799225600	23990842368
+[PMWatch] DIMM: 2	total_bytes_written: 902727936	890112256	12615680
+[PMWatch] DIMM: 2	media_read_ops: 96836203	3121975	93714228
+[PMWatch] DIMM: 2	media_write_ops: 3526281	3477001	49280
+[PMWatch] DIMM: 2	read_64B_ops_received: 401449936	26395904	375054032
+[PMWatch] DIMM: 2	write_64B_ops_received: 14105124	13908004	197120
+[PMWatch] DIMM: 2	host_reads: 134141058	4165905	129975153
+[PMWatch] DIMM: 2	host_writes: 3479288	3466776	12512
+[PMWatch] DIMM: 2	read_hit_ratio: 0.264786	0.250589	0.278984
+[PMWatch] DIMM: 2	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 2	read_amplification: 2.940854955	2.997643969	 2.884065941
+[PMWatch] DIMM: 2	write_amplification: 9.883136704	4.011797705	 15.754475703
+
+[PMWatch] DIMM: 3
+[PMWatch] DIMM: 3	total_bytes_read: 24751872768	799388416	23952484352
+[PMWatch] DIMM: 3	total_bytes_written: 902048768	890271488	11777280
+[PMWatch] DIMM: 3	media_read_ops: 96687003	3122611	93564392
+[PMWatch] DIMM: 3	media_write_ops: 3523628	3477623	46005
+[PMWatch] DIMM: 3	read_64B_ops_received: 400842524	26400936	374441588
+[PMWatch] DIMM: 3	write_64B_ops_received: 14094512	13910492	184020
+[PMWatch] DIMM: 3	host_reads: 133927123	4166394	129760729
+[PMWatch] DIMM: 3	host_writes: 3477890	3468303	9587
+[PMWatch] DIMM: 3	read_hit_ratio: 0.264736	0.250524	0.278947
+[PMWatch] DIMM: 3	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 3	read_amplification: 2.941057819	2.997902743	 2.884212896
+[PMWatch] DIMM: 3	write_amplification: 11.602745827	4.010748773	 19.194742881
+
+[PMWatch] DIMM: 4
+[PMWatch] DIMM: 4	total_bytes_read: 24709904384	799121920	23910782464
+[PMWatch] DIMM: 4	total_bytes_written: 901635584	890596096	11039488
+[PMWatch] DIMM: 4	media_read_ops: 96523064	3121570	93401494
+[PMWatch] DIMM: 4	media_write_ops: 3522014	3478891	43123
+[PMWatch] DIMM: 4	read_64B_ops_received: 400180312	26401844	373778468
+[PMWatch] DIMM: 4	write_64B_ops_received: 14088056	13915564	172492
+[PMWatch] DIMM: 4	host_reads: 133701150	4165838	129535312
+[PMWatch] DIMM: 4	host_writes: 3474069	3467039	7030
+[PMWatch] DIMM: 4	read_hit_ratio: 0.264812	0.250674	0.278950
+[PMWatch] DIMM: 4	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 4	read_amplification: 2.940752536	2.997303304	 2.884201769
+[PMWatch] DIMM: 4	write_amplification: 14.275115763	4.013673916	 24.536557610
+
+[PMWatch] DIMM: 5
+[PMWatch] DIMM: 5	total_bytes_read: 24666919168	798958848	23867960320
+[PMWatch] DIMM: 5	total_bytes_written: 901568000	890633984	10934016
+[PMWatch] DIMM: 5	media_read_ops: 96355153	3120933	93234220
+[PMWatch] DIMM: 5	media_write_ops: 3521750	3479039	42711
+[PMWatch] DIMM: 5	read_64B_ops_received: 399507612	26399888	373107724
+[PMWatch] DIMM: 5	write_64B_ops_received: 14087000	13916156	170844
+[PMWatch] DIMM: 5	host_reads: 133470247	4166719	129303528
+[PMWatch] DIMM: 5	host_writes: 3473630	3468281	5349
+[PMWatch] DIMM: 5	read_hit_ratio: 0.264968	0.250985	0.278951
+[PMWatch] DIMM: 5	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 5	read_amplification: 2.940127650	2.996058050	 2.884197251
+[PMWatch] DIMM: 5	write_amplification: 17.975917615	4.012407299	 31.939427930
+
+[PMWatch] DIMM: 6
+[PMWatch] DIMM: 6	total_bytes_read: 242432	33792	208640
+[PMWatch] DIMM: 6	total_bytes_written: 3450368	506112	2944256
+[PMWatch] DIMM: 6	media_read_ops: 947	132	815
+[PMWatch] DIMM: 6	media_write_ops: 13478	1977	11501
+[PMWatch] DIMM: 6	read_64B_ops_received: 57700	8436	49264
+[PMWatch] DIMM: 6	write_64B_ops_received: 53912	7908	46004
+[PMWatch] DIMM: 6	host_reads: 108	54	54
+[PMWatch] DIMM: 6	host_writes: 34	17	17
+[PMWatch] DIMM: 6	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 6	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 6	read_amplification: 35.074074074	9.777777778	 60.370370370
+[PMWatch] DIMM: 6	write_amplification: 1585.647058824	465.176470588	 2706.117647059
+
+[PMWatch] DIMM: 7
+[PMWatch] DIMM: 7	total_bytes_read: 241408	35328	206080
+[PMWatch] DIMM: 7	total_bytes_written: 3447808	507136	2940672
+[PMWatch] DIMM: 7	media_read_ops: 943	138	805
+[PMWatch] DIMM: 7	media_write_ops: 13468	1981	11487
+[PMWatch] DIMM: 7	read_64B_ops_received: 57644	8476	49168
+[PMWatch] DIMM: 7	write_64B_ops_received: 53872	7924	45948
+[PMWatch] DIMM: 7	host_reads: 108	54	54
+[PMWatch] DIMM: 7	host_writes: 34	17	17
+[PMWatch] DIMM: 7	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 7	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 7	read_amplification: 34.925925926	10.222222222	 59.629629630
+[PMWatch] DIMM: 7	write_amplification: 1584.470588235	466.117647059	 2702.823529412
+
+[PMWatch] DIMM: 8
+[PMWatch] DIMM: 8	total_bytes_read: 237824	37632	200192
+[PMWatch] DIMM: 8	total_bytes_written: 3444480	509184	2935296
+[PMWatch] DIMM: 8	media_read_ops: 929	147	782
+[PMWatch] DIMM: 8	media_write_ops: 13455	1989	11466
+[PMWatch] DIMM: 8	read_64B_ops_received: 57536	8544	48992
+[PMWatch] DIMM: 8	write_64B_ops_received: 53820	7956	45864
+[PMWatch] DIMM: 8	host_reads: 108	54	54
+[PMWatch] DIMM: 8	host_writes: 34	17	17
+[PMWatch] DIMM: 8	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 8	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 8	read_amplification: 34.407407407	10.888888889	 57.925925926
+[PMWatch] DIMM: 8	write_amplification: 1582.941176471	468.000000000	 2697.882352941
+
+[PMWatch] DIMM: 9
+[PMWatch] DIMM: 9	total_bytes_read: 246784	39680	207104
+[PMWatch] DIMM: 9	total_bytes_written: 3446784	509440	2937344
+[PMWatch] DIMM: 9	media_read_ops: 964	155	809
+[PMWatch] DIMM: 9	media_write_ops: 13464	1990	11474
+[PMWatch] DIMM: 9	read_64B_ops_received: 57712	8580	49132
+[PMWatch] DIMM: 9	write_64B_ops_received: 53856	7960	45896
+[PMWatch] DIMM: 9	host_reads: 108	54	54
+[PMWatch] DIMM: 9	host_writes: 34	17	17
+[PMWatch] DIMM: 9	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 9	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 9	read_amplification: 35.703703704	11.481481481	 59.925925926
+[PMWatch] DIMM: 9	write_amplification: 1584.000000000	468.235294118	 2699.764705882
+
+[PMWatch] DIMM: 10
+[PMWatch] DIMM: 10	total_bytes_read: 227072	31744	195328
+[PMWatch] DIMM: 10	total_bytes_written: 3428864	504576	2924288
+[PMWatch] DIMM: 10	media_read_ops: 887	124	763
+[PMWatch] DIMM: 10	media_write_ops: 13394	1971	11423
+[PMWatch] DIMM: 10	read_64B_ops_received: 57124	8380	48744
+[PMWatch] DIMM: 10	write_64B_ops_received: 53576	7884	45692
+[PMWatch] DIMM: 10	host_reads: 108	54	54
+[PMWatch] DIMM: 10	host_writes: 34	17	17
+[PMWatch] DIMM: 10	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 10	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 10	read_amplification: 32.851851852	9.185185185	 56.518518519
+[PMWatch] DIMM: 10	write_amplification: 1575.764705882	463.764705882	 2687.764705882
+
+[PMWatch] DIMM: 11
+[PMWatch] DIMM: 11	total_bytes_read: 238080	33792	204288
+[PMWatch] DIMM: 11	total_bytes_written: 3437568	505856	2931712
+[PMWatch] DIMM: 11	media_read_ops: 930	132	798
+[PMWatch] DIMM: 11	media_write_ops: 13428	1976	11452
+[PMWatch] DIMM: 11	read_64B_ops_received: 57432	8432	49000
+[PMWatch] DIMM: 11	write_64B_ops_received: 53712	7904	45808
+[PMWatch] DIMM: 11	host_reads: 108	54	54
+[PMWatch] DIMM: 11	host_writes: 34	17	17
+[PMWatch] DIMM: 11	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 11	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 11	read_amplification: 34.444444444	9.777777778	 59.111111111
+[PMWatch] DIMM: 11	write_amplification: 1579.764705882	464.941176471	 2694.588235294
+
+[PAPI] PAPI_event_name: PAPI_TOT_CYC	total_counter: 218862650753	buildpart_counter: 15986924475	probejoin_counter: 202875726278
+[PAPI] PAPI_event_name: PAPI_L1_TCM	total_counter: 844402202	buildpart_counter: 28603773	probejoin_counter: 815798429
+[PAPI] PAPI_event_name: PAPI_L2_TCM	total_counter: 836866092	buildpart_counter: 25136510	probejoin_counter: 811729582
+[PAPI] PAPI_event_name: PAPI_L3_TCM	total_counter: 806702177	buildpart_counter: 24776212	probejoin_counter: 781925965
+[PAPI] PAPI_event_name: perf::DTLB-STORE-MISSES	total_counter: 9766	buildpart_counter: 4514	probejoin_counter: 5252
+[PAPI] PAPI_event_name: perf::DTLB-LOAD-MISSES	total_counter: 10809	buildpart_counter: 1832	probejoin_counter: 8977
+[PAPI] PAPI_event_name: perf::ITLB-LOAD-MISSES	total_counter: 47429	buildpart_counter: 21069	probejoin_counter: 26360
+[0;36mmemory_type: nvm	algo: nphj_sc	workload: uniform_pkfk_A	buildpart_time: 0.585496399	probejoin_time: 3.611511671	total_time: 4.197008070
+[0;35mmatched_cnt: 268435456	check_sum: 4503599895805952
+[PMWatch] DIMM: 0
+[PMWatch] DIMM: 0	total_bytes_read: 24862246400	799612672	24062633728
+[PMWatch] DIMM: 0	total_bytes_written: 904609792	890012672	14597120
+[PMWatch] DIMM: 0	media_read_ops: 97118150	3123487	93994663
+[PMWatch] DIMM: 0	media_write_ops: 3533632	3476612	57020
+[PMWatch] DIMM: 0	read_64B_ops_received: 402607128	26400396	376206732
+[PMWatch] DIMM: 0	write_64B_ops_received: 14134528	13906448	228080
+[PMWatch] DIMM: 0	host_reads: 135287002	4163261	131123741
+[PMWatch] DIMM: 0	host_writes: 3482077	3461546	20531
+[PMWatch] DIMM: 0	read_hit_ratio: 0.266455	0.249750	0.283161
+[PMWatch] DIMM: 0	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 0	read_amplification: 2.934178996	3.001000418	 2.867357575
+[PMWatch] DIMM: 0	write_amplification: 7.563232081	4.017409562	 11.109054600
+
+[PMWatch] DIMM: 1
+[PMWatch] DIMM: 1	total_bytes_read: 24819988480	799836416	24020152064
+[PMWatch] DIMM: 1	total_bytes_written: 903163648	890140672	13022976
+[PMWatch] DIMM: 1	media_read_ops: 96953080	3124361	93828719
+[PMWatch] DIMM: 1	media_write_ops: 3527983	3477112	50871
+[PMWatch] DIMM: 1	read_64B_ops_received: 401924252	26405892	375518360
+[PMWatch] DIMM: 1	write_64B_ops_received: 14111932	13908448	203484
+[PMWatch] DIMM: 1	host_reads: 135047725	4163210	130884515
+[PMWatch] DIMM: 1	host_writes: 3476675	3462060	14615
+[PMWatch] DIMM: 1	read_hit_ratio: 0.266325	0.249531	0.283118
+[PMWatch] DIMM: 1	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 1	read_amplification: 2.934701941	3.001876917	 2.867526965
+[PMWatch] DIMM: 1	write_amplification: 8.970173335	4.017390802	 13.922955867
+
+[PMWatch] DIMM: 2
+[PMWatch] DIMM: 2	total_bytes_read: 24784768256	800430080	23984338176
+[PMWatch] DIMM: 2	total_bytes_written: 902585600	890538496	12047104
+[PMWatch] DIMM: 2	media_read_ops: 96815501	3126680	93688821
+[PMWatch] DIMM: 2	media_write_ops: 3525725	3478666	47059
+[PMWatch] DIMM: 2	read_64B_ops_received: 401364904	26421384	374943520
+[PMWatch] DIMM: 2	write_64B_ops_received: 14102900	13914664	188236
+[PMWatch] DIMM: 2	host_reads: 134845174	4163240	130681934
+[PMWatch] DIMM: 2	host_writes: 3472600	3461571	11029
+[PMWatch] DIMM: 2	read_hit_ratio: 0.266028	0.248979	0.283077
+[PMWatch] DIMM: 2	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 2	read_amplification: 2.935886712	3.004083358	 2.867690066
+[PMWatch] DIMM: 2	write_amplification: 10.543560942	4.019754037	 17.067367848
+
+[PMWatch] DIMM: 3
+[PMWatch] DIMM: 3	total_bytes_read: 24743897088	799284992	23944612096
+[PMWatch] DIMM: 3	total_bytes_written: 901230848	889785600	11445248
+[PMWatch] DIMM: 3	media_read_ops: 96655848	3122207	93533641
+[PMWatch] DIMM: 3	media_write_ops: 3520433	3475725	44708
+[PMWatch] DIMM: 3	read_64B_ops_received: 400705124	26391728	374313396
+[PMWatch] DIMM: 3	write_64B_ops_received: 14081732	13902900	178832
+[PMWatch] DIMM: 3	host_reads: 134629456	4163660	130465796
+[PMWatch] DIMM: 3	host_writes: 3470701	3462310	8391
+[PMWatch] DIMM: 3	read_hit_ratio: 0.266604	0.250129	0.283079
+[PMWatch] DIMM: 3	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 3	read_amplification: 2.933583145	2.999483147	 2.867683144
+[PMWatch] DIMM: 3	write_amplification: 12.663928401	4.015498323	 21.312358479
+
+[PMWatch] DIMM: 4
+[PMWatch] DIMM: 4	total_bytes_read: 24703257344	799860992	23903396352
+[PMWatch] DIMM: 4	total_bytes_written: 901104384	890384896	10719488
+[PMWatch] DIMM: 4	media_read_ops: 96497099	3124457	93372642
+[PMWatch] DIMM: 4	media_write_ops: 3519939	3478066	41873
+[PMWatch] DIMM: 4	read_64B_ops_received: 400068152	26410092	373658060
+[PMWatch] DIMM: 4	write_64B_ops_received: 14079756	13912264	167492
+[PMWatch] DIMM: 4	host_reads: 134412673	4164480	130248193
+[PMWatch] DIMM: 4	host_writes: 3468898	3463121	5777
+[PMWatch] DIMM: 4	read_hit_ratio: 0.266427	0.249737	0.283118
+[PMWatch] DIMM: 4	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 4	read_amplification: 2.934291710	3.001053673	 2.867529748
+[PMWatch] DIMM: 4	write_amplification: 16.505082388	4.017261886	 28.992902891
+
+[PMWatch] DIMM: 5
+[PMWatch] DIMM: 5	total_bytes_read: 24659412224	799581184	23859831040
+[PMWatch] DIMM: 5	total_bytes_written: 901671680	891059456	10612224
+[PMWatch] DIMM: 5	media_read_ops: 96325829	3123364	93202465
+[PMWatch] DIMM: 5	media_write_ops: 3522155	3480701	41454
+[PMWatch] DIMM: 5	read_64B_ops_received: 399391936	26416260	372975676
+[PMWatch] DIMM: 5	write_64B_ops_received: 14088620	13922804	165816
+[PMWatch] DIMM: 5	host_reads: 134179655	4163992	130015663
+[PMWatch] DIMM: 5	host_writes: 3468052	3463544	4508
+[PMWatch] DIMM: 5	read_hit_ratio: 0.266528	0.249911	0.283144
+[PMWatch] DIMM: 5	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 5	read_amplification: 2.933889051	3.000355428	 2.867422674
+[PMWatch] DIMM: 5	write_amplification: 20.401211541	4.019814387	 36.782608696
+
+[PMWatch] DIMM: 6
+[PMWatch] DIMM: 6	total_bytes_read: 252160	37888	214272
+[PMWatch] DIMM: 6	total_bytes_written: 3461632	512000	2949632
+[PMWatch] DIMM: 6	media_read_ops: 985	148	837
+[PMWatch] DIMM: 6	media_write_ops: 13522	2000	11522
+[PMWatch] DIMM: 6	read_64B_ops_received: 58028	8592	49436
+[PMWatch] DIMM: 6	write_64B_ops_received: 54088	8000	46088
+[PMWatch] DIMM: 6	host_reads: 108	54	54
+[PMWatch] DIMM: 6	host_writes: 34	17	17
+[PMWatch] DIMM: 6	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 6	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 6	read_amplification: 36.481481481	10.962962963	 62.000000000
+[PMWatch] DIMM: 6	write_amplification: 1590.823529412	470.588235294	 2711.058823529
+
+[PMWatch] DIMM: 7
+[PMWatch] DIMM: 7	total_bytes_read: 232448	33280	199168
+[PMWatch] DIMM: 7	total_bytes_written: 3441920	508160	2933760
+[PMWatch] DIMM: 7	media_read_ops: 908	130	778
+[PMWatch] DIMM: 7	media_write_ops: 13445	1985	11460
+[PMWatch] DIMM: 7	read_64B_ops_received: 57412	8460	48952
+[PMWatch] DIMM: 7	write_64B_ops_received: 53780	7940	45840
+[PMWatch] DIMM: 7	host_reads: 108	54	54
+[PMWatch] DIMM: 7	host_writes: 34	17	17
+[PMWatch] DIMM: 7	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 7	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 7	read_amplification: 33.629629630	9.629629630	 57.629629630
+[PMWatch] DIMM: 7	write_amplification: 1581.764705882	467.058823529	 2696.470588235
+
+[PMWatch] DIMM: 8
+[PMWatch] DIMM: 8	total_bytes_read: 246016	34560	211456
+[PMWatch] DIMM: 8	total_bytes_written: 3453184	509440	2943744
+[PMWatch] DIMM: 8	media_read_ops: 961	135	826
+[PMWatch] DIMM: 8	media_write_ops: 13489	1990	11499
+[PMWatch] DIMM: 8	read_64B_ops_received: 57800	8500	49300
+[PMWatch] DIMM: 8	write_64B_ops_received: 53956	7960	45996
+[PMWatch] DIMM: 8	host_reads: 108	54	54
+[PMWatch] DIMM: 8	host_writes: 34	17	17
+[PMWatch] DIMM: 8	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 8	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 8	read_amplification: 35.592592593	10.000000000	 61.185185185
+[PMWatch] DIMM: 8	write_amplification: 1586.941176471	468.235294118	 2705.647058824
+
+[PMWatch] DIMM: 9
+[PMWatch] DIMM: 9	total_bytes_read: 239104	33536	205568
+[PMWatch] DIMM: 9	total_bytes_written: 3443456	508160	2935296
+[PMWatch] DIMM: 9	media_read_ops: 934	131	803
+[PMWatch] DIMM: 9	media_write_ops: 13451	1985	11466
+[PMWatch] DIMM: 9	read_64B_ops_received: 57540	8464	49076
+[PMWatch] DIMM: 9	write_64B_ops_received: 53804	7940	45864
+[PMWatch] DIMM: 9	host_reads: 108	54	54
+[PMWatch] DIMM: 9	host_writes: 34	17	17
+[PMWatch] DIMM: 9	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 9	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 9	read_amplification: 34.592592593	9.703703704	 59.481481481
+[PMWatch] DIMM: 9	write_amplification: 1582.470588235	467.058823529	 2697.882352941
+
+[PMWatch] DIMM: 10
+[PMWatch] DIMM: 10	total_bytes_read: 227328	33024	194304
+[PMWatch] DIMM: 10	total_bytes_written: 3430144	507136	2923008
+[PMWatch] DIMM: 10	media_read_ops: 888	129	759
+[PMWatch] DIMM: 10	media_write_ops: 13399	1981	11418
+[PMWatch] DIMM: 10	read_64B_ops_received: 57148	8440	48708
+[PMWatch] DIMM: 10	write_64B_ops_received: 53596	7924	45672
+[PMWatch] DIMM: 10	host_reads: 108	54	54
+[PMWatch] DIMM: 10	host_writes: 34	17	17
+[PMWatch] DIMM: 10	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 10	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 10	read_amplification: 32.888888889	9.555555556	 56.222222222
+[PMWatch] DIMM: 10	write_amplification: 1576.352941176	466.117647059	 2686.588235294
+
+[PMWatch] DIMM: 11
+[PMWatch] DIMM: 11	total_bytes_read: 247808	39936	207872
+[PMWatch] DIMM: 11	total_bytes_written: 3444224	512256	2931968
+[PMWatch] DIMM: 11	media_read_ops: 968	156	812
+[PMWatch] DIMM: 11	media_write_ops: 13454	2001	11453
+[PMWatch] DIMM: 11	read_64B_ops_received: 57688	8628	49060
+[PMWatch] DIMM: 11	write_64B_ops_received: 53816	8004	45812
+[PMWatch] DIMM: 11	host_reads: 108	54	54
+[PMWatch] DIMM: 11	host_writes: 34	17	17
+[PMWatch] DIMM: 11	read_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 11	write_hit_ratio: 0.000000	0.000000	0.000000
+[PMWatch] DIMM: 11	read_amplification: 35.851851852	11.555555556	 60.148148148
+[PMWatch] DIMM: 11	write_amplification: 1582.823529412	470.823529412	 2694.823529412
+
+[PAPI] PAPI_event_name: PAPI_TOT_CYC	total_counter: 218778174951	buildpart_counter: 16015297005	probejoin_counter: 202762877946
+[PAPI] PAPI_event_name: PAPI_L1_TCM	total_counter: 849456619	buildpart_counter: 28534886	probejoin_counter: 820921733
+[PAPI] PAPI_event_name: PAPI_L2_TCM	total_counter: 841578075	buildpart_counter: 25172244	probejoin_counter: 816405831
+[PAPI] PAPI_event_name: PAPI_L3_TCM	total_counter: 810780323	buildpart_counter: 24780593	probejoin_counter: 785999730
+[PAPI] PAPI_event_name: perf::DTLB-STORE-MISSES	total_counter: 8914	buildpart_counter: 5070	probejoin_counter: 3844
+[PAPI] PAPI_event_name: perf::DTLB-LOAD-MISSES	total_counter: 9961	buildpart_counter: 1910	probejoin_counter: 8051
+[PAPI] PAPI_event_name: perf::ITLB-LOAD-MISSES	total_counter: 47272	buildpart_counter: 20538	probejoin_counter: 26734
+[0;36mmemory_type: nvm	algo: nphj_sc	workload: uniform_pkfk_A	buildpart_time: 0.588147795	probejoin_time: 3.611619108	total_time: 4.199766903
+[0;32m
+num_trials: 5	memory_type: nvm	algo: nphj_sc	workload: uniform_pkfk_A	buildpart_time: 0.585726417	probejoin_time: 3.612310633	total_time: 4.198037050
+
+[agg_PAPI] PAPI_event_name: PAPI_TOT_CYC	total_counter: 218863282485	buildpart_counter: 15988772122	probejoin_counter: 202874510362
+[agg_PAPI] PAPI_event_name: PAPI_L1_TCM	total_counter: 847539120	buildpart_counter: 28539190	probejoin_counter: 818999930
+[agg_PAPI] PAPI_event_name: PAPI_L2_TCM	total_counter: 839853408	buildpart_counter: 25200245	probejoin_counter: 814653163
+[agg_PAPI] PAPI_event_name: PAPI_L3_TCM	total_counter: 809166954	buildpart_counter: 24828383	probejoin_counter: 784338570
+[agg_PAPI] PAPI_event_name: perf::DTLB-STORE-MISSES	total_counter: 10262	buildpart_counter: 4895	probejoin_counter: 5367
+[agg_PAPI] PAPI_event_name: perf::DTLB-LOAD-MISSES	total_counter: 10384	buildpart_counter: 1893	probejoin_counter: 8491
+[agg_PAPI] PAPI_event_name: perf::ITLB-LOAD-MISSES	total_counter: 48302	buildpart_counter: 21721	probejoin_counter: 26580
+
+[agg_PMWatch] DIMM: 0
+[agg_PMWatch] DIMM: 0	total_bytes_read: 24866215372	799098572	24067116800
+[agg_PMWatch] DIMM: 0	total_bytes_written: 904664883	889704601	14960281
+[agg_PMWatch] DIMM: 0	media_read_ops: 97133653	3121478	94012175
+[agg_PMWatch] DIMM: 0	media_write_ops: 3533847	3475408	58438
+[agg_PMWatch] DIMM: 0	read_64B_ops_received: 402670004	26387549	376282454
+[agg_PMWatch] DIMM: 0	write_64B_ops_received: 14135388	13901634	233754
+[agg_PMWatch] DIMM: 0	host_reads: 135045684	4163537	130882147
+[agg_PMWatch] DIMM: 0	host_writes: 3483865	3461907	21958
+[agg_PMWatch] DIMM: 0	read_hit_ratio: 0.265990	0.250282	0.281698
+[agg_PMWatch] DIMM: 0	write_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 0	read_amplification: 2.936040791	2.998872374	2.873209208
+[agg_PMWatch] DIMM: 0	write_amplification: 7.340799273	4.015600846	10.665997700
+
+[agg_PMWatch] DIMM: 1
+[agg_PMWatch] DIMM: 1	total_bytes_read: 24828132147	799401216	24028730931
+[agg_PMWatch] DIMM: 1	total_bytes_written: 903038003	889732147	13305856
+[agg_PMWatch] DIMM: 1	media_read_ops: 96984891	3122661	93862230
+[agg_PMWatch] DIMM: 1	media_write_ops: 3527492	3475516	51976
+[agg_PMWatch] DIMM: 1	read_64B_ops_received: 402049533	26392708	375656824
+[agg_PMWatch] DIMM: 1	write_64B_ops_received: 14109968	13902064	207904
+[agg_PMWatch] DIMM: 1	host_reads: 134832010	4163338	130668672
+[agg_PMWatch] DIMM: 1	host_writes: 3477273	3461648	15624
+[agg_PMWatch] DIMM: 1	read_hit_ratio: 0.265817	0.249962	0.281672
+[agg_PMWatch] DIMM: 1	write_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 1	read_amplification: 2.936732242	3.000151551	2.873312933
+[agg_PMWatch] DIMM: 1	write_amplification: 8.672410899	4.016025452	13.328796346
+
+[agg_PMWatch] DIMM: 2
+[agg_PMWatch] DIMM: 2	total_bytes_read: 24790290227	799455078	23990835148
+[agg_PMWatch] DIMM: 2	total_bytes_written: 902221568	889941913	12279654
+[agg_PMWatch] DIMM: 2	media_read_ops: 96837071	3122871	93714199
+[agg_PMWatch] DIMM: 2	media_write_ops: 3524303	3476335	47967
+[agg_PMWatch] DIMM: 2	read_64B_ops_received: 401445496	26396828	375048668
+[agg_PMWatch] DIMM: 2	write_64B_ops_received: 14097212	13905342	191869
+[agg_PMWatch] DIMM: 2	host_reads: 134617326	4163488	130453838
+[agg_PMWatch] DIMM: 2	host_writes: 3473857	3462025	11832
+[agg_PMWatch] DIMM: 2	read_hit_ratio: 0.265781	0.249939	0.281624
+[agg_PMWatch] DIMM: 2	write_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 2	read_amplification: 2.936875454	3.000245575	2.873505332
+[agg_PMWatch] DIMM: 2	write_amplification: 10.131750681	4.016535558	16.246965803
+
+[agg_PMWatch] DIMM: 3
+[agg_PMWatch] DIMM: 3	total_bytes_read: 24750935244	799325235	23951610009
+[agg_PMWatch] DIMM: 3	total_bytes_written: 901456640	889907968	11548672
+[agg_PMWatch] DIMM: 3	media_read_ops: 96683340	3122364	93560976
+[agg_PMWatch] DIMM: 3	media_write_ops: 3521315	3476203	45112
+[agg_PMWatch] DIMM: 3	read_64B_ops_received: 400818623	26394268	374424354
+[agg_PMWatch] DIMM: 3	write_64B_ops_received: 14085260	13904812	180448
+[agg_PMWatch] DIMM: 3	host_reads: 134402628	4164061	130238567
+[agg_PMWatch] DIMM: 3	host_writes: 3471996	3463076	8920
+[agg_PMWatch] DIMM: 3	read_hit_ratio: 0.265888	0.250164	0.281613
+[agg_PMWatch] DIMM: 3	write_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 3	read_amplification: 2.936447455	2.999345498	2.873549412
+[agg_PMWatch] DIMM: 3	write_amplification: 12.137042808	4.015163770	20.258921845
+
+[agg_PMWatch] DIMM: 4
+[agg_PMWatch] DIMM: 4	total_bytes_read: 24710250086	799474227	23910775859
+[agg_PMWatch] DIMM: 4	total_bytes_written: 901176371	890262476	10913894
+[agg_PMWatch] DIMM: 4	media_read_ops: 96524414	3122946	93401468
+[agg_PMWatch] DIMM: 4	media_write_ops: 3520220	3477587	42632
+[agg_PMWatch] DIMM: 4	read_64B_ops_received: 400178538	26402136	373776402
+[agg_PMWatch] DIMM: 4	write_64B_ops_received: 14080880	13910351	170529
+[agg_PMWatch] DIMM: 4	host_reads: 134181625	4164119	130017506
+[agg_PMWatch] DIMM: 4	host_writes: 3469494	3463090	6404
+[agg_PMWatch] DIMM: 4	read_hit_ratio: 0.265826	0.250034	0.281618
+[agg_PMWatch] DIMM: 4	write_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 4	read_amplification: 2.936695241	2.999862723	2.873527759
+[agg_PMWatch] DIMM: 4	write_amplification: 15.370916292	4.016745616	26.725086969
+
+[agg_PMWatch] DIMM: 5
+[agg_PMWatch] DIMM: 5	total_bytes_read: 24667153305	799066112	23868087193
+[agg_PMWatch] DIMM: 5	total_bytes_written: 901070694	890431232	10639462
+[agg_PMWatch] DIMM: 5	media_read_ops: 96356067	3121352	93234715
+[agg_PMWatch] DIMM: 5	media_write_ops: 3519807	3478247	41560
+[agg_PMWatch] DIMM: 5	read_64B_ops_received: 399503500	26398396	373105104
+[agg_PMWatch] DIMM: 5	write_64B_ops_received: 14079229	13912988	166241
+[agg_PMWatch] DIMM: 5	host_reads: 133954084	4164040	129790044
+[agg_PMWatch] DIMM: 5	host_writes: 3468018	3463052	4966
+[agg_PMWatch] DIMM: 5	read_hit_ratio: 0.266023	0.250403	0.281644
+[agg_PMWatch] DIMM: 5	write_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 5	read_amplification: 2.935906667	2.998388227	2.873425107
+[agg_PMWatch] DIMM: 5	write_amplification: 18.804822944	4.017552822	33.592093066
+
+[agg_PMWatch] DIMM: 6
+[agg_PMWatch] DIMM: 6	total_bytes_read: 242380	35276	207104
+[agg_PMWatch] DIMM: 6	total_bytes_written: 3451596	507801	2943795
+[agg_PMWatch] DIMM: 6	media_read_ops: 946	137	809
+[agg_PMWatch] DIMM: 6	media_write_ops: 13482	1983	11499
+[agg_PMWatch] DIMM: 6	read_64B_ops_received: 57718	8485	49232
+[agg_PMWatch] DIMM: 6	write_64B_ops_received: 53931	7934	45996
+[agg_PMWatch] DIMM: 6	host_reads: 108	54	54
+[agg_PMWatch] DIMM: 6	host_writes: 34	17	17
+[agg_PMWatch] DIMM: 6	read_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 6	write_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 6	read_amplification: 35.066666667	10.207407407	59.925925926
+[agg_PMWatch] DIMM: 6	write_amplification: 1586.211764706	466.729411765	2705.694117647
+
+[agg_PMWatch] DIMM: 7
+[agg_PMWatch] DIMM: 7	total_bytes_read: 238950	35891	203059
+[agg_PMWatch] DIMM: 7	total_bytes_written: 3446732	508211	2938521
+[agg_PMWatch] DIMM: 7	media_read_ops: 933	140	793
+[agg_PMWatch] DIMM: 7	media_write_ops: 13463	1985	11478
+[agg_PMWatch] DIMM: 7	read_64B_ops_received: 57588	8501	49087
+[agg_PMWatch] DIMM: 7	write_64B_ops_received: 53855	7940	45914
+[agg_PMWatch] DIMM: 7	host_reads: 108	54	54
+[agg_PMWatch] DIMM: 7	host_writes: 34	17	17
+[agg_PMWatch] DIMM: 7	read_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 7	write_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 7	read_amplification: 34.570370370	10.385185185	58.755555556
+[agg_PMWatch] DIMM: 7	write_amplification: 1583.976470588	467.105882353	2700.847058824
+
+[agg_PMWatch] DIMM: 8
+[agg_PMWatch] DIMM: 8	total_bytes_read: 245862	35635	210227
+[agg_PMWatch] DIMM: 8	total_bytes_written: 3452672	508211	2944460
+[agg_PMWatch] DIMM: 8	media_read_ops: 960	139	821
+[agg_PMWatch] DIMM: 8	media_write_ops: 13487	1985	11501
+[agg_PMWatch] DIMM: 8	read_64B_ops_received: 57789	8497	49292
+[agg_PMWatch] DIMM: 8	write_64B_ops_received: 53948	7940	46007
+[agg_PMWatch] DIMM: 8	host_reads: 108	54	54
+[agg_PMWatch] DIMM: 8	host_writes: 34	17	17
+[agg_PMWatch] DIMM: 8	read_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 8	write_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 8	read_amplification: 35.570370370	10.311111111	60.829629630
+[agg_PMWatch] DIMM: 8	write_amplification: 1586.705882353	467.105882353	2706.305882353
+
+[agg_PMWatch] DIMM: 9
+[agg_PMWatch] DIMM: 9	total_bytes_read: 241868	35584	206284
+[agg_PMWatch] DIMM: 9	total_bytes_written: 3444684	507750	2936934
+[agg_PMWatch] DIMM: 9	media_read_ops: 944	139	805
+[agg_PMWatch] DIMM: 9	media_write_ops: 13455	1983	11472
+[agg_PMWatch] DIMM: 9	read_64B_ops_received: 57602	8489	49112
+[agg_PMWatch] DIMM: 9	write_64B_ops_received: 53823	7933	45889
+[agg_PMWatch] DIMM: 9	host_reads: 108	54	54
+[agg_PMWatch] DIMM: 9	host_writes: 34	17	17
+[agg_PMWatch] DIMM: 9	read_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 9	write_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 9	read_amplification: 34.992592593	10.296296296	59.688888889
+[agg_PMWatch] DIMM: 9	write_amplification: 1583.035294118	466.682352941	2699.388235294
+
+[agg_PMWatch] DIMM: 10
+[agg_PMWatch] DIMM: 10	total_bytes_read: 226355	32972	193382
+[agg_PMWatch] DIMM: 10	total_bytes_written: 3428608	505446	2923161
+[agg_PMWatch] DIMM: 10	media_read_ops: 884	128	755
+[agg_PMWatch] DIMM: 10	media_write_ops: 13393	1974	11418
+[agg_PMWatch] DIMM: 10	read_64B_ops_received: 57108	8412	48696
+[agg_PMWatch] DIMM: 10	write_64B_ops_received: 53572	7897	45674
+[agg_PMWatch] DIMM: 10	host_reads: 108	54	54
+[agg_PMWatch] DIMM: 10	host_writes: 34	17	17
+[agg_PMWatch] DIMM: 10	read_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 10	write_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 10	read_amplification: 32.748148148	9.540740741	55.955555556
+[agg_PMWatch] DIMM: 10	write_amplification: 1575.647058824	464.564705882	2686.729411765
+
+[agg_PMWatch] DIMM: 11
+[agg_PMWatch] DIMM: 11	total_bytes_read: 243046	36454	206592
+[agg_PMWatch] DIMM: 11	total_bytes_written: 3441510	508211	2933299
+[agg_PMWatch] DIMM: 11	media_read_ops: 949	142	807
+[agg_PMWatch] DIMM: 11	media_write_ops: 13443	1985	11458
+[agg_PMWatch] DIMM: 11	read_64B_ops_received: 57571	8510	49060
+[agg_PMWatch] DIMM: 11	write_64B_ops_received: 53773	7940	45832
+[agg_PMWatch] DIMM: 11	host_reads: 108	54	54
+[agg_PMWatch] DIMM: 11	host_writes: 34	17	17
+[agg_PMWatch] DIMM: 11	read_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 11	write_hit_ratio: 0.000000	0.000000	0.000000
+[agg_PMWatch] DIMM: 11	read_amplification: 35.162962963	10.548148148	59.777777778
+[agg_PMWatch] DIMM: 11	write_amplification: 1581.576470588	467.105882353	2696.047058824
+
+[0m
+
+
+

@@ -1,0 +1,20 @@
+CONFIGURATION:	WARMUP	USE_HYPERTHREADING	TUPLE_T_SIZE: 16	THREAD_NUM: 20	BUILDPART_THREAD_NUM: 20	BUILDPART_WRITE_THREAD_NUM: 11	INTERMEDIATEMEMSET_THREAD_NUM: 7	PROBEJOIN_THREAD_NUM: 20	RETRIEVE_THREAD_NUM: 19	XSOCKET_THREAD_NUM_DEFAULT: 4	RUN_FNDLY	NONTEMP_STORE_MATER	PREFETCH_DISTANCE: 32	BUCKET_CAPACITY: 2	OVERFLOW_BUF_SIZE: 1024	BW_REG	NUM_RADIX_BITS: 14	NUM_RADIX_BITS_PASS1: 13	NUM_PASSES: 2	SWWCB_SIZE: 256	USE_SWWCB_OPTIMIZED_PART	USE_SWWCB_OPTIMIZED_RADIX_CLUSTER	INTERMEDIATE_SCALING_FACTOR: 2	PHJ_SC_BUCKET_CAPACITY: 2	PART_BUFFER_T_CAPACITY: 128
+[0;35mmatched_cnt: 4294967296	check_sum: 2305843013508661248
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_T	buildpart_time: 14.429160859	probejoin_time: 6.968572940	total_time: 21.397733799
+[0;35mmatched_cnt: 4294967296	check_sum: 2305843013508661248
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_T	buildpart_time: 14.374178751	probejoin_time: 7.047846016	total_time: 21.422024767
+[0;35mmatched_cnt: 4294967296	check_sum: 2305843013508661248
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_T	buildpart_time: 14.438346113	probejoin_time: 6.979167655	total_time: 21.417513768
+[0;35mmatched_cnt: 4294967296	check_sum: 2305843013508661248
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_T	buildpart_time: 14.380272217	probejoin_time: 6.971517950	total_time: 21.351790167
+[0;35mmatched_cnt: 4294967296	check_sum: 2305843013508661248
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_T	buildpart_time: 14.406315760	probejoin_time: 7.030515732	total_time: 21.436831492
+[0;35mmatched_cnt: 4294967296	check_sum: 2305843013508661248
+[0;36mmemory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_T	buildpart_time: 14.441980240	probejoin_time: 7.043220597	total_time: 21.485200837
+[0;32m
+num_trials: 5	memory_type: nvm	algo: phj_asymm_radix_bc	workload: uniform_pkfk_T	buildpart_time: 14.408218616	probejoin_time: 7.014453590	total_time: 21.422672206
+
+[0m
+
+
+

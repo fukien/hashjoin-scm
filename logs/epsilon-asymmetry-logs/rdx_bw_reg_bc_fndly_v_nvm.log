@@ -1,0 +1,20 @@
+CONFIGURATION:	WARMUP	USE_HYPERTHREADING	TUPLE_T_SIZE: 16	THREAD_NUM: 20	BUILDPART_THREAD_NUM: 20	BUILDPART_WRITE_THREAD_NUM: 11	INTERMEDIATEMEMSET_THREAD_NUM: 7	PROBEJOIN_THREAD_NUM: 20	RETRIEVE_THREAD_NUM: 19	XSOCKET_THREAD_NUM_DEFAULT: 4	RUN_FNDLY	NONTEMP_STORE_MATER	PREFETCH_DISTANCE: 32	BUCKET_CAPACITY: 2	OVERFLOW_BUF_SIZE: 1024	BW_REG	NUM_RADIX_BITS: 18	NUM_RADIX_BITS_PASS1: 12	NUM_PASSES: 2	SWWCB_SIZE: 256	USE_SWWCB_OPTIMIZED_PART	USE_SWWCB_OPTIMIZED_RADIX_CLUSTER	INTERMEDIATE_SCALING_FACTOR: 2	PHJ_SC_BUCKET_CAPACITY: 2	PART_BUFFER_T_CAPACITY: 128
+[0;35mmatched_cnt: 1073741824	check_sum: 144115189149597696
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_V	buildpart_time: 5.681374098	probejoin_time: 0.983789113	total_time: 6.665163211
+[0;35mmatched_cnt: 1073741824	check_sum: 144115189149597696
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_V	buildpart_time: 5.583763614	probejoin_time: 0.983834892	total_time: 6.567598506
+[0;35mmatched_cnt: 1073741824	check_sum: 144115189149597696
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_V	buildpart_time: 5.577868636	probejoin_time: 0.985313684	total_time: 6.563182320
+[0;35mmatched_cnt: 1073741824	check_sum: 144115189149597696
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_V	buildpart_time: 5.666611727	probejoin_time: 0.984177721	total_time: 6.650789448
+[0;35mmatched_cnt: 1073741824	check_sum: 144115189149597696
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_V	buildpart_time: 5.658242254	probejoin_time: 0.985032798	total_time: 6.643275052
+[0;35mmatched_cnt: 1073741824	check_sum: 144115189149597696
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_V	buildpart_time: 5.686942844	probejoin_time: 0.982357086	total_time: 6.669299930
+[0;32m
+num_trials: 5	memory_type: nvm	algo: phj_radix_bw_reg_bc	workload: uniform_pkfk_V	buildpart_time: 5.634685815	probejoin_time: 0.984143236	total_time: 6.618829051
+
+[0m
+
+
+

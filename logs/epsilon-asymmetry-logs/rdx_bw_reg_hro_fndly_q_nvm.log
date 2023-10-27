@@ -1,0 +1,20 @@
+CONFIGURATION:	WARMUP	USE_HYPERTHREADING	TUPLE_T_SIZE: 16	THREAD_NUM: 20	BUILDPART_THREAD_NUM: 20	BUILDPART_WRITE_THREAD_NUM: 11	INTERMEDIATEMEMSET_THREAD_NUM: 7	PROBEJOIN_THREAD_NUM: 20	RETRIEVE_THREAD_NUM: 19	XSOCKET_THREAD_NUM_DEFAULT: 4	RUN_FNDLY	NONTEMP_STORE_MATER	PREFETCH_DISTANCE: 32	BUCKET_CAPACITY: 2	OVERFLOW_BUF_SIZE: 1024	BW_REG	NUM_RADIX_BITS: 18	NUM_RADIX_BITS_PASS1: 12	NUM_PASSES: 2	SWWCB_SIZE: 256	USE_SWWCB_OPTIMIZED_PART	USE_SWWCB_OPTIMIZED_RADIX_CLUSTER	INTERMEDIATE_SCALING_FACTOR: 2	PHJ_SC_BUCKET_CAPACITY: 2	PART_BUFFER_T_CAPACITY: 128
+[0;35mmatched_cnt: 1073741824	check_sum: 288230377225453568
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_Q	buildpart_time: 6.216326921	probejoin_time: 2.256262498	total_time: 8.472589419
+[0;35mmatched_cnt: 1073741824	check_sum: 288230377225453568
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_Q	buildpart_time: 6.240404226	probejoin_time: 2.265679405	total_time: 8.506083631
+[0;35mmatched_cnt: 1073741824	check_sum: 288230377225453568
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_Q	buildpart_time: 6.240363827	probejoin_time: 2.268726814	total_time: 8.509090641
+[0;35mmatched_cnt: 1073741824	check_sum: 288230377225453568
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_Q	buildpart_time: 6.172760846	probejoin_time: 2.245535719	total_time: 8.418296565
+[0;35mmatched_cnt: 1073741824	check_sum: 288230377225453568
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_Q	buildpart_time: 6.183868225	probejoin_time: 2.272402016	total_time: 8.456270241
+[0;35mmatched_cnt: 1073741824	check_sum: 288230377225453568
+[0;36mmemory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_Q	buildpart_time: 6.296309401	probejoin_time: 2.289826240	total_time: 8.586135641
+[0;32m
+num_trials: 5	memory_type: nvm	algo: phj_radix_bw_reg_hro	workload: uniform_pkfk_Q	buildpart_time: 6.226741305	probejoin_time: 2.268434039	total_time: 8.495175344
+
+[0m
+
+
+
