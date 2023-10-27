@@ -1,75 +1,76 @@
-date
+# Record the start time for plotting
 start_time=$(date +%s)
 
-
-# plot Figure 1
+# Plot Figure 1
 cd fig1-scripts
 python plot_fig1.py
 cd ..
 
-# plot Figure 3
+# Plot Figure 3
 cd fig3-scripts
 python plot_fig3.py
 cd ..
 
-# plot Figure 4a
+# Plot Figure 4a
 cd fig4a-scripts
 python plot_fig4a.py
 cd ..
 
-# # plot Figure 4b
+# Plot Figure 4b
 # cd fig4b-scripts
 # python plot_fig4b.py
 # cd ..
 
-# plot Figure 5
+# Plot Figure 5
 cd fig5-scripts
 python plot_fig5.py
 cd ..
 
-# plot Figure 6
+# Plot Figure 6
 cd fig6-scripts
-plot plot_fig6.py
+python plot_fig6.py
 cd ..
 
-# plot Figure 7
+# Plot Figure 7
 cd fig7-scripts
-plot plot_fig7.py
+python plot_fig7.py
 cd ..
 
-# plot Figure 8(a)
+# Plot Figure 8(a)
 cd fig8a-scripts
-plot plot_fig8a.py
+python plot_fig8a.py
 cd ..
 
-# plot Figure 8(b)
+# Plot Figure 8(b)
 cd fig8b-scripts
-plot plot_fig8b.py
+python plot_fig8b.py
 cd ..
 
-# plot Figure 8(c)
+# Plot Figure 8(c)
 cd fig8c-scripts
-plot plot_fig8c.py
+python plot_fig8c.py
 cd ..
 
-# plot Figure 8(d)
+# Plot Figure 8(d)
 cd fig8d-scripts
-plot plot_fig8d.py
+python plot_fig8d.py
 cd ..
 
-# plot Figure 9
+# Plot Figure 9
 cd fig9-scripts
-plot plot_fig9.py
+python plot_fig9.py
 cd ..
 
-# plot Figure 10
+# Plot Figure 10
 cd fig10-scripts
-plot plot_fig10a.py
-plot plot_fig10b.py
+python plot_fig10a.py
+python plot_fig10b.py
 cd ..
 
-
+# Record the end time for plotting
 end_time=$(date +%s)
 duration=$((end_time - start_time))
 echo "Duration: $duration seconds"
+
+# Display the current date and time
 date

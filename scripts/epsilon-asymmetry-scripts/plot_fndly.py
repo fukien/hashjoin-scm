@@ -275,7 +275,7 @@ def plot_workload_group(workload_list):
 if __name__ == "__main__":
 	if not os.path.exists(FIG_PATH):
 		os.makedirs(FIG_PATH)
-	plot_workload_group(workload_group_5_list)
+	# plot_workload_group(workload_group_5_list)
 	plot_workload_group(workload_group_7_list)
 
 

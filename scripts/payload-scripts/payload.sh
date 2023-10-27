@@ -82,7 +82,7 @@ numactl --membind=0 ../../bin/main --algo=phj_radix_bc --workload=payload --subt
 # numactl --membind=0 ../../bin/main --algo=phj_radix_hr --workload=payload --subtype=32 --param=pkfk >> $RDX_HR_PAYLOAD_NVM_LOG
 # # numactl --membind=0 ../../bin/main --algo=phj_radix_hro --workload=payload --subtype=32 --param=pkfk >> $RDX_HRO_PAYLOAD_NVM_LOG
 # numactl --membind=0 ../../bin/main --algo=phj_radix_lp --workload=payload --subtype=32 --param=pkfk >> $RDX_LP_PAYLOAD_NVM_LOG
-cd ../../
+# cd ../../
 # ./clean.sh
 # mkdir build
 # cd build

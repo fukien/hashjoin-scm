@@ -9,7 +9,7 @@ import sys
 from utils import *
 
 LOG_PATH = "../../logs/phj-part-thread-scalability-logs/"
-FIG_PATH = "../../figs/phj-part-thread-scalability-figs/thread_scalability"
+FIG_PATH = "../../figs/phj-part-thread-scalability-figs/"
 
 x_axis = np.arange(2, 41, 2)
 x_axis_label_list = [str(i) for i in x_axis]

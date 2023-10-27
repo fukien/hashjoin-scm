@@ -46,6 +46,10 @@ $ sudo apt info ipmctl
 Install [ipmctl](https://github.com/intel/ipmctl)
 
 
+### Install PAPI
+Install [PAPI](https://icl.utk.edu/papi/)
+
+
 ### Install Intel-PMWatch
 ```
 $ sudo apt update -y

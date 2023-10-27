@@ -61,7 +61,7 @@ def plot_time(mem_type):
 	# plt.ylim(top=10)
 	# plt.gca().yaxis.set_major_formatter(mticker.FormatStrFormatter("%.2fs"))
 	# plt.show()
-	plt.savefig(os.path.join(FIG_PATH, mem_type, "nphj_prefetching_runtime_{}.png".format(mem_type)), bbox_inches="tight", format="png")
+	plt.savefig(os.path.join(FIG_PATH, "nphj_prefetching_runtime_{}.png".format(mem_type)), bbox_inches="tight", format="png")
 	# plt.title("", fontsize=20)
 	# plt.savefig(os.path.join(FIG_PATH, mem_type, "nphj_prefetching_runtime_{}.pdf".format(mem_type)), bbox_inches="tight", format="pdf")
 	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
@@ -107,6 +107,7 @@ def plot_counter(mem_type, event, flag):
 		plt.bar(x_axis+x_starting_idx_list[idx], counter_list[2], width=bar_width, edgecolor=color_list[idx%(len(color_list))],
 			color="none", hatch=hatch_list[idx], label=legend_list[idx])
 
+
 	plt.legend(loc=0, ncol=2, fontsize=14, columnspacing=1)
 	plt.ylabel("Media Reads (MOps)", fontsize=14)
 	plt.xlabel("Prefetching Distance", fontsize=14)
@@ -115,7 +116,7 @@ def plot_counter(mem_type, event, flag):
 	# plt.ylim(top=10)
 	# plt.gca().yaxis.set_major_formatter(mticker.FormatStrFormatter("%.2fs"))
 	# plt.show()
-	plt.savefig(os.path.join(FIG_PATH, mem_type, "nphj_prefetching_{}_{}.png".format(event, mem_type)), bbox_inches="tight", format="png")
+	plt.savefig(os.path.join(FIG_PATH, "nphj_prefetching_{}_{}.png".format(event, mem_type)), bbox_inches="tight", format="png")
 	# plt.title("", fontsize=20)
 	# plt.savefig(os.path.join(FIG_PATH, mem_type, "nphj_prefetching_{}_{}.pdf".format(event, mem_type)), bbox_inches="tight", format="pdf")
 	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
@@ -185,7 +186,7 @@ def share_x_axis_plot(mem_type, event, general_time_list, general_counter_list):
 	ax2.set_xlabel("Prefetching Distance", fontsize=14)
 
 	# plt.show()
-	plt.savefig(os.path.join(FIG_PATH, mem_type, "nphj_prefetching_runtime_{}_{}_bar_chart_column.png".format(event, mem_type)), bbox_inches="tight", format="png")
+	plt.savefig(os.path.join(FIG_PATH, "nphj_prefetching_runtime_{}_{}_bar_chart_column.png".format(event, mem_type)), bbox_inches="tight", format="png")
 	# plt.title("", fontsize=20)
 	# plt.savefig(os.path.join(FIG_PATH, mem_type, "nphj_prefetching_runtime_{}_{}_bar_chart_column.pdf".format(event, mem_type)), bbox_inches="tight", format="pdf")
 	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
@@ -201,8 +202,8 @@ def share_x_axis_plot(mem_type, event, general_time_list, general_counter_list):
 
 
 if __name__ == "__main__":
-	if not os.path.exists(os.path.join(FIG_PATH, "nvm")):
-		os.makedirs(os.path.join(FIG_PATH, "nvm"))
+	if not os.path.exists(FIG_PATH):
+		os.makedirs(FIG_PATH)
 
 	general_time_list = plot_time("nvm")
 	general_counter_list = plot_counter("nvm", "media_read_ops", "pmwatch")

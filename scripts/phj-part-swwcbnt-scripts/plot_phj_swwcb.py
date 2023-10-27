@@ -77,13 +77,13 @@ def plot_swwcb(mem_type, im_mem_type):
 	# plt.gca().yaxis.set_major_formatter(mticker.FormatStrFormatter("%.2fs"))
 	# plt.show()
 	plt.savefig(os.path.join(FIG_PATH, "phj_part_swwcb_runtime_{}_im_{}.png".format(mem_type, im_mem_type)), bbox_inches="tight", format="png")
-	plt.title("", fontsize=20)
-	plt.savefig(os.path.join(FIG_PATH, "phj_part_swwcb_runtime_{}_im_{}.pdf".format(mem_type, im_mem_type)), bbox_inches="tight", format="pdf")
-	os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
-			os.path.join(FIG_PATH, "phj_part_swwcb_runtime_{}_im_{}.pdf".format(mem_type, im_mem_type)),
-			os.path.join(FIG_PATH, "phj_part_swwcb_runtime_{}_im_{}.eps".format(mem_type, im_mem_type))
-		)
-	)
+	# plt.title("", fontsize=20)
+	# plt.savefig(os.path.join(FIG_PATH, "phj_part_swwcb_runtime_{}_im_{}.pdf".format(mem_type, im_mem_type)), bbox_inches="tight", format="pdf")
+	# os.system("/Applications/Inkscape.app/Contents/MacOS/inkscape {} --export-eps={}".format(
+	# 		os.path.join(FIG_PATH, "phj_part_swwcb_runtime_{}_im_{}.pdf".format(mem_type, im_mem_type)),
+	# 		os.path.join(FIG_PATH, "phj_part_swwcb_runtime_{}_im_{}.eps".format(mem_type, im_mem_type))
+	# 	)
+	# )
 
 	plt.close()
 

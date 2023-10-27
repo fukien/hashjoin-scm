@@ -215,7 +215,7 @@ void gen_pkfk_uniform(const size_t pk_record_num, const size_t fk_record_num, co
 	void* nvm_data = create_pmem_buffer(path, pk_record_num * TUPLE_T_SIZE);
 	
 	pmem_memcpy_persist(nvm_data, dram_data, pk_record_num * TUPLE_T_SIZE);
-	
+
 	gen_fk_from_pk(dram_data, pk_record_num, fk_record_num, subdirectory, fk_flag);
 
 	free(dram_data);

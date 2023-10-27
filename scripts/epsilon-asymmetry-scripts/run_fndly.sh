@@ -19,7 +19,7 @@ cd build
 cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=512 -DFNDLY_S_CARDINALITY=16384
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
-../../bin/fndly_gen
+numactl --physcpubind=20-39 --membind=0-1 ../../bin/fndly_gen
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_LR.bin
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_LS.bin
 
@@ -70,9 +70,6 @@ numactl --membind=0 ../../bin/main --algo=phj_radix_bw_reg_hro --workload=unifor
 
 
 
-
-
-
 rm -rf /pmemfs1/hashjoin-scm/fndly-data/uniform
 cd ../../
 ./clean.sh
@@ -81,7 +78,7 @@ cd build
 cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=2048 -DFNDLY_S_CARDINALITY=16384
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
-../../bin/fndly_gen
+numactl --physcpubind=20-39 --membind=0-1 ../../bin/fndly_gen
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_PR.bin
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_PS.bin
 
@@ -132,8 +129,6 @@ numactl --membind=0 ../../bin/main --algo=phj_radix_bw_reg_hro --workload=unifor
 
 
 
-
-
 rm -rf /pmemfs1/hashjoin-scm/fndly-data/uniform
 cd ../../
 ./clean.sh
@@ -142,7 +137,7 @@ cd build
 cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=256 -DFNDLY_S_CARDINALITY=1024
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
-../../bin/fndly_gen
+numactl --physcpubind=20-39 --membind=0-1 ../../bin/fndly_gen
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_QR.bin
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_QS.bin
 
@@ -202,7 +197,7 @@ cd build
 cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=4096 -DFNDLY_S_CARDINALITY=16384
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
-../../bin/fndly_gen
+numactl --physcpubind=20-39 --membind=0-1 ../../bin/fndly_gen
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_UR.bin
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_US.bin
 
@@ -260,7 +255,7 @@ cd build
 cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=512 -DFNDLY_S_CARDINALITY=4096
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
-../../bin/fndly_gen
+numactl --physcpubind=20-39 --membind=0-1 ../../bin/fndly_gen
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_TR.bin
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_TS.bin
 
@@ -319,7 +314,7 @@ cd build
 cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=128 -DFNDLY_S_CARDINALITY=1024
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
-../../bin/fndly_gen
+numactl --physcpubind=20-39 --membind=0-1 ../../bin/fndly_gen
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_VR.bin
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_VS.bin
 
@@ -377,7 +372,7 @@ cd build
 cmake .. -DRUN_FNDLY=true -DFNDLY_R_CARDINALITY=256 -DFNDLY_S_CARDINALITY=4096
 make -j 32
 cd ../scripts/epsilon-asymmetry-scripts
-../../bin/fndly_gen
+numactl --physcpubind=20-39 --membind=0-1 ../../bin/fndly_gen
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_AR.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/pk_HR.bin
 mv /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_AS.bin /pmemfs1/hashjoin-scm/fndly-data/uniform/fk_HS.bin
 

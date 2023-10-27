@@ -96,7 +96,7 @@ def get_persist_data_from_log(access_granularity):
 		get_average(ntstore_fence_list)
 
 def get_pagefault_data_from_log(filepath):
-	filepath = os.path.join("../../logs/0623-logs/", filepath)
+	filepath = os.path.join(filepath)
 	mgmt_time_percentage_list = []
 	write_time_percentage_list = []
 	read_time_percentage_list = []
@@ -417,6 +417,6 @@ if __name__ == "__main__":
 	)
 
 
-	plt.savefig(os.path.join(FIG_PATH, "fig_1.png", bbox_inches="tight", format="png")
+	plt.savefig(os.path.join(FIG_PATH, "fig_1.png"), bbox_inches="tight", format="png")
 
 	plt.close()

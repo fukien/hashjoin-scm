@@ -186,7 +186,7 @@ mkdir build
 cd build
 cmake .. -DTRIAL_NUM=6 -DRUN_BILLION=false -DUSE_PAPI=false -DUSE_PMWATCH=false -DWARMUP=true -DSYNCSTATS=false -DPHJ_SYNCSTATS=false -DUSE_HYPERTHREADING=true -DUSE_NVM=true -DUSE_HUGE=false -DTHREAD_NUM=20 -DBUILDPART_THREAD_NUM=20 -DBUILDPART_WRITE_THREAD_NUM=11 -DPROBEJOIN_THREAD_NUM=20 -DUSE_NUMA=false -DPREFETCH_DISTANCE=32 -DPREFETCH_CACHE=false -DPREFETCH_CACHE_NVM=false -DLOCK_IN_BUCKET=false -DNUM_RADIX_BITS=11 -DNUM_RADIX_BITS_PASS1=11 -DNUM_PASSES=1 -DPHJ_MBP=false -DTEST_PARTITIONING=false -DOUTPUT_OFFSET_NVM=false -DUSE_SWWCB_OPTIMIZED_PART=true -DUSE_SWWCB_OPTIMIZED_PART_ON_NVM=false  -DUSE_SWWCB_OPTIMIZED_RADIX_CLUSTER=true -DUSE_SWWCB_OPTIMIZED_RADIX_CLUSTER_ON_NVM=false -DBW_REG=true
 make -j 32
-cd ../scripts/1013-scripts
+cd ../scripts/pkfkA-scripts
 numactl --membind=0 ../../bin/main --algo=phj_radix_bw_reg_bc --workload=uniform --subtype=A --param=pkfk >> $RDX_BW_REG_BC_NVM_LOG
 numactl --membind=0 ../../bin/main --algo=phj_radix_bw_reg_sc --workload=uniform --subtype=A --param=pkfk >> $RDX_BW_REG_SC_NVM_LOG
 numactl --membind=0 ../../bin/main --algo=phj_radix_bw_reg_lp --workload=uniform --subtype=A --param=pkfk >> $RDX_BW_REG_LP_NVM_LOG
@@ -216,7 +216,7 @@ mkdir build
 cd build
 cmake .. -DTRIAL_NUM=3 -DRUN_PAYLOAD=false -DTUPLE_T_SIZE=16 -DRUN_BILLION=false -DUSE_PAPI=false -DUSE_PMWATCH=false -DWARMUP=true -DSYNCSTATS=false -DPHJ_SYNCSTATS=false -DUSE_HYPERTHREADING=true -DUSE_NVM=true -DUSE_HUGE=false -DTHREAD_NUM=20 -DBUILDPART_THREAD_NUM=20 -DBUILDPART_WRITE_THREAD_NUM=11 -DPROBEJOIN_THREAD_NUM=20 -DUSE_NUMA=false -DPREFETCH_DISTANCE=32 -DPREFETCH_CACHE=false -DPREFETCH_CACHE_NVM=false -DLOCK_IN_BUCKET=false -DNUM_RADIX_BITS=12 -DNUM_RADIX_BITS_PASS1=11 -DNUM_PASSES=2 -DPHJ_MBP=true -DTEST_PARTITIONING=false -DOUTPUT_OFFSET_NVM=false -DUSE_SWWCB_OPTIMIZED_PART=true -DUSE_SWWCB_OPTIMIZED_PART_ON_NVM=false -DUSE_SWWCB_OPTIMIZED_RADIX_CLUSTER=true -DUSE_SWWCB_OPTIMIZED_RADIX_CLUSTER_ON_NVM=false -DSKEW_HANDLING=false -DBW_REG=true
 make -j 32
-cd ../scripts/1013-scripts
+cd ../scripts/pkfkA-scripts
 numactl --physcpubind=0-19 --membind=0 ../../bin/main --algo=phj_asymm_radix_bw_reg_bc --workload=uniform --subtype=A --param=pkfk >> $ASYM_BW_REG_BC_NVM_LOG
 numactl --physcpubind=0-19 --membind=0 ../../bin/main --algo=phj_asymm_radix_bw_reg_sc --workload=uniform --subtype=A --param=pkfk >> $ASYM_BW_REG_SC_NVM_LOG
 numactl --physcpubind=0-19 --membind=0 ../../bin/main --algo=phj_asymm_radix_bw_reg_hr --workload=uniform --subtype=A --param=pkfk >> $ASYM_BW_REG_HR_NVM_LOG

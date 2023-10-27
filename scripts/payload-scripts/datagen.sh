@@ -12,7 +12,7 @@ for (( i = $MIN_POW_NUM; i <= $MAX_POW_NUM; i++ )); do
 	cmake .. -DRUN_PAYLOAD=true -DTUPLE_T_SIZE=$((2**$i))
 	make -j 32
 	cd ../scripts/payload-scripts/
-	numactl --physcpubind=0-19 --membind=0 ../../bin/gen
+	numactl --physcpubind=0-19 --membind=0-1 ../../bin/gen
 done
 
 
