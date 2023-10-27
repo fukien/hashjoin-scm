@@ -45,7 +45,7 @@ $ sudo bash install.sh
 Configure the SCM mounting points as "/pmemfs0" and "/pmemfs1," and ensure that "/pmemfs0" is set as the default SCM mounting point for the first socket (assuming core IDs start from 0 on the first socket).
 
 ### 2.6 Configuration Parameters
-- Adjust the "[./config/mc/cpu.cfg](../config/mc/cpu.cfg)" file according to the core IDs obtained from "numactl -H." By default, we consider socket-0 as "local" and socket-1 as "remote." For example:
+- Adjust "[./config/mc/cpu.cfg](../config/mc/cpu.cfg)" file according to the core IDs obtained from "numactl -H." By default, we consider socket-0 as "local" and socket-1 as "remote." For example:
 
 ```
 cores: {
@@ -113,19 +113,18 @@ $ cd reproducibility/
 $ bash run_all.sh
 ```
 
-All experiment running logs will be stored in the "[./logs/](../logs/)" directory.
+All experiment running logs will be stored in "[./logs/](../logs/)" directory (our running logs are saved in "[./logs/](../logs/)" for your reference ). 
 
 Note: "[run\_all.sh](./run_all.sh)" usually takes 27 hours to finish (Fig 10(b) experiments typically last 17 hours).
 
-p.s. You can find our running logs for your reference in the "[./logs/](../logs/)" directory.
 
 ### Plot all experiment figures corresponding to the paper
-Retrieve all the logs from the "[./logs/](../logs/)" directory to your local machine, especially if the experiments were conducted on a remote SCM-equipped server.   
+Retrieve all the logs from "[./logs/](../logs/)" directory to your local machine, especially if the experiments were conducted on a remote SCM-equipped server.   
 
 ```
 $ cd reproducibility/
 $ bash plot_all.sh
 ```
-All experiment figures will be generated and saved in the "[./figs/](../figs/)" directory. 
+All experiment figures will be generated and saved in "[./figs/](../figs/)" directory. 
 
-p.s. We have uploaded the figures we generated to the "[./figs/](../figs/)" directory for your reference.
+Note: We have uploaded the figures we generated to "[./figs/](../figs/)" directory for your reference.
