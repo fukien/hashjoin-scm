@@ -82,15 +82,15 @@ cd ..
 rm -rf /pmemfs0/hashjoin-scm/data
 rm -rf /pmemfs1/hashjoin-scm/data
 
-# Reproduce the experiments of Figure 10(b) (read/write asymmetry)
-cd fig10-scripts
-bash run_fig10b.sh
-cd ..
+# # Reproduce the experiments of Figure 10(b) (read/write asymmetry)
+# cd fig10-scripts
+# bash run_fig10b.sh
+# cd ..
 
 
-# Free up the dataset space for other workloads
-rm -rf /pmemfs0/hashjoin-scm/data
-rm -rf /pmemfs1/hashjoin-scm/data
+# # Free up the dataset space for other workloads
+# rm -rf /pmemfs0/hashjoin-scm/data
+# rm -rf /pmemfs1/hashjoin-scm/data
 
 
 
