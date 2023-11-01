@@ -14,6 +14,10 @@ cd ../scripts/epsilon-asymmetry-scripts
 bash pkfk_b.sh > pkfk_b.log
 
 
+# Free up the dataset space for other workloads
+rm -rf /pmemfs0/hashjoin-scm/data
+rm -rf /pmemfs1/hashjoin-scm/data
+
 
 end_time=$(date +%s)
 duration=$((end_time - start_time))

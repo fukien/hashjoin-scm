@@ -22,7 +22,7 @@ Note: If you do not meet the above requirements, you may not be able to reproduc
 * Intel PMWatch >= 3.2.1
 
 
-## 2. Setup (Skip to Section-3 if evaluated on our provided machine)
+## 2. Setup (Skip to Section 3 if evaluated on our provided machine)
 
 ### 2.1. Clone this project from Github.
 ```
@@ -82,7 +82,7 @@ $ ./bin/main --workload=uniform --subtype=A --param=pkfk --algo=phj_radix_bw_reg
 
 
 
-## 3 Reproduce the experiment results from the paper.
+## 3 Reproduce the experiment results from the paper
 
 ### General instruction
 Please navigate to the indicated folders and execute the provided scripts ("run\_fig\*.sh") to replicate the corresponding experiments. Additionally, you'll find the plotting scripts ("plot\_\*.py") within these folders for further analysis.
@@ -108,14 +108,18 @@ Note:
 * To reproduce experiments in Figure 8(d), Figure 9, and Figure 10(b), it may be necessary to clear the SCM mounting path since they typically involve datasets of several hundred gigabytes."
 
 ### One-click replication for all experiments
+We offer one-click scripts to facilitate the reproduction of all experiments mentioned in the paper, with the exception of those involving Figure 3, Figure 4(b), and Figure 10(b). These particular experiments either necessitate sudo access or have extended durations (e.g., Figure 10(b) requires 17 hours to complete). You can conveniently execute the experiments by:
+
 ```
 $ cd reproducibility/
 $ bash run_all.sh
 ```
 
-All experiment running logs will be stored in "[./logs/](../logs/)" directory (our running logs are saved in "[./logs/](../logs/)" for your reference ). 
+All experiment running logs will be stored in "[./logs/](../logs/)" directory (our running logs are saved in "[./logs/](../logs/)" for your reference).   
 
-Note: "[run\_all.sh](./run_all.sh)" usually takes 27 hours to finish (Fig 10(b) experiments typically last 17 hours).
+To reproduce Figure 3, Figure 4(b), and Figure 10(b), please navigate to the corresponding script folders and execute the "run\_fig\*.sh" scripts to generate the experimental results.  
+
+Note: "[run\_all.sh](./run_all.sh)" usually takes 14 hours.  
 
 
 ### Plot all experiment figures corresponding to the paper
