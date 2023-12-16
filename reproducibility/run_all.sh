@@ -26,7 +26,7 @@ cd ..
 # # Reproduce the experiments of Figure 4b 
 # # Note: You may need "sudo" to access the counters
 # cd fig4b-scripts
-# sudo bash run_fig4b.sh
+# bash run_fig4b.sh
 # cd ..
 
 # Reproduce the experiments of Figure 5

@@ -61,11 +61,13 @@ Install [Intel-PMWatch](https://github.com/intel/intel-pmwatch)
 ### Install Other Packages
 ```
 $ sudo apt install -y numactl
+$ pip install -r requirements.txt
 ```
 
 ### Grant Permissions (for PAPI):  
 ```
-sudo sh -c 'echo -1 >/proc/sys/kernel/perf_event_paranoid'
+sudo sh -c "echo -1 >/proc/sys/kernel/perf_event_paranoid"
+sudo sh -c "echo 0 > /proc/sys/kernel/kptr_restrict"
 ```
 
 ## Quick Start

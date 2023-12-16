@@ -104,7 +104,7 @@ if __name__ == "__main__":
 	ax2.set_ylabel("Media Reads\n(MOps)", fontsize=14)
 	ax2.tick_params(axis='y', labelsize=14)
 
-	ax1.get_shared_x_axes().join(ax1, ax2)
+	# ax1.get_shared_x_axes().join(ax1, ax2)
 	ax2.set_xticks([])
 	# ax2.set_xticks(x_axis)
 	# ax2.set_xticklabels(x_axis_label_list, fontsize=14)

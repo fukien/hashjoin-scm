@@ -10,6 +10,9 @@ apt install -y ndctl daxctl numactl
 apt install -y autoconf automake libtool libconfig-dev libkmod-dev libudev-dev uuid-dev libipmctl-dev libnuma-dev
 apt install -y ipmctl
 
+# Python dependencies for plotting figures
+pip install -r requirements.txt
+
 
 end_time=$(date +%s)
 duration=$((end_time - start_time))
