@@ -1210,7 +1210,7 @@ void probe_hashtable_nphj_lp(hash_entry_t *hashtable, relation_t *rel, size_t *m
 		// *matched_cnt +=  (found_tuple == NULL) ? 0 : 1;
 		// *checksum += (found_tuple == NULL) ? 0 : rel->tuples[idx].row_id + found_tuple->row_id;
 
-		matched_flag = (found_tuple == NULL);
+		matched_flag = (found_tuple != NULL);
 		*matched_cnt += matched_flag;
 		*checksum += (rel->tuples[idx].row_id + found_tuple->row_id)*matched_flag;
 
@@ -1227,7 +1227,7 @@ void probe_hashtable_nphj_lp(hash_entry_t *hashtable, relation_t *rel, size_t *m
 		// *matched_cnt +=  (found_tuple == NULL) ? 0 : 1;
 		// *checksum += (found_tuple == NULL) ? 0 : rel->tuples[idx].row_id + found_tuple->row_id;
 
-		matched_flag = (found_tuple == NULL);
+		matched_flag = (found_tuple != NULL);
 		*matched_cnt += matched_flag;
 		*checksum += (rel->tuples[idx].row_id + found_tuple->row_id)*matched_flag;
 	}
@@ -1248,7 +1248,7 @@ void probe_hashtable_nphj_lp(hash_entry_t *hashtable, relation_t *rel, size_t *m
 			// *matched_cnt +=  (found_tuple == NULL) ? 0 : 1;
 			// *checksum += (found_tuple == NULL) ? 0 : rel->tuples[idx].row_id + found_tuple->row_id;
 
-			matched_flag = (found_tuple == NULL);
+			matched_flag = (found_tuple != NULL);
 			*matched_cnt += matched_flag;
 			*checksum += (rel->tuples[idx].row_id + found_tuple->row_id)*matched_flag;
 		}
@@ -1260,7 +1260,7 @@ void probe_hashtable_nphj_lp(hash_entry_t *hashtable, relation_t *rel, size_t *m
 			// *matched_cnt +=  (found_tuple == NULL) ? 0 : 1;
 			// *checksum += (found_tuple == NULL) ? 0 : rel->tuples[idx].row_id + found_tuple->row_id;
 
-			matched_flag = (found_tuple == NULL);
+			matched_flag = (found_tuple != NULL);
 			*matched_cnt += matched_flag;
 			*checksum += (rel->tuples[idx].row_id + found_tuple->row_id)*matched_flag;
 		}
