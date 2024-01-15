@@ -1839,7 +1839,7 @@ void *prj_thread_buildpart_bw_reg(void *param) {
 
 				max_build_side_tup_num = max_build_side_tup_num > skew_hand_r_num_tup ? max_build_side_tup_num : skew_hand_r_num_tup;
 
-				if ( skew_hand_r_num_tup > 0 && skew_hand_s_num_tup > 0 (skew_hand_r_num_tup > THRESHOLD_1 || skew_hand_s_num_tup > THRESHOLD_1) ) {
+				if ( skew_hand_r_num_tup > 0 && skew_hand_s_num_tup > 0 && (skew_hand_r_num_tup > THRESHOLD_1 || skew_hand_s_num_tup > THRESHOLD_1) ) {
 					for (size_t jdx = 0; jdx < PROBEJOIN_THREAD_NUM; jdx ++) {
 						skew_hand_task = task_queue_get_slot(part_queue);
 

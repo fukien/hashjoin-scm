@@ -87,6 +87,7 @@ $ ./bin/main --workload=uniform --subtype=A --param=pkfk --algo=nphj_sc
 To run RDX-BC with the bandwidth regulation mechanism:
 $ ./bin/main --workload=uniform --subtype=A --param=pkfk --algo=phj_radix_bw_reg_bc
 ```
+Note: You can also run all joins in DRAM by simply disabling the `USE_NVM` variable in [CMakeLists.txt](https://github.com/fukien/hashjoin-scm/blob/main/CMakeLists.txt).
 
 ## Reproducing Experiments 
 See [scripts/](https://github.com/fukien/hashjoin-scm/tree/main/scripts).  
