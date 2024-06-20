@@ -199,7 +199,7 @@ def plot_uniform_pkfk_A(mem_type, log_prefix):
 	# 	)
 	# )
 
-	# plt.close()
+	plt.close()
 
 
 
