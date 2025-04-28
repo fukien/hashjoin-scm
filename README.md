@@ -3,7 +3,7 @@ Code repository for our [VLDB'23 paper](https://www.vldb.org/pvldb/vol16/p1249-h
 
 ## Prerequisites
 ```
-1. A two-socket machine with 2nd 2nd Gen Intel® Xeon® Scalable Processors.  
+1. A two-socket machine with 2nd Gen Intel® Xeon® Scalable Processors.  
 2. 1.5TB Intel Optane DIMMs.  
 
 Note: If you do not meet the above requirements, you may not be able to reproduce all the experimental results.  
